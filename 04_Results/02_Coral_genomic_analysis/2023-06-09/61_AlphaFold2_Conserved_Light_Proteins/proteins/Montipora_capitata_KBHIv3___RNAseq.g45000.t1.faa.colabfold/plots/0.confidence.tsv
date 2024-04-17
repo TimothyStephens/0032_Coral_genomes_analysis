@@ -1,0 +1,2 @@
+PDB_file	length	pLDDT_mean	pLDDT_overall_quality	pLDDT_VERY_LOW_residue_count	pLDDT_VERY_LOW_residue_percent	pLDDT_LOW_residue_count	pLDDT_LOW_residue_percent	pLDDT_HIGH_residue_count	pLDDT_HIGH_residue_percent	pLDDT_VERY_HIGH_residue_count	pLDDT_VERY_HIGH_residue_percent
+proteins/Montipora_capitata_KBHIv3___RNAseq.g45000.t1.faa.colabfold/plots/0.pdb	488	94.1864549180328	Very_High	10	2.0491803278688523	11	2.2540983606557377	35	7.172131147540983	432	88.52459016393442
