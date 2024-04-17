@@ -1,0 +1,5 @@
+f0e7ab488e050091592b5d5ea279fe28  MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam
+2d2e619aa8eb8c1737543987b25c67bb  MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam.bai
+3499b990e93cf4576e59739785cedb11  Montipora_capitata_KBHIv3.assembly.fasta
+1f6c65fedf00ac9d19cfdcbd8eb6bdc3  Montipora_capitata_KBHIv3.assembly.fasta.fai
+b34c436551b537f0bb1d9e99f99665fc  Montipora_capitata_KBHIv3.genes.gff3

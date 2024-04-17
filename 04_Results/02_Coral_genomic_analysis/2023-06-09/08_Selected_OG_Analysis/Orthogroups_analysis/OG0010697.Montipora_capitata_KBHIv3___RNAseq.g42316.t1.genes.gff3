@@ -1,0 +1,3 @@
+Montipora_capitata_KBHIv3___Scaffold_5	AUGUSTUS	transcript	32177414	32177839	.	+	.	ID=Montipora_capitata_KBHIv3___RNAseq.g42316.t1
+Montipora_capitata_KBHIv3___Scaffold_5	AUGUSTUS	CDS	32177414	32177839	.	+	0	Parent=Montipora_capitata_KBHIv3___RNAseq.g42316.t1
+Montipora_capitata_KBHIv3___Scaffold_5	AUGUSTUS	exon	32177414	32177839	.	+	0	Parent=Montipora_capitata_KBHIv3___RNAseq.g42316.t1

@@ -1,0 +1,7 @@
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	transcript	62645836	62649173	.	+	.	ID=Montipora_capitata_KBHIv3___TS.g4484.t1
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	CDS	62645836	62645913	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g4484.t1
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	exon	62645836	62645913	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g4484.t1
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	CDS	62648120	62648204	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g4484.t1
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	exon	62648120	62648204	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g4484.t1
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	CDS	62648998	62649173	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g4484.t1
+Montipora_capitata_KBHIv3___Scaffold_11	AUGUSTUS	exon	62648998	62649173	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g4484.t1

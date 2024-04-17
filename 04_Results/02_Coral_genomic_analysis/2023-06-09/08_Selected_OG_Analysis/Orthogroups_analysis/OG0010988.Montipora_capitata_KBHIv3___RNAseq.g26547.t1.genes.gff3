@@ -1,0 +1,5 @@
+Montipora_capitata_KBHIv3___Scaffold_4	AUGUSTUS	transcript	37362171	37363458	.	-	.	ID=Montipora_capitata_KBHIv3___RNAseq.g26547.t1
+Montipora_capitata_KBHIv3___Scaffold_4	AUGUSTUS	CDS	37362171	37362482	.	-	0	Parent=Montipora_capitata_KBHIv3___RNAseq.g26547.t1
+Montipora_capitata_KBHIv3___Scaffold_4	AUGUSTUS	exon	37362171	37362482	.	-	0	Parent=Montipora_capitata_KBHIv3___RNAseq.g26547.t1
+Montipora_capitata_KBHIv3___Scaffold_4	AUGUSTUS	CDS	37363357	37363458	.	-	0	Parent=Montipora_capitata_KBHIv3___RNAseq.g26547.t1
+Montipora_capitata_KBHIv3___Scaffold_4	AUGUSTUS	exon	37363357	37363458	.	-	0	Parent=Montipora_capitata_KBHIv3___RNAseq.g26547.t1

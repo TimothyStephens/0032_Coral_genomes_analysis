@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="../igv_data/Montipora_capitata_KBHIv3.assembly.fasta" locus="Montipora_capitata_KBHIv3___Scaffold_14:6252793-6267208" version="8">
+    <Resources>
+        <Resource path="../igv_data/MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam" type="bam"/>
+        <Resource path="OG0005842.Montipora_capitata_KBHIv3___RNAseq.g35326.t1.genes.gff3" type="gff3"/>
+        <Resource path="../igv_data/Montipora_capitata_KBHIv3.genes.gff3" type="gff3"/>
+    </Resources>
+    <Panel height="94" name="Panel1691953457322" width="2223">
+        <Track attributeKey="MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" fontSize="10" id="../igv_data/MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam_coverage" name="RNA-seq Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="10740.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="NEGATIVE" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="OG0005842.Montipora_capitata_KBHIv3___RNAseq.g35326.t1.genes.gff3" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;0.0;255,255,255;0,0,178" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="OG0005842.Montipora_capitata_KBHIv3___RNAseq.g35326.t1.genes.gff3" name="Target gene" visible="true"/>
+        <Track attributeKey="MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam Junctions" autoScale="false" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="../igv_data/MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam_junctions" maxdepth="50" name="MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam Junctions" visible="false"/>
+    </Panel>
+    <Panel height="16067" name="FeaturePanel" width="2223">
+        <Track attributeKey="Montipora_capitata_KBHIv3.genes.gff3" clazz="org.broad.igv.track.FeatureTrack" color="51,102,255" colorScale="ContinuousColorScale;0.0;976.0;255,255,255;0,0,178" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="../igv_data/Montipora_capitata_KBHIv3.genes.gff3" name="All genes" visible="true"/>
+        <Track attributeKey="MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="../igv_data/MC-289_All_combined.HISAT2_RNAseq_mapping.coordSorted.bam" name="RNA-seq Reads" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <PanelLayout dividerFractions="0.006472491909385114,0.11326860841423948"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

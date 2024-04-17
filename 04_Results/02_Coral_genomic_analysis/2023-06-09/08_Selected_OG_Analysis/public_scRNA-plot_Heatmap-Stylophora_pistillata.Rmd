@@ -1,0 +1,276 @@
+---
+title: "Complex heatmap of Stylophora pistillata scRNA results"
+author: "Timothy Stephens"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+
+
+# Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 8, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(tibble)
+library(dplyr)
+library(reshape2)
+library(RColorBrewer)
+library(ComplexHeatmap)
+options(scipen = 999) #Prevent scientific notation
+
+out.prefix <- "public_scRNA-plot_Heatmap-Stylophora_pistillata"
+```
+
+
+
+Load data inot `R`
+```{r load_data}
+data <- read.table("public_scRNA/data/Stylophora_pistillata_GAJOv1.COMBINED_genes.cell_type_gene_FC.tsv", header=T, row.names=1, sep='\t', check.names=FALSE)
+color <- read.table("public_scRNA/data/Stylophora_pistillata_GAJOv1.celltype_color.tsv", header=T, sep='\t', comment.char='')
+OG.long <- read.table("../06_Final_Classifications/Orthogroups.Run2.long.tsv.gz", header=T, sep='\t')
+OG.class <- read.table("../06_Final_Classifications/Orthogroups.Run2.classification.tsv.gz", header=T, sep='\t')
+```
+
+
+Cleanup and melt data.
+```{r format_data}
+t <- subset(data, select=-c(old_name)) %>% replace(is.na(.), 0)# %>% replace(. < 1.5, 0)
+t <- t[!rowSums(t == 0) > 0, ]
+data.formatted <- t
+#data.formatted <- subset(data, select=-c(old_name))[rownames(t), ] %>% replace(is.na(.), 1)
+```
+
+
+Merge OG datasets into a single dataframe, then filter so that we only keep the info of the genes in data
+```{r merge_OG_datasets}
+OG <- merge(OG.long, OG.class %>% select(orthogroup_id, designation)) %>% filter(sequence_id %in% rownames(data.formatted))
+```
+
+
+Cleanup cell color metadata dataframe.
+```{r cleanup_celltype_color_data}
+# Reformat metacell info (reduce to just named cell types, not metacell numbers)
+color.celltype <- subset(color, select=-c(metacell, metacell_color)) %>% unique()
+rownames(color.celltype) <- paste(color.celltype$tissue,"_",color.celltype$cell, sep='')
+
+# Get just metadata for metacell types in dataset
+color.celltype <- color.celltype[colnames(data.formatted) %>% unique(),]
+```
+
+
+
+```{r cleanup_OG_color_data}
+# Add row names
+color.OG <- OG %>% select(sequence_id, designation) %>% unique()
+rownames(color.OG) <- color.OG$sequence_id
+
+# Get just the OGs in dataset
+color.OG <- color.OG[rownames(data.formatted) %>% unique(),]
+```
+
+
+
+```{r func_plot_ComplexHeatmap}
+plot_ComplexHeatmap <- function(df, 
+                                color.columns, color.rows, 
+                                row.split.ids, 
+                                cluster_columns=FALSE,
+                                out.plot.file, 
+                                plot.width=12, plot.heigth=12){
+  ##
+  ## Column (cell type) colors
+  ##
+  # Get tissue/developmental tissue type colors
+  t <- color.columns[, c("tissue", "tissue_color")] %>% unique()
+  developmental_stage <- t$tissue_color
+  names(developmental_stage) <- t$tissue
+  
+  # Get metacell type colors
+  t <- color.columns[, c("cell", "cell_color")] %>% unique()
+  cell <- t$cell_color
+  names(cell) <- t$cell
+  
+  # Get broadcell type colors
+  t <- color.columns[, c("broadcell", "broadcell_color")] %>% unique()
+  broadcell <- t$broadcell_color
+  names(broadcell) <- t$broadcell
+  
+  # Load colors into data.object
+  col <- list(
+    developmental_stage=developmental_stage,
+    cell=cell,
+    broadcell=broadcell
+  )
+  col.colors <- HeatmapAnnotation(
+    developmental_stage=color.columns$tissue,
+    cell=color.columns$cell,
+    broadcell=color.columns$broadcell,
+    col=col
+  )
+  
+  
+  
+  ##
+  ## Row (OG) colors
+  ##
+  # Get OG designation colors
+  designation <- c(
+    "Dark-Restricted"="#984ea3", 
+    "Dark-Shared"="#f781bf", 
+    "Light-Restricted"="#ff7f00", 
+    "Light-Shared"="#ffff33"
+  )
+
+  # Load colors into data.object
+  col <- list(
+    designation=designation
+  )
+  row.colors <- rowAnnotation(
+    designation=color.rows$designation,
+    col=col
+  )
+  
+  
+  
+  ##
+  ## Get factors to split rows by 
+  ##
+  if(!is.null(row.split.ids)){
+    row.split <- data.frame(color.rows[, row.split.ids])
+    rownames(row.split) <- NULL
+    for (id in row.split.ids){
+      row.split[id] <- factor(row.split[[id]], levels=names(get(id)))
+    }
+  } else {
+    row.split <- row.split.ids
+  }
+  
+  
+  
+  ##
+  ## Plot and save heatmap
+  ##
+  #pdf(out.plot.file, width=plot.width, height=plot.heigth)
+  p <- Heatmap(df, 
+          name = "Gene FC in scRNA-seq data", #title of legend
+          column_title = "Metacell types", row_title = "Orthogroups",
+          row_names_gp = gpar(fontsize = 1), # Text size for row names
+          column_names_gp = gpar(fontsize = 3), # Text size for row names
+          cluster_columns=cluster_columns,
+          cluster_rows=TRUE,
+          top_annotation = col.colors,
+          left_annotation = row.colors,
+          row_split=row.split,
+          cluster_row_slices=FALSE,
+          use_raster=FALSE,
+          col = circlize::colorRamp2(c(0, 1, 1.5, 5, 10), c("white", "white", "yellow", "red", "black")),
+          )
+  #return(p)
+  draw(p)
+  #dev.off()
+}
+```
+
+
+
+```{r heatmap_full}
+color.columns <- color.celltype
+color.rows <- color.OG
+df <- data.formatted
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), FALSE, paste(out.prefix, ".plot_Heatmap.pdf", sep=''))
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), TRUE,  paste(out.prefix, ".plot_Heatmap-columnClust.pdf", sep=''))
+```
+
+
+
+```{r heatmap_LightShared}
+color.columns <- color.celltype[colnames(data.formatted), ]
+color.rows <- color.OG[color.OG$designation %in% c("Light-Shared"), ]
+df <- data.formatted[rownames(data.formatted) %in% color.rows$sequence_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), FALSE, paste(out.prefix, ".plot_Heatmap_LightShared.pdf", sep=''))
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), TRUE,  paste(out.prefix, ".plot_Heatmap_LightShared-columnClust.pdf", sep=''))
+```
+
+
+
+```{r heatmap_LightRestricted}
+color.columns <- color.celltype
+color.rows <- color.OG[color.OG$designation %in% c("Light-Restricted"), ]
+df <- data.formatted[rownames(data.formatted) %in% color.rows$sequence_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), FALSE, paste(out.prefix, ".plot_Heatmap_LightRestricted.pdf", sep=''))
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), TRUE,  paste(out.prefix, ".plot_Heatmap_LightRestricted-columnClust.pdf", sep=''))
+```
+
+
+
+```{r heatmap_DarkShared}
+color.columns <- color.celltype
+color.rows <- color.OG[color.OG$designation %in% c("Dark-Shared"), ]
+df <- data.formatted[rownames(data.formatted) %in% color.rows$sequence_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), FALSE, paste(out.prefix, ".plot_Heatmap_DarkShared.pdf", sep=''))
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), TRUE,  paste(out.prefix, ".plot_Heatmap_DarkShared-columnClust.pdf", sep=''))
+```
+
+
+
+```{r heatmap_DarkRestricted}
+color.columns <- color.celltype[colnames(data.formatted), ]
+color.rows <- color.OG[color.OG$designation %in% c("Dark-Restricted"), ]
+df <- data.formatted[rownames(data.formatted) %in% color.rows$sequence_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, NULL, FALSE, paste(out.prefix, ".plot_Heatmap_DarkRestricted.pdf", sep=''))
+plot_ComplexHeatmap(df, color.columns, color.rows, NULL, TRUE,  paste(out.prefix, ".plot_Heatmap_DarkRestricted-columnClust.pdf", sep=''))
+```
+
+
+
+
+
+```{r}
+t <- subset(data, select=-c(old_name)) %>% replace(is.na(.), 0)
+t <- merge(
+  OG[, c("sequence_id", "designation")],
+  t, by.x = "sequence_id", by.y = "row.names") %>% column_to_rownames("sequence_id")
+t.sum <- t %>% 
+  melt() %>%
+  group_by(variable, designation) %>% 
+  summarize(n = length(value), diff.expr = sum(value > 1.5), prop.diff.expr = (diff.expr/n)*100)
+t.sum
+```
+
+
+```{r}
+df <- dcast(t.sum, variable ~ designation, value.var = "prop.diff.expr") %>% column_to_rownames("variable") %>% t()
+
+color.cell <- color.celltype[colnames(df), ]
+
+color.designation <- subset(color.OG, select=-c(sequence_id))
+rownames(color.designation) <- NULL
+color.designation <- color.designation %>% unique()
+rownames(color.designation) <- color.designation$designation
+color.designation$designation2 <-  color.designation$designation
+color.designation <- color.designation[rownames(df), ]
+
+plot_ComplexHeatmap(df, color.cell, color.designation, NULL, FALSE, paste(out.prefix, ".plot_Heatmap_Sum.pdf", sep=''))
+plot_ComplexHeatmap(df, color.cell, color.designation, NULL, TRUE,  paste(out.prefix, ".plot_Heatmap_Sum-columnClust.pdf", sep=''))
+```
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```
+
+

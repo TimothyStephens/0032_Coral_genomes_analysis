@@ -1,0 +1,440 @@
+---
+title: "Plot All vs. Selected Dark OGs"
+author: "Timothy Stephens"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+# Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 12, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(ggridges)
+library(ggplot2)
+library(tibble)
+library(dplyr)
+library(reshape2)
+library(scales)
+library(ggrepel)
+library(stringr)
+library(glue)
+library(ggpubr)
+options(scipen = 999) #Prevent scientific notation
+
+text.scale <- 0.5
+```
+
+# Load datasets into R
+
+Load the cleaned and processed datasets into R for plotting.
+
+```{r load_data}
+data.selected.OGs <- read.table("combined_results/combined.stats.OGs.tsv", sep='\t', 
+  header=TRUE, check.names=FALSE, stringsAsFactors=FALSE)
+data.selected.OGs <- data.selected.OGs$orthogroup_id
+
+data.OGs  <- read.table("../06_Final_Classifications/Orthogroups.Run2.classification.tsv.gz", sep='\t', 
+  header=TRUE, check.names=FALSE, stringsAsFactors=FALSE) %>%
+  mutate(selected=if_else(orthogroup_id %in% data.selected.OGs, "Yes", "No", NA))
+data.seqs <- read.table("combined_results/combined.stats.ALL_seqs.info.tsv", sep='\t', 
+  header=TRUE, check.names=FALSE, stringsAsFactors=FALSE) %>%
+  mutate(selected=if_else(orthogroup_id %in% data.selected.OGs, "Yes", "No", NA))
+```
+
+# Generate plot
+
+Plot number of CDS per proteins (for proteins with genome coords available) - ALL Designations.
+
+```{r plot_ALL_num_CDS}
+col <- "num_CDS"
+col.name <- "Number of CDS/exons per protein"
+x.min <- 1
+x.max <- 20
+
+p1 <- merge(data.seqs, 
+      data.OGs %>% select(orthogroup_id, designation), 
+      all=TRUE,
+      by="orthogroup_id"
+      ) %>%
+  select(!!sym(col), designation) %>%
+  rename(value = !!sym(col)) %>%
+  rename(group = designation) %>%
+  filter(! is.na(value)) %>%
+  mutate(value = if_else(value < x.min, x.min, 
+                      if_else(value > x.max, x.max, value)
+                      )
+         ) %>%
+  ggplot(aes(x=value, y=group, fill=group)) + 
+    geom_density_ridges(scale = 0.95) +
+    theme_ridges() +
+    theme(legend.position = "none",
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_blank(),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, angle = 90, vjust = 0.5, hjust=0, face="bold")
+          ) +
+    scale_fill_cyclical(values = c("#984ea3", "#bebada", "#ff7f00", "#fdbf6f")) +
+    labs(title="Distribution of CDS/exon count per gene",
+         x=col.name, 
+         y="Orthogorup Designation") +
+    scale_x_continuous(expand = c(0, 0)) +
+    scale_y_discrete(expand = c(0, 0))
+p1
+```
+
+Plot number of CDS per proteins (for proteins with genome coords available) - ALL Designations.
+
+```{r plot_ALL_PEP_length}
+col <- "PEP_length"
+col.name <- "Protein length (aa)"
+x.min <- 1
+x.max <- 1000
+
+p2 <- merge(data.seqs, 
+      data.OGs %>% select(orthogroup_id, designation), 
+      all=TRUE,
+      by="orthogroup_id"
+      ) %>%
+  select(!!sym(col), designation) %>%
+  rename(value = !!sym(col)) %>%
+  rename(group = designation) %>%
+  filter(! is.na(value)) %>%
+  mutate(value = if_else(value < x.min, x.min, 
+                      if_else(value > x.max, x.max, value)
+                      )
+         ) %>%
+  ggplot(aes(x=value, y=group, fill=group)) + 
+    geom_density_ridges(scale = 0.95) +
+    theme_ridges() +
+    theme(legend.position = "none",
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_blank(),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, angle = 90, vjust = 0.5, hjust=0, face="bold")
+          ) +
+    scale_fill_cyclical(values = c("#984ea3", "#bebada", "#ff7f00", "#fdbf6f")) +
+    labs(title="Distribution of protein lengths",
+         x=col.name, 
+         y="Orthogorup Designation") +
+    scale_x_continuous(expand = c(0, 0)) +
+    scale_y_discrete(expand = c(0, 0))
+p2
+```
+
+Plot length of proteins.
+
+```{r plot_num_CDS}
+col <- "num_CDS"
+col.name <- "Number of CDS/exons per protein"
+x.min <- 1
+x.max <- 20
+y.labels <- c("Selected Dark Orthogroups", "Orther Orthogroups")
+names(y.labels) <- c("Yes", "No")
+
+p3 <- data.seqs %>% 
+  select(!!sym(col), selected) %>%
+  rename(value = !!sym(col)) %>%
+  rename(group = selected) %>%
+  filter(! is.na(value)) %>%
+  mutate(value = if_else(value < x.min, x.min, 
+                      if_else(value > x.max, x.max, value)
+                      )
+         ) %>%
+  ggplot(aes(x=value, y=group, fill=group)) + 
+    geom_density_ridges(scale = 0.95) +
+    theme_ridges() +
+    theme(legend.position = "none",
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_blank(),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, angle = 90, vjust = 0.5, hjust=0, face="bold")
+          ) +
+    labs(title="Distribution of CDS/exon count per gene") +
+    scale_fill_cyclical(values = c("#ff7f00", "#984ea3")) +
+    labs(x=col.name) +
+    scale_x_continuous(expand = c(0, 0)) +
+    scale_y_discrete(expand = c(0, 0), label=y.labels)
+p3
+```
+
+Plot length of proteins.
+
+```{r plot_PEP_length}
+col <- "PEP_length"
+col.name <- "Protein length (aa)"
+x.min <- 1
+x.max <- 1000
+
+p4 <- data.seqs %>% 
+  select(!!sym(col), selected) %>%
+  rename(value = !!sym(col)) %>%
+  rename(group = selected) %>%
+  filter(! is.na(value)) %>%
+  mutate(value = if_else(value < x.min, x.min, 
+                      if_else(value > x.max, x.max, value)
+                      )
+         ) %>%
+  ggplot(aes(x=value, y=group, fill=group)) + 
+    geom_density_ridges(scale = 0.95) +
+    theme_ridges() +
+    theme(legend.position = "none",
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_blank(),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, angle = 90, vjust = 0.5, hjust=0, face="bold")
+          ) +
+    labs(title="Distribution of protein lengths") +
+    scale_fill_cyclical(values = c("#ff7f00", "#984ea3")) +
+    labs(x=col.name) +
+    scale_x_continuous(expand = c(0, 0)) +
+    scale_y_discrete(expand = c(0, 0), label=y.labels)
+p4
+```
+
+Plot abSENSE results.
+
+```{r plot_abSENSE_stat_density_2d}
+selected.labs <- c("Selected Dark Orthogroups", "Orther Orthogroups")
+names(selected.labs) <- c("Yes", "No")
+
+p5 <- data.OGs %>%
+  select(`non-strata_taxa_expectedHDF_false_proportion`, `non-strata_taxa_expectedHDF_true_proportion`, designation, selected) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_false_proportion`)) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_true_proportion`)) %>%
+  rename(x = `non-strata_taxa_expectedHDF_true_proportion`) %>%
+  rename(y = `non-strata_taxa_expectedHDF_false_proportion`) %>%
+  ggplot(aes(x=x, y=y)) + 
+    stat_density_2d(aes(fill = after_stat(density)), geom = "raster", contour = FALSE) +
+    scale_fill_distiller(palette= "Spectral", direction=-1) +
+    scale_x_continuous(expand=c(0,0)) +
+    scale_y_continuous(expand=c(0,0)) +
+    coord_fixed()+
+    labs(title="abSENSE Homology Detection Failure Assessment",
+         x="Percent (%) proteins with evidence of HDF", 
+         y="Percent (%) proteins without evidence of HDF") +
+    theme_minimal() +
+    theme(strip.background = element_blank(), 
+          strip.placement = "outside",
+          strip.text.x = element_text(size=8*text.scale),
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_blank(),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, face="bold"),
+          legend.key.size   = unit(0.5*text.scale, 'cm'), #change legend key size
+          legend.key.height = unit(0.5*text.scale, 'cm'), #change legend key height
+          legend.key.width  = unit(0.5*text.scale, 'cm'), #change legend key width
+          legend.title = element_text(size=12*text.scale, vjust = 1), #change legend title font size
+          legend.text  = element_text(size=8*text.scale, angle = 45, hjust = 1),
+          legend.position = "bottom", 
+          legend.box = "horizontal"
+          ) +
+    facet_wrap(vars(selected), labeller = labeller(selected = selected.labs))
+p5
+```
+
+Plot abSENSE results.
+
+```{r plot_abSENSE_stat_density_2d_Points}
+selected.labs <- c("Selected Dark Orthogroups", "Orther Orthogroups")
+names(selected.labs) <- c("Yes", "No")
+
+p6 <- data.OGs %>%
+  select(`non-strata_taxa_expectedHDF_false_proportion`, `non-strata_taxa_expectedHDF_true_proportion`, designation, selected) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_false_proportion`)) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_true_proportion`)) %>%
+  rename(x = `non-strata_taxa_expectedHDF_true_proportion`) %>%
+  rename(y = `non-strata_taxa_expectedHDF_false_proportion`) %>%
+  ggplot(aes(x=x, y=y)) + 
+    stat_density_2d(aes(fill = after_stat(density)), geom = "raster", contour = FALSE) +
+    geom_jitter(color="pink", size=0.1, width=0.5, height=0.5) +
+    scale_fill_distiller(palette= "Spectral", direction=-1) +
+    scale_x_continuous(expand=c(0,0)) +
+    scale_y_continuous(expand=c(0,0)) +
+    coord_fixed()+
+    labs(title="abSENSE Homology Detection Failure Assessment",
+         x="Percent (%) proteins with evidence of HDF", 
+         y="Percent (%) proteins without evidence of HDF",
+          ) +
+    theme_minimal() +
+    theme(strip.background = element_blank(), 
+          strip.placement = "outside",
+          strip.text.x = element_text(size=8*text.scale),
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_blank(),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, face="bold"),
+          legend.key.size   = unit(0.5*text.scale, 'cm'), #change legend key size
+          legend.key.height = unit(0.5*text.scale, 'cm'), #change legend key height
+          legend.key.width  = unit(0.5*text.scale, 'cm'), #change legend key width
+          legend.title = element_text(size=12*text.scale, vjust = 1), #change legend title font size
+          legend.text  = element_text(size=8*text.scale, angle = 45, hjust = 1),
+          legend.position = "bottom", 
+          legend.box = "horizontal"
+          ) +
+    facet_wrap(vars(selected), labeller = labeller(selected = selected.labs))
+p6
+```
+
+
+Plot abSENSE results for just selected dark orthogroups.
+```{r plot_selected_OGs_abSENSE_stat_density_2d}
+p7 <- data.OGs %>%
+  select(`non-strata_taxa_expectedHDF_false_proportion`, `non-strata_taxa_expectedHDF_true_proportion`, designation, selected) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_false_proportion`)) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_true_proportion`)) %>%
+  rename(x = `non-strata_taxa_expectedHDF_true_proportion`) %>%
+  rename(y = `non-strata_taxa_expectedHDF_false_proportion`) %>%
+  filter(selected == "Yes") %>%
+  ggplot(aes(x=x, y=y)) + 
+    stat_density_2d(aes(fill = after_stat(density)), geom = "raster", contour = FALSE) +
+    scale_fill_distiller(palette= "Spectral", direction=-1) +
+    scale_x_continuous(expand=c(0,0)) +
+    scale_y_continuous(expand=c(0,0)) +
+    coord_fixed()+
+    labs(title="abSENSE Homology Detection Failure Assessment",
+         x="Percent (%) proteins with evidence of HDF", 
+         y="Percent (%) proteins without evidence of HDF") +
+    theme_minimal() +
+    theme(strip.background = element_blank(), 
+          strip.placement = "outside",
+          strip.text.x = element_text(size=8*text.scale),
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, face="bold"),
+          legend.key.size   = unit(0.5*text.scale, 'cm'), #change legend key size
+          legend.key.height = unit(0.5*text.scale, 'cm'), #change legend key height
+          legend.key.width  = unit(0.5*text.scale, 'cm'), #change legend key width
+          legend.title = element_text(size=12*text.scale, vjust = 1), #change legend title font size
+          legend.text  = element_text(size=8*text.scale, angle = 45, hjust = 1),
+          legend.position = "bottom", 
+          legend.box = "horizontal"
+          )
+p7
+```
+
+```{r plot_selected_OGs_abSENSE_stat_density_2d_Points}
+p8 <- data.OGs %>%
+  select(`non-strata_taxa_expectedHDF_false_proportion`, `non-strata_taxa_expectedHDF_true_proportion`, designation, selected) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_false_proportion`)) %>%
+  filter(! is.na(`non-strata_taxa_expectedHDF_true_proportion`)) %>%
+  rename(x = `non-strata_taxa_expectedHDF_true_proportion`) %>%
+  rename(y = `non-strata_taxa_expectedHDF_false_proportion`) %>%
+  filter(selected == "Yes") %>%
+  ggplot(aes(x=x, y=y)) + 
+    stat_density_2d(aes(fill = after_stat(density)), geom = "raster", contour = FALSE) +
+    geom_jitter(color="pink", size=0.1, width=0.5, height=0.5) +
+    scale_fill_distiller(palette= "Spectral", direction=-1) +
+    scale_x_continuous(expand=c(0,0)) +
+    scale_y_continuous(expand=c(0,0)) +
+    coord_fixed()+
+    labs(title="abSENSE Homology Detection Failure Assessment",
+         x="Percent (%) proteins with evidence of HDF", 
+         y="Percent (%) proteins without evidence of HDF",
+          ) +
+    theme_minimal() +
+    theme(strip.background = element_blank(), 
+          strip.placement = "outside",
+          strip.text.x = element_text(size=8*text.scale),
+          plot.title   = element_text(size=14*text.scale, hjust = 0.5, face="bold"),
+          axis.title.x = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.title.y = element_text(size=10*text.scale, hjust = 0.5, face="bold"),
+          axis.text.x  = element_text(size=8*text.scale),
+          axis.text.y  = element_text(size=8*text.scale, face="bold"),
+          legend.key.size   = unit(0.5*text.scale, 'cm'), #change legend key size
+          legend.key.height = unit(0.5*text.scale, 'cm'), #change legend key height
+          legend.key.width  = unit(0.5*text.scale, 'cm'), #change legend key width
+          legend.title = element_text(size=12*text.scale, vjust = 1), #change legend title font size
+          legend.text  = element_text(size=8*text.scale, angle = 45, hjust = 1),
+          legend.position = "bottom", 
+          legend.box = "horizontal"
+          )
+p8
+```
+
+
+```{r multi_plot, fig.height = 12, fig.width=8}
+multi_plot <- ggarrange(p1,p2,p3,p4,p7,p8, #plots that are going to be included in this multipanel figure
+                        labels = c("A", "B", "C", "D", "E", "F"), #labels given each panel
+                        font.label = list(size = 10, color = "black", face = "bold", family = NULL),
+                        ncol = 2, nrow = 3, #adjust plot space 
+                        common.legend = F) #does the plot have a common legend
+multi_plot
+```
+
+
+
+
+```{r test_pvalue, eval=FALSE}
+col <- "PEP_length"
+col.name <- "Protein length (aa)"
+x.min <- 1
+x.max <- 1000
+
+d <- data.seqs %>% 
+  select(!!sym(col), selected) %>%
+  rename(value = !!sym(col)) %>%
+  rename(group = selected) %>%
+  filter(! is.na(value))  %>%
+  mutate(value = if_else(value < x.min, x.min, 
+                      if_else(value > x.max, x.max, value)
+                      )
+         )
+ggboxplot(data = d, x = "group", y = "value",
+          width = 0.5, size = 0.8, 
+          xlab = "", ylab = "value") +
+  stat_compare_means(comparisons = list(c("Yes", "No")))
+
+
+
+
+
+shapiro.test(data.seqs$PEP_length)
+
+
+
+
+
+col <- "num_CDS"
+col.name <- "Number of CDS/exons per protein"
+x.min <- 1
+x.max <- 20
+
+d <- data.seqs %>% 
+  select(!!sym(col), selected) %>%
+  rename(value = !!sym(col)) %>%
+  rename(group = selected) %>%
+  filter(! is.na(value))  %>%
+  mutate(value = if_else(value < x.min, x.min, 
+                      if_else(value > x.max, x.max, value)
+                      )
+         )
+
+ggboxplot(data = d, x = "group", y = "value",
+          width = 0.5, size = 0.8, 
+          xlab = "", ylab = "value") +
+  stat_compare_means(comparisons = list(c("Yes", "No")))
+```
+
+
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```

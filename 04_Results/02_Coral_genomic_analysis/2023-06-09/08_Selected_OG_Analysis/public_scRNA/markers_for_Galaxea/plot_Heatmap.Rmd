@@ -1,0 +1,240 @@
+---
+title: "Complex heatmap of scRNA results"
+author: "Timothy Stephens"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+
+
+# Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 8, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(tibble)
+library(dplyr)
+library(reshape2)
+library(RColorBrewer)
+library(ComplexHeatmap)
+options(scipen = 999) #Prevent scientific notation
+```
+
+
+
+```{r load_data}
+data <- read.table("scRNA.Orthogroups.cell_type_gene_FC1.5_counts.tsv", header=T, row.names=1, sep='\t', check.names=FALSE)
+color.celltype <- read.table("../data/Stylophora_pistillata_GAJOv1.celltype_color.tsv", header=T, sep='\t', comment.char='')
+color.OG <- read.table("scRNA.Orthogroups.classification.txt", header=T, sep='\t')
+```
+
+
+
+```{r cleanup_celltype_color_data}
+# Reformat metacell info (reduce to just named cell types, not metacell numbers)
+color.celltype <- subset(color.celltype, select=-c(metacell)) %>% unique()
+rownames(color.celltype) <- color.celltype$metacell_type
+color.celltype[is.na(color.celltype)] <- "NA"
+
+# Get just metadata for metacell types in dataset
+color.celltype <- color.celltype[colnames(data),]
+```
+
+
+
+```{r cleanup_OG_color_data}
+# Add row names
+rownames(color.OG) <- color.OG$orthogroup_id
+color.OG[is.na(color.OG)] <- "NA"
+
+# Get just the OGs in dataset
+color.OG <- color.OG[rownames(data),]
+```
+
+
+
+```{r func_plot_ComplexHeatmap}
+plot_ComplexHeatmap <- function(df, 
+                                color.columns, color.rows, 
+                                row.split.ids, 
+                                out.plot.file, 
+                                plot.width=12, plot.heigth=12){
+  ##
+  ## Column (cell type) colors
+  ##
+  # Get tissue/developmental tissue type colors
+  t <- color.columns[, c("tissue", "tissue_color")] %>% unique()
+  developmental_stage <- t$tissue_color
+  names(developmental_stage) <- t$tissue
+  
+  # Get metacell type colors
+  t <- color.columns[, c("metacell_type", "metacell_type_color")] %>% unique()
+  metacell_type <- t$metacell_type_color
+  names(metacell_type) <- t$metacell_type
+  
+  # Get broadcell yupe colors
+  t <- color.columns[, c("broadcell_type", "broadcell_type_color")] %>% unique()
+  broadcell_type <- t$broadcell_type_color
+  names(broadcell_type) <- t$broadcell_type
+  
+  # Load colors into data.object
+  col <- list(
+    developmental_stage=developmental_stage,
+    metacell_type=metacell_type,
+    broadcell_type=broadcell_type
+  )
+  col.colors <- HeatmapAnnotation(
+    developmental_stage=color.columns$tissue,
+    metacell_type=color.columns$metacell_type,
+    broadcell_type=color.columns$broadcell_type,
+    col=col
+  )
+  
+  
+  
+  ##
+  ## Row (OG) colors
+  ##
+  # Get OG designation colors
+  designation <- c(
+    "Dark-Restricted"="#984ea3", 
+    "Dark-Shared"="#f781bf", 
+    "Light-Restricted"="#ff7f00", 
+    "Light-Shared"="#ffff33"
+  )
+  
+  # Get no. sequences/OG colors
+  no_sequences = circlize::colorRamp2(c(1, 50, 100), c("blue" , "purple", "red"))
+  
+  # Get best strat taxa
+  best_strata_taxa <- c(
+    "NA"="#808080",
+    "Anthozoa"="#a6cee3",
+    "Hexacorallia"="#1f78b4",
+    "Cnidaria"="#b2df8a",
+    "Astrocoeniina"="#33a02c",
+    "Scleractinia"="#fb9a99",
+    "Eumetazoa"="#e31a1c",
+    "50429"="#6a3d9a",
+    "Opisthokonta"="#fdbf6f",
+    "Metazoa"="#ff7f00"
+  )
+  
+  # Load colors into data.object
+  col <- list(
+    designation=designation,
+    no_sequences=no_sequences,
+    best_strata_taxa=best_strata_taxa
+  )
+  row.colors <- rowAnnotation(
+    designation=color.rows$designation,
+    no_sequences=color.rows$no_sequences,
+    best_strata_taxa=color.rows$best_strata_taxa,
+    col=col,
+    annotation_legend_param = list(
+      best_strata_taxa = list(at = names(best_strata_taxa))
+    )
+  )
+  
+  
+  
+  ##
+  ## Get factors to split rows by 
+  ##
+  row.split <- data.frame(color.rows[, row.split.ids])
+  rownames(row.split) <- NULL
+  for (id in ids){
+    row.split[id] <- factor(row.split[[id]], levels=names(get(id)))
+  }
+  
+  
+  
+  ##
+  ## Plot and save heatmap
+  ##
+  pdf(out.plot.file, width=plot.width, height=plot.heigth)
+  p <- Heatmap(df, 
+          name = "No. genes FC > 1.5", #title of legend
+          column_title = "Metacell types", row_title = "Orthogroups",
+          row_names_gp = gpar(fontsize = 1), # Text size for row names
+          column_names_gp = gpar(fontsize = 3), # Text size for row names
+          cluster_columns=FALSE,
+          top_annotation = col.colors,
+          left_annotation = row.colors,
+          row_split=row.split,
+          cluster_row_slices=FALSE,
+          use_raster=FALSE,
+          col = circlize::colorRamp2(c(0, 1, 10), c("white", "#f781bf", "red")),
+          )
+  return(p)
+  draw(p)
+  dev.off()
+}
+```
+
+
+
+```{r heatmap_full}
+color.columns <- color.celltype
+color.rows <- color.OG
+df <- data
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation"), "plot_Heatmap.pdf")
+```
+
+
+
+```{r heatmap_LightShared}
+color.columns <- color.celltype
+color.rows <- color.OG[color.OG$designation %in% c("Light-Shared"), ]
+df <- data[rownames(data) %in% color.rows$orthogroup_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation", "best_strata_taxa"), "plot_Heatmap_LightShared.pdf")
+```
+
+
+
+```{r heatmap_LightRestricted}
+color.columns <- color.celltype
+color.rows <- color.OG[color.OG$designation %in% c("Light-Restricted"), ]
+df <- data[rownames(data) %in% color.rows$orthogroup_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation", "best_strata_taxa"), "plot_Heatmap_LightRestricted.pdf")
+```
+
+
+
+```{r heatmap_DarkShared}
+color.columns <- color.celltype
+color.rows <- color.OG[color.OG$designation %in% c("Dark-Shared"), ]
+df <- data[rownames(data) %in% color.rows$orthogroup_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation", "best_strata_taxa"), "plot_Heatmap_DarkShared.pdf")
+```
+
+
+
+```{r heatmap_DarkRestricted}
+color.columns <- color.celltype
+color.rows <- color.OG[color.OG$designation %in% c("Dark-Restricted"), ]
+df <- data[rownames(data) %in% color.rows$orthogroup_id, ]
+
+plot_ComplexHeatmap(df, color.columns, color.rows, c("designation", "best_strata_taxa"), "plot_Heatmap_DarkRestricted.pdf")
+```
+
+
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```
+
+

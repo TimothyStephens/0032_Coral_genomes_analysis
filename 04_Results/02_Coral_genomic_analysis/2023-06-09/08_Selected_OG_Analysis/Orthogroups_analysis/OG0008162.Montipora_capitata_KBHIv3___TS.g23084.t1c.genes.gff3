@@ -1,0 +1,17 @@
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	transcript	34407792	34417300	.	+	.	ID=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34407792	34408066	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34407792	34408066	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34409676	34410342	.	+	1	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34409676	34410342	.	+	1	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34412550	34412664	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34412550	34412664	.	+	0	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34413243	34413354	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34413243	34413354	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34414064	34414147	.	+	1	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34414064	34414147	.	+	1	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34415568	34415638	.	+	1	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34415568	34415638	.	+	1	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34416785	34416985	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34416785	34416985	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	CDS	34417293	34417300	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
+Montipora_capitata_KBHIv3___Scaffold_6	AUGUSTUS	exon	34417293	34417300	.	+	2	Parent=Montipora_capitata_KBHIv3___TS.g23084.t1c
