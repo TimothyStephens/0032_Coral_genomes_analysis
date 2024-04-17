@@ -1,0 +1,16 @@
+best_strata	color_best_strata
+tax_id	#33a02c
+species	#33a02c
+genus	#1f78b4
+subfamily	#1f78b4
+family	#1f78b4
+suborder	#1f78b4
+order	#1f78b4
+subclass	#ff7f00
+class	#ff7f00
+phylum	#ff7f00
+clade1	#e31a1c
+kingdom	#e31a1c
+clade	#e31a1c
+superkingdom	#e31a1c
+no rank	#e31a1c

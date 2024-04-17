@@ -1,0 +1,5 @@
+designation	color_designation
+Dark-Restricted	#984ea3
+Dark-Shared	#984ea3
+Light-Restricted	#ffff33
+Light-Shared	#ffff33

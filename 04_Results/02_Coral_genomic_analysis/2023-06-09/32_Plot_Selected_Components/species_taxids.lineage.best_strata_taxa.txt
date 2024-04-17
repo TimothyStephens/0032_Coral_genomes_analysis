@@ -1,0 +1,1936 @@
+best_strata	best_strata_taxa	color_best_strata_taxa
+tax_id	279588	#ffff99
+tax_id	400682	#ffff99
+tax_id	178554	#ffff99
+tax_id	6052	#ffff99
+tax_id	6106	#fccde5
+tax_id	2652724	#fccde5
+tax_id	45351	#fccde5
+tax_id	2072708	#fccde5
+tax_id	6110	#fccde5
+tax_id	2736680	#fccde5
+tax_id	51823	#fccde5
+tax_id	86600	#fccde5
+tax_id	51772	#fccde5
+tax_id	541185	#fccde5
+tax_id	51832	#fccde5
+tax_id	367763	#33a02c
+tax_id	1929007	#33a02c
+tax_id	46686	#33a02c
+tax_id	70779	#33a02c
+tax_id	513064	#33a02c
+tax_id	70782	#33a02c
+tax_id	70780	#33a02c
+tax_id	55974	#33a02c
+tax_id	114500	#33a02c
+tax_id	156436	#33a02c
+tax_id	45264	#33a02c
+tax_id	159855	#33a02c
+tax_id	70778	#33a02c
+tax_id	165727	#33a02c
+tax_id	70783	#33a02c
+tax_id	117778	#33a02c
+tax_id	102202	#33a02c
+tax_id	2635559	#33a02c
+tax_id	46745	#33a02c
+tax_id	1540031	#33a02c
+tax_id	63558	#33a02c
+tax_id	246299	#33a02c
+tax_id	46704	#33a02c
+tax_id	46704	#33a02c
+tax_id	105610	#33a02c
+tax_id	48498	#33a02c
+tax_id	497657	#33a02c
+tax_id	102205	#33a02c
+tax_id	1491507	#33a02c
+tax_id	1491507	#33a02c
+tax_id	490831	#33a02c
+tax_id	46731	#33a02c
+tax_id	46732	#33a02c
+tax_id	203993	#33a02c
+tax_id	104758	#33a02c
+tax_id	51061	#33a02c
+tax_id	46720	#33a02c
+tax_id	104178	#33a02c
+tax_id	104759	#33a02c
+tax_id	51062	#33a02c
+tax_id	262591	#33a02c
+tax_id	50429	#33a02c
+tax_id	55974	#33a02c
+tax_id	159855	#33a02c
+tax_id	2643297	#33a02c
+tax_id	486192	#33a02c
+tax_id	1869260	#33a02c
+tax_id	2619190	#33a02c
+tax_id	46714	#33a02c
+tax_id	999287	#33a02c
+tax_id	63558	#33a02c
+tax_id	48498	#33a02c
+tax_id	105609	#33a02c
+tax_id	591990	#33a02c
+tax_id	1136245	#33a02c
+tax_id	46731	#33a02c
+tax_id	203993	#33a02c
+tax_id	104758	#33a02c
+tax_id	104759	#33a02c
+tax_id	1428006	#33a02c
+tax_id	51070	#33a02c
+tax_id	86597	#fccde5
+tax_id	35630	#fccde5
+tax_id	13093	#fccde5
+tax_id	6082	#fccde5
+tax_id	6087	#fccde5
+tax_id	6088	#fccde5
+tax_id	544493	#fccde5
+tax_id	544496	#fccde5
+tax_id	1916238	#fccde5
+tax_id	544505	#fccde5
+tax_id	6096	#fccde5
+tax_id	316235	#fccde5
+tax_id	1784781	#fccde5
+tax_id	264060	#fccde5
+tax_id	252671	#fccde5
+tax_id	308606	#fccde5
+tax_id	168775	#fccde5
+tax_id	669202	#fccde5
+tax_id	59783	#fccde5
+tax_id	138709	#fccde5
+tax_id	269814	#fccde5
+tax_id	1193083	#fccde5
+tax_id	686327	#fccde5
+tax_id	1193083	#fccde5
+tax_id	6141	#fccde5
+tax_id	43186	#fccde5
+tax_id	12993	#fccde5
+tax_id	12993	#fccde5
+tax_id	6145	#fccde5
+tax_id	6145	#fccde5
+tax_id	1843192	#fccde5
+tax_id	1843192	#fccde5
+tax_id	1843192	#fccde5
+tax_id	37531	#fccde5
+tax_id	1954221	#fccde5
+tax_id	168739	#fccde5
+tax_id	1843199	#fccde5
+tax_id	1403702	#ffff99
+tax_id	27923	#ffff99
+tax_id	81824	#ffff99
+tax_id	946362	#ffff99
+tax_id	1964320	#ffff99
+tax_id	10228	#ffff99
+tax_id	287889	#ffff99
+tax_id	151771	#fccde5
+tax_id	317549	#fccde5
+tax_id	86540	#fccde5
+tax_id	142104	#fccde5
+tax_id	204384	#fccde5
+tax_id	47982	#fccde5
+tax_id	2789654	#fccde5
+tax_id	37510	#fccde5
+tax_id	6136	#fccde5
+species	Stylissa carteri	#ffff99
+species	Amphimedon queenslandica	#ffff99
+species	Xestospongia testudinaria	#ffff99
+species	Ephydatia muelleri	#ffff99
+species	Actinia equina	#fccde5
+species	Exaiptasia diaphana	#fccde5
+species	Nematostella vectensis	#fccde5
+species	Scolanthus callimorphus	#fccde5
+species	Anthopleura elegantissima	#fccde5
+species	Pachycerianthus borealis	#fccde5
+species	Amplexidiscus fenestrafer	#fccde5
+species	Discosoma sp.	#fccde5
+species	Corynactis australis	#fccde5
+species	Rhodactis indosinensis	#fccde5
+species	Ricordea yuma	#fccde5
+species	Acropora acuminata	#33a02c
+species	Acropora awi	#33a02c
+species	Acropora cytherea	#33a02c
+species	Acropora digitifera	#33a02c
+species	Acropora echinata	#33a02c
+species	Acropora florida	#33a02c
+species	Acropora gemmifera	#33a02c
+species	Acropora hyacinthus	#33a02c
+species	Acropora intermedia	#33a02c
+species	Acropora microphthalma	#33a02c
+species	Acropora millepora	#33a02c
+species	Acropora muricata	#33a02c
+species	Acropora nasuta	#33a02c
+species	Acropora selago	#33a02c
+species	Acropora tenuis	#33a02c
+species	Acropora yongei	#33a02c
+species	Astreopora myriophthalma	#33a02c
+species	NA	#33a02c
+species	Galaxea fascicularis	#33a02c
+species	Coelastrea aspera	#33a02c
+species	Montastraea cavernosa	#33a02c
+species	Montipora cactus	#33a02c
+species	Montipora capitata	#33a02c
+species	Montipora capitata	#33a02c
+species	Montipora efflorescens	#33a02c
+species	Orbicella faveolata	#33a02c
+species	Pachyseris speciosa	#33a02c
+species	Platygyra sinensis	#33a02c
+species	Pocillopora acuta	#33a02c
+species	Pocillopora acuta	#33a02c
+species	Pocillopora effusa	#33a02c
+species	Pocillopora damicornis	#33a02c
+species	Pocillopora meandrina	#33a02c
+species	Pocillopora verrucosa	#33a02c
+species	Porites astreoides	#33a02c
+species	Porites australiensis	#33a02c
+species	Porites compressa	#33a02c
+species	Porites evermanni	#33a02c
+species	Porites lobata	#33a02c
+species	Porites lutea	#33a02c
+species	Porites rus	#33a02c
+species	Stylophora pistillata	#33a02c
+species	Acropora hyacinthus	#33a02c
+species	Acropora muricata	#33a02c
+species	NA	#33a02c
+species	Ctenactis echinata	#33a02c
+species	Dipsastraea lizardensis	#33a02c
+species	NA	#33a02c
+species	Lobactis scutaria	#33a02c
+species	Madracis auretenra	#33a02c
+species	Montastraea cavernosa	#33a02c
+species	Orbicella faveolata	#33a02c
+species	Montipora aequituberculata	#33a02c
+species	Montipora foliosa	#33a02c
+species	Platygyra carnosa	#33a02c
+species	Pocillopora damicornis	#33a02c
+species	Pocillopora verrucosa	#33a02c
+species	Porites astreoides	#33a02c
+species	Porites lobata	#33a02c
+species	Pseudodiploria strigosa	#33a02c
+species	Seriatopora hystrix	#33a02c
+species	Palythoa variabilis	#fccde5
+species	Hydractinia echinata	#fccde5
+species	Hydractinia symbiolongicarpus	#fccde5
+species	Hydra viridissima	#fccde5
+species	Hydra vulgaris	#fccde5
+species	Hydra oligactis	#fccde5
+species	Millepora alcicornis	#fccde5
+species	Millepora complanata	#fccde5
+species	Millepora sp. RR-2016	#fccde5
+species	Millepora squarrosa	#fccde5
+species	Podocoryna carnea	#fccde5
+species	Porpita porpita	#fccde5
+species	Turritopsis sp. SK-2016	#fccde5
+species	Velella velella	#fccde5
+species	Clytia hemisphaerica	#fccde5
+species	Dynamena pumila	#fccde5
+species	Physalia physalis	#fccde5
+species	Thelohanellus kitauei	#fccde5
+species	Myxobolus cerebralis	#fccde5
+species	Myxobolus pendula	#fccde5
+species	Kudoa iwatai	#fccde5
+species	Alatina alata	#fccde5
+species	Morbakka virulenta	#fccde5
+species	Alatina alata	#fccde5
+species	Tripedalia cystophora	#fccde5
+species	Polypodium hydriforme	#fccde5
+species	Cassiopea xamachana	#fccde5
+species	Cassiopea xamachana	#fccde5
+species	Aurelia aurita	#fccde5
+species	Aurelia aurita	#fccde5
+species	Calvadosia cruxmelitensis	#fccde5
+species	Calvadosia cruxmelitensis	#fccde5
+species	Calvadosia cruxmelitensis	#fccde5
+species	Craterolophus convolvulus	#fccde5
+species	Haliclystus auricula	#fccde5
+species	Haliclystus sanjuanensis	#fccde5
+species	Lucernaria quadricornis	#fccde5
+species	Hormiphora californensis	#ffff99
+species	Mnemiopsis leidyi	#ffff99
+species	Monosiga brevicollis	#ffff99
+species	Salpingoeca rosetta	#ffff99
+species	Hoilungia hongkongensis	#ffff99
+species	Trichoplax adhaerens	#ffff99
+species	Trichoplax sp. H2	#ffff99
+species	Dendronephthya gigantea	#fccde5
+species	Paramuricea clavata	#fccde5
+species	Xenia sp.	#fccde5
+species	Corallium rubrum	#fccde5
+species	Gorgonia ventalina	#fccde5
+species	Plexaura homomalla	#fccde5
+species	Plexaura kukenthali	#fccde5
+species	Renilla muelleri	#fccde5
+species	Renilla reniformis	#fccde5
+genus	Stylissa	#b15928
+genus	Amphimedon	#b15928
+genus	Xestospongia	#b15928
+genus	Ephydatia	#b15928
+genus	Actinia	#6a3d9a
+genus	Exaiptasia	#6a3d9a
+genus	Nematostella	#6a3d9a
+genus	Scolanthus	#6a3d9a
+genus	Anthopleura	#6a3d9a
+genus	Pachycerianthus	#6a3d9a
+genus	Amplexidiscus	#6a3d9a
+genus	Discosoma	#6a3d9a
+genus	Corynactis	#6a3d9a
+genus	Rhodactis	#6a3d9a
+genus	Ricordea	#6a3d9a
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Astreopora	#1f78b4
+genus	Fungia	#1f78b4
+genus	Galaxea	#1f78b4
+genus	Coelastrea	#1f78b4
+genus	Montastraea	#1f78b4
+genus	Montipora	#1f78b4
+genus	Montipora	#1f78b4
+genus	Montipora	#1f78b4
+genus	Montipora	#1f78b4
+genus	Orbicella	#1f78b4
+genus	Pachyseris	#1f78b4
+genus	Platygyra	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Stylophora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Acropora	#1f78b4
+genus	Astreopora	#1f78b4
+genus	Ctenactis	#1f78b4
+genus	Dipsastraea	#1f78b4
+genus	Favia	#1f78b4
+genus	Lobactis	#1f78b4
+genus	Madracis	#1f78b4
+genus	Montastraea	#1f78b4
+genus	Orbicella	#1f78b4
+genus	Montipora	#1f78b4
+genus	Montipora	#1f78b4
+genus	Platygyra	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Pocillopora	#1f78b4
+genus	Porites	#1f78b4
+genus	Porites	#1f78b4
+genus	Pseudodiploria	#1f78b4
+genus	Seriatopora	#1f78b4
+genus	Palythoa	#6a3d9a
+genus	Hydractinia	#6a3d9a
+genus	Hydractinia	#6a3d9a
+genus	Hydra	#6a3d9a
+genus	Hydra	#6a3d9a
+genus	Hydra	#6a3d9a
+genus	Millepora	#6a3d9a
+genus	Millepora	#6a3d9a
+genus	Millepora	#6a3d9a
+genus	Millepora	#6a3d9a
+genus	Podocoryna	#6a3d9a
+genus	Porpita	#6a3d9a
+genus	Turritopsis	#6a3d9a
+genus	Velella	#6a3d9a
+genus	Clytia	#6a3d9a
+genus	Dynamena	#6a3d9a
+genus	Physalia	#6a3d9a
+genus	Thelohanellus	#6a3d9a
+genus	Myxobolus	#6a3d9a
+genus	Myxobolus	#6a3d9a
+genus	Kudoa	#6a3d9a
+genus	Alatina	#6a3d9a
+genus	Morbakka	#6a3d9a
+genus	Alatina	#6a3d9a
+genus	Tripedalia	#6a3d9a
+genus	Polypodium	#6a3d9a
+genus	Cassiopea	#6a3d9a
+genus	Cassiopea	#6a3d9a
+genus	Aurelia	#6a3d9a
+genus	Aurelia	#6a3d9a
+genus	Calvadosia	#6a3d9a
+genus	Calvadosia	#6a3d9a
+genus	Calvadosia	#6a3d9a
+genus	Craterolophus	#6a3d9a
+genus	Haliclystus	#6a3d9a
+genus	Haliclystus	#6a3d9a
+genus	Lucernaria	#6a3d9a
+genus	Hormiphora	#b15928
+genus	Mnemiopsis	#b15928
+genus	Monosiga	#b15928
+genus	Salpingoeca	#b15928
+genus	Hoilungia	#b15928
+genus	Trichoplax	#b15928
+genus	Trichoplax	#b15928
+genus	Dendronephthya	#6a3d9a
+genus	Paramuricea	#6a3d9a
+genus	Xenia	#6a3d9a
+genus	Corallium	#6a3d9a
+genus	Gorgonia	#6a3d9a
+genus	Plexaura	#6a3d9a
+genus	Plexaura	#6a3d9a
+genus	Renilla	#6a3d9a
+genus	Renilla	#6a3d9a
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	Faviinae	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	Faviinae	#1f78b4
+subfamily	NA	#1f78b4
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#b15928
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+subfamily	NA	#6a3d9a
+family	Axinellidae	#b15928
+family	Niphatidae	#b15928
+family	Petrosiidae	#b15928
+family	Spongillidae	#b15928
+family	Actiniidae	#6a3d9a
+family	Aiptasiidae	#6a3d9a
+family	Edwardsiidae	#6a3d9a
+family	Edwardsiidae	#6a3d9a
+family	Actiniidae	#6a3d9a
+family	Cerianthidae	#6a3d9a
+family	Discosomidae	#6a3d9a
+family	Discosomidae	#6a3d9a
+family	Corallimorphidae	#6a3d9a
+family	Discosomidae	#6a3d9a
+family	Ricordeidae	#6a3d9a
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Fungiidae	#1f78b4
+family	Euphylliidae	#1f78b4
+family	Merulinidae	#1f78b4
+family	Montastraeidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Merulinidae	#1f78b4
+family	Agariciidae	#1f78b4
+family	Merulinidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Fungiidae	#1f78b4
+family	Merulinidae	#1f78b4
+family	Mussidae	#1f78b4
+family	Fungiidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Montastraeidae	#1f78b4
+family	Merulinidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Acroporidae	#1f78b4
+family	Merulinidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Poritidae	#1f78b4
+family	Mussidae	#1f78b4
+family	Pocilloporidae	#1f78b4
+family	Sphenopidae	#6a3d9a
+family	Hydractiniidae	#6a3d9a
+family	Hydractiniidae	#6a3d9a
+family	Hydridae	#6a3d9a
+family	Hydridae	#6a3d9a
+family	Hydridae	#6a3d9a
+family	Milleporidae	#6a3d9a
+family	Milleporidae	#6a3d9a
+family	Milleporidae	#6a3d9a
+family	Milleporidae	#6a3d9a
+family	Hydractiniidae	#6a3d9a
+family	Porpitidae	#6a3d9a
+family	Oceaniidae	#6a3d9a
+family	Porpitidae	#6a3d9a
+family	Clytiidae	#6a3d9a
+family	Sertulariidae	#6a3d9a
+family	Physaliidae	#6a3d9a
+family	Myxobolidae	#6a3d9a
+family	Myxobolidae	#6a3d9a
+family	Myxobolidae	#6a3d9a
+family	Kudoidae	#6a3d9a
+family	Alatinidae	#6a3d9a
+family	Carukiidae	#6a3d9a
+family	Alatinidae	#6a3d9a
+family	Tripedaliidae	#6a3d9a
+family	Polypodiidae	#6a3d9a
+family	Cassiopeidae	#6a3d9a
+family	Cassiopeidae	#6a3d9a
+family	Ulmaridae	#6a3d9a
+family	Ulmaridae	#6a3d9a
+family	Kishinouyeidae	#6a3d9a
+family	Kishinouyeidae	#6a3d9a
+family	Kishinouyeidae	#6a3d9a
+family	Craterolophidae	#6a3d9a
+family	Haliclystidae	#6a3d9a
+family	Haliclystidae	#6a3d9a
+family	Lucernariidae	#6a3d9a
+family	Pleurobrachiidae	#b15928
+family	Bolinopsidae	#b15928
+family	Salpingoecidae	#b15928
+family	Salpingoecidae	#b15928
+family	Trichoplacidae	#b15928
+family	Trichoplacidae	#b15928
+family	Trichoplacidae	#b15928
+family	Nephtheidae	#6a3d9a
+family	Plexauridae	#6a3d9a
+family	Xeniidae	#6a3d9a
+family	Coralliidae	#6a3d9a
+family	Gorgoniidae	#6a3d9a
+family	Plexauridae	#6a3d9a
+family	Plexauridae	#6a3d9a
+family	Renillidae	#6a3d9a
+family	Renillidae	#6a3d9a
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Fungiina	#1f78b4
+suborder	Faviina	#1f78b4
+suborder	Astrocoeniina	#1f78b4
+suborder	NA	#6a3d9a
+suborder	Filifera	#6a3d9a
+suborder	Filifera	#6a3d9a
+suborder	Aplanulata	#6a3d9a
+suborder	Aplanulata	#6a3d9a
+suborder	Aplanulata	#6a3d9a
+suborder	Capitata	#6a3d9a
+suborder	Capitata	#6a3d9a
+suborder	Capitata	#6a3d9a
+suborder	Capitata	#6a3d9a
+suborder	Filifera	#6a3d9a
+suborder	Capitata	#6a3d9a
+suborder	Filifera	#6a3d9a
+suborder	Capitata	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	Cystonectae	#6a3d9a
+suborder	Platysporina	#6a3d9a
+suborder	Platysporina	#6a3d9a
+suborder	Platysporina	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	Amyostaurida	#6a3d9a
+suborder	Amyostaurida	#6a3d9a
+suborder	Amyostaurida	#6a3d9a
+suborder	Amyostaurida	#6a3d9a
+suborder	Myostaurida	#6a3d9a
+suborder	Myostaurida	#6a3d9a
+suborder	Myostaurida	#6a3d9a
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#b15928
+suborder	NA	#6a3d9a
+suborder	Holaxonia	#6a3d9a
+suborder	NA	#6a3d9a
+suborder	Scleraxonia	#6a3d9a
+suborder	Holaxonia	#6a3d9a
+suborder	Holaxonia	#6a3d9a
+suborder	Holaxonia	#6a3d9a
+suborder	Sessiliflorae	#6a3d9a
+suborder	Sessiliflorae	#6a3d9a
+order	Axinellida	#b15928
+order	Haplosclerida	#b15928
+order	Haplosclerida	#b15928
+order	Spongillida	#b15928
+order	Actiniaria	#6a3d9a
+order	Actiniaria	#6a3d9a
+order	Actiniaria	#6a3d9a
+order	Actiniaria	#6a3d9a
+order	Actiniaria	#6a3d9a
+order	Ceriantharia	#6a3d9a
+order	Corallimorpharia	#6a3d9a
+order	Corallimorpharia	#6a3d9a
+order	Corallimorpharia	#6a3d9a
+order	Corallimorpharia	#6a3d9a
+order	Corallimorpharia	#6a3d9a
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Scleractinia	#1f78b4
+order	Zoantharia	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Anthoathecata	#6a3d9a
+order	Leptothecata	#6a3d9a
+order	Leptothecata	#6a3d9a
+order	Siphonophorae	#6a3d9a
+order	Bivalvulida	#6a3d9a
+order	Bivalvulida	#6a3d9a
+order	Bivalvulida	#6a3d9a
+order	Multivalvulida	#6a3d9a
+order	Carybdeida	#6a3d9a
+order	Carybdeida	#6a3d9a
+order	Carybdeida	#6a3d9a
+order	Carybdeida	#6a3d9a
+order	Polypodiidea	#6a3d9a
+order	Rhizostomeae	#6a3d9a
+order	Rhizostomeae	#6a3d9a
+order	Semaeostomeae	#6a3d9a
+order	Semaeostomeae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Stauromedusae	#6a3d9a
+order	Cydippida	#b15928
+order	Lobata	#b15928
+order	Craspedida	#b15928
+order	Craspedida	#b15928
+order	NA	#b15928
+order	NA	#b15928
+order	NA	#b15928
+order	Alcyonacea	#6a3d9a
+order	Alcyonacea	#6a3d9a
+order	Alcyonacea	#6a3d9a
+order	Alcyonacea	#6a3d9a
+order	Alcyonacea	#6a3d9a
+order	Alcyonacea	#6a3d9a
+order	Alcyonacea	#6a3d9a
+order	Pennatulacea	#6a3d9a
+order	Pennatulacea	#6a3d9a
+subclass	Heteroscleromorpha	#ff7f00
+subclass	Heteroscleromorpha	#ff7f00
+subclass	Heteroscleromorpha	#ff7f00
+subclass	Heteroscleromorpha	#ff7f00
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hexacorallia	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Hydroidolina	#e31a1c
+subclass	Myxosporea	#e31a1c
+subclass	Myxosporea	#e31a1c
+subclass	Myxosporea	#e31a1c
+subclass	Myxosporea	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#e31a1c
+subclass	NA	#ff7f00
+subclass	NA	#ff7f00
+subclass	NA	#ff7f00
+subclass	NA	#ff7f00
+subclass	NA	#ff7f00
+subclass	NA	#ff7f00
+subclass	NA	#ff7f00
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+subclass	Octocorallia	#e31a1c
+class	Demospongiae	#ff7f00
+class	Demospongiae	#ff7f00
+class	Demospongiae	#ff7f00
+class	Demospongiae	#ff7f00
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Hydrozoa	#e31a1c
+class	Myxozoa	#e31a1c
+class	Myxozoa	#e31a1c
+class	Myxozoa	#e31a1c
+class	Myxozoa	#e31a1c
+class	Cubozoa	#e31a1c
+class	Cubozoa	#e31a1c
+class	Cubozoa	#e31a1c
+class	Cubozoa	#e31a1c
+class	Polypodiozoa	#e31a1c
+class	Scyphozoa	#e31a1c
+class	Scyphozoa	#e31a1c
+class	Scyphozoa	#e31a1c
+class	Scyphozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Staurozoa	#e31a1c
+class	Tentaculata	#ff7f00
+class	Tentaculata	#ff7f00
+class	Choanoflagellata	#ff7f00
+class	Choanoflagellata	#ff7f00
+class	NA	#ff7f00
+class	NA	#ff7f00
+class	NA	#ff7f00
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+class	Anthozoa	#e31a1c
+phylum	Porifera	#ff7f00
+phylum	Porifera	#ff7f00
+phylum	Porifera	#ff7f00
+phylum	Porifera	#ff7f00
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Ctenophora	#ff7f00
+phylum	Ctenophora	#ff7f00
+phylum	NA	#ff7f00
+phylum	NA	#ff7f00
+phylum	Placozoa	#ff7f00
+phylum	Placozoa	#ff7f00
+phylum	Placozoa	#ff7f00
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+phylum	Cnidaria	#e31a1c
+clade1	NA	#000000
+clade1	NA	#000000
+clade1	NA	#000000
+clade1	NA	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	NA	#000000
+clade1	NA	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+clade1	Eumetazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	NA	#000000
+kingdom	NA	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+kingdom	Metazoa	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+clade	Opisthokonta	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+superkingdom	Eukaryota	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
+no rank	cellular organisms	#000000
