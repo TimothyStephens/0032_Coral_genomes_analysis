@@ -1,0 +1,244 @@
+sequence_id	sseqid	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	qlen	slen	stitle
+Montipora_capitata_KBHIv3___TS.g26649.t1	sp|Q566Y1|ELP4_DANRE	43.7	366	179	7	3	363	18	361	2.32e-88	281	553	397	Elongator complex protein 4 OS=Danio rerio OX=7955 GN=elp4 PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g6642.t1	sp|Q9D8W5|PSD12_MOUSE	63.8	445	159	1	9	451	11	455	8.14e-204	574	454	456	26S proteasome non-ATPase regulatory subunit 12 OS=Mus musculus OX=10090 GN=Psmd12 PE=1 SV=4
+Montipora_capitata_KBHIv3___TS.g25013.t1	sp|A7SJ66|U587_NEMVE	68.1	135	42	1	26	160	1	134	6.04e-59	194	484	159	UPF0587 protein v1g245604 OS=Nematostella vectensis OX=45351 GN=v1g245604 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g15693.t1	sp|Q9BV10|ALG12_HUMAN	48.6	473	233	6	9	477	17	483	2.53e-139	412	488	488	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransferase OS=Homo sapiens OX=9606 GN=ALG12 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g43101.t1	sp|Q7ZXZ2|UTP15_XENLA	44.1	497	266	4	5	496	4	493	3.38e-147	434	511	515	U3 small nucleolar RNA-associated protein 15 homolog OS=Xenopus laevis OX=8355 GN=utp15 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g3836.t1	sp|P59015|VPS18_DANRE	45.7	1007	497	12	1	990	1	974	4.48e-307	878	990	974	Vacuolar protein sorting-associated protein 18 homolog OS=Danio rerio OX=7955 GN=vps18 PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g44216.t1	sp|Q9Y3D8|KAD6_HUMAN	67.5	163	53	0	8	170	4	166	4.95e-79	235	172	172	Adenylate kinase isoenzyme 6 OS=Homo sapiens OX=9606 GN=AK6 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g27174.t2	sp|A7SPX9|EIF3M_NEMVE	53.2	391	169	2	26	414	1	379	2.09e-143	416	414	379	Eukaryotic translation initiation factor 3 subunit M OS=Nematostella vectensis OX=45351 GN=v1g192238 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g8800.t1	sp|Q9Y4C8|RBM19_HUMAN	43.8	995	469	17	1	956	1	944	1.27e-242	711	962	960	Probable RNA-binding protein 19 OS=Homo sapiens OX=9606 GN=RBM19 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g29536.t1	sp|Q9D7A6|SRP19_MOUSE	49.2	118	59	1	36	152	9	126	7.55e-34	119	174	144	Signal recognition particle 19 kDa protein OS=Mus musculus OX=10090 GN=Srp19 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g5308.t2b	sp|Q9WVF7|DPOE1_MOUSE	65.6	1617	519	9	17	1622	1	1590	0.0	2095	1627	2283	DNA polymerase epsilon catalytic subunit A OS=Mus musculus OX=10090 GN=Pole PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g27924.t1	sp|Q91W43|GCSP_MOUSE	66.7	968	311	5	50	1017	58	1014	0.0	1337	1025	1025	Glycine dehydrogenase (decarboxylating), mitochondrial OS=Mus musculus OX=10090 GN=Gldc PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g33868.t1	sp|O75691|UTP20_HUMAN	31.7	2839	1623	51	1	2760	167	2766	0.0	1167	2772	2785	Small subunit processome component 20 homolog OS=Homo sapiens OX=9606 GN=UTP20 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g545.t1a	sp|E7F590|VPS41_DANRE	51.1	826	351	8	38	820	25	840	7.35e-278	793	842	854	Vacuolar protein sorting-associated protein 41 homolog OS=Danio rerio OX=7955 GN=vps41 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41412.t1	sp|Q8R2T8|TF3C5_MOUSE	40.9	438	215	12	30	432	23	451	5.10e-101	316	501	520	General transcription factor 3C polypeptide 5 OS=Mus musculus OX=10090 GN=Gtf3c5 PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g19800.t1	sp|Q3T108|PSB4_BOVIN	57.2	257	107	1	10	263	8	264	1.16e-105	310	263	264	Proteasome subunit beta type-4 OS=Bos taurus OX=9913 GN=PSMB4 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g15168.t1	sp|A7RP64|PNO1_NEMVE	77.8	239	52	1	1	239	1	238	2.33e-128	365	239	238	RNA-binding protein pno1 OS=Nematostella vectensis OX=45351 GN=pno1 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g7383.t1	sp|Q8N5M1|ATPF2_HUMAN	49.2	244	120	2	40	279	32	275	8.26e-76	236	289	289	ATP synthase mitochondrial F1 complex assembly factor 2 OS=Homo sapiens OX=9606 GN=ATPAF2 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g41761.t2	sp|Q9VX98|DENR_DROME	53.0	185	70	2	18	202	21	188	9.24e-55	175	202	189	Density-regulated protein homolog OS=Drosophila melanogaster OX=7227 GN=DENR PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g32704.t1	sp|Q9YHY6|CND1_XENLA	42.5	1193	597	16	2	1187	227	1337	1.44e-288	855	1287	1364	Condensin complex subunit 1 OS=Xenopus laevis OX=8355 GN=ncapd2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g49768.t1	sp|A4IGP0|HIKES_XENTR	62.2	196	73	1	1	195	1	196	1.37e-83	248	196	197	Protein Hikeshi OS=Xenopus tropicalis OX=8364 GN=hikeshi PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g7396.t1	sp|Q9Y6N1|COX11_HUMAN	66.5	182	61	0	107	288	91	272	5.17e-84	256	288	276	Cytochrome c oxidase assembly protein COX11, mitochondrial OS=Homo sapiens OX=9606 GN=COX11 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g8711.t1	sp|Q5ZHS1|ELP3_CHICK	87.1	549	59	2	1	541	1	545	0.0	985	542	546	Elongator complex protein 3 OS=Gallus gallus OX=9031 GN=ELP3 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g42225.t1	sp|A0JN27|TF2H2_RAT	56.3	391	160	2	1	385	1	386	3.29e-163	466	393	396	General transcription factor IIH subunit 2 OS=Rattus norvegicus OX=10116 GN=Gtf2h2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.21890_t	sp|Q803J8|ZC3HF_DANRE	49.6	448	183	14	48	477	1	423	1.81e-113	344	485	433	Zinc finger CCCH domain-containing protein 15 OS=Danio rerio OX=7955 GN=zc3h15 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g33664.t1	sp|O75844|FACE1_HUMAN	61.6	464	162	3	7	470	22	469	1.73e-191	544	475	475	CAAX prenyl protease 1 homolog OS=Homo sapiens OX=9606 GN=ZMPSTE24 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g14949.t1	sp|P51950|MAT1_MARGL	45.7	313	154	3	1	303	1	307	1.78e-85	262	307	324	CDK-activating kinase assembly factor MAT1 OS=Marthasterias glacialis OX=7609 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g39602.t2	sp|Q13416|ORC2_HUMAN	53.3	345	150	4	169	510	238	574	1.63e-115	355	514	577	Origin recognition complex subunit 2 OS=Homo sapiens OX=9606 GN=ORC2 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g37761.t1	sp|Q2KJJ5|TBL3_BOVIN	50.6	795	364	5	12	793	12	790	4.55e-190	570	944	800	Transducin beta-like protein 3 OS=Bos taurus OX=9913 GN=TBL3 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g9543.t1	sp|Q9UBQ0|VPS29_HUMAN	83.0	182	31	0	1	182	1	182	2.84e-113	322	183	182	Vacuolar protein sorting-associated protein 29 OS=Homo sapiens OX=9606 GN=VPS29 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41393.t1	sp|O35130|NEP1_MOUSE	67.4	218	71	0	11	228	27	244	1.54e-106	310	228	244	Ribosomal RNA small subunit methyltransferase NEP1 OS=Mus musculus OX=10090 GN=Emg1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g14764.t1	sp|Q8CE96|TRM6_MOUSE	42.9	448	216	6	30	446	21	459	1.43e-107	331	470	497	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subunit TRM6 OS=Mus musculus OX=10090 GN=Trmt6 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41746.t1	sp|Q96NC0|ZMAT2_HUMAN	64.7	207	62	3	1	206	1	197	1.56e-66	206	206	199	Zinc finger matrin-type protein 2 OS=Homo sapiens OX=9606 GN=ZMAT2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g34074.t1	sp|Q8BH58|TIPRL_MOUSE	55.2	248	109	2	7	253	13	259	9.01e-100	295	264	271	TIP41-like protein OS=Mus musculus OX=10090 GN=Tiprl PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g27786.t1	sp|Q9Y2P8|RCL1_HUMAN	63.4	372	132	1	2	373	5	372	2.49e-183	515	374	373	RNA 3'-terminal phosphate cyclase-like protein OS=Homo sapiens OX=9606 GN=RCL1 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.3107_t	sp|Q6GMA4|CHM6A_XENLA	65.8	158	53	1	53	210	37	193	1.92e-54	176	223	200	Charged multivesicular body protein 6-A OS=Xenopus laevis OX=8355 GN=chmp6-a PE=2 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g35104.t3	sp|Q60HE6|MRE11_MACFA	55.5	532	218	8	8	531	8	528	3.43e-198	578	691	707	Double-strand break repair protein MRE11 OS=Macaca fascicularis OX=9541 GN=MRE11 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g14436.t1	sp|Q6IR75|CSN2_XENLA	87.5	441	55	0	3	443	1	441	1.64e-276	757	443	441	COP9 signalosome complex subunit 2 (Fragment) OS=Xenopus laevis OX=8355 GN=csn2 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g36349.t1	sp|Q99LZ3|SLD5_MOUSE	52.1	215	95	2	199	405	9	223	8.60e-69	219	405	223	DNA replication complex GINS protein SLD5 OS=Mus musculus OX=10090 GN=Gins4 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g34611.t1	sp|Q99ND9|RWDD1_RAT	47.2	231	112	4	1	224	1	228	1.37e-54	177	226	243	RWD domain-containing protein 1 OS=Rattus norvegicus OX=10116 GN=Rwdd1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g36993.t1	sp|Q9CQ49|NCBP2_MOUSE	80.7	140	27	0	3	142	16	155	2.89e-80	237	158	156	Nuclear cap-binding protein subunit 2 OS=Mus musculus OX=10090 GN=Ncbp2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g13842.t1	sp|Q14181|DPOA2_HUMAN	49.6	284	132	4	3	285	325	598	2.73e-90	282	285	598	DNA polymerase alpha subunit B OS=Homo sapiens OX=9606 GN=POLA2 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g39001.t1a	sp|Q6NVS5|DCA13_XENTR	61.3	447	170	1	1	447	1	444	7.19e-203	571	448	445	DDB1- and CUL4-associated factor 13 OS=Xenopus tropicalis OX=8364 GN=dcaf13 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g35374.t1	sp|Q62384|ZPR1_MOUSE	53.5	437	182	7	31	461	31	452	2.86e-153	446	463	459	Zinc finger protein ZPR1 OS=Mus musculus OX=10090 GN=Zpr1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g831.t1	sp|Q0MQB0|NDUA8_GORGO	51.8	112	53	1	5	115	5	116	4.74e-39	132	128	172	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8 OS=Gorilla gorilla gorilla OX=9595 GN=NDUFA8 PE=2 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g6829.t1	sp|Q9D2C6|RPC8_MOUSE	62.4	202	76	0	1	202	1	202	1.98e-91	269	203	204	DNA-directed RNA polymerase III subunit RPC8 OS=Mus musculus OX=10090 GN=Polr3h PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.32244_t	sp|Q8K4P0|WDR33_MOUSE	74.6	406	99	3	39	440	39	444	8.06e-189	584	977	1330	pre-mRNA 3' end processing protein WDR33 OS=Mus musculus OX=10090 GN=Wdr33 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g42151.t1	sp|Q99LC5|ETFA_MOUSE	72.4	312	85	1	27	338	18	328	3.06e-154	439	341	333	Electron transfer flavoprotein subunit alpha, mitochondrial OS=Mus musculus OX=10090 GN=Etfa PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g15935.t1	sp|Q9BRU9|UTP23_HUMAN	53.0	181	84	1	6	186	1	180	2.14e-57	186	255	249	rRNA-processing protein UTP23 homolog OS=Homo sapiens OX=9606 GN=UTP23 PE=1 SV=2
+Montipora_capitata_KBHIv3___TS.g26963.t2	sp|Q9DBA9|TF2H1_MOUSE	43.5	549	270	13	5	529	6	538	6.30e-133	400	540	547	General transcription factor IIH subunit 1 OS=Mus musculus OX=10090 GN=Gtf2h1 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g22110.t1	sp|Q6DIF4|WDR1_XENTR	55.6	608	261	7	74	675	1	605	1.27e-236	672	676	607	WD repeat-containing protein 1 OS=Xenopus tropicalis OX=8364 GN=wdr1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41165.t1	sp|Q8BZQ7|ANC2_MOUSE	43.4	820	412	13	4	786	32	836	3.23e-208	612	787	837	Anaphase-promoting complex subunit 2 OS=Mus musculus OX=10090 GN=Anapc2 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g25763.t1	sp|Q5RFQ3|PWP2_PONAB	51.6	874	391	4	1	842	1	874	4.91e-312	883	859	918	Periodic tryptophan protein 2 homolog OS=Pongo abelii OX=9601 GN=PWP2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g9430.t1	sp|O60671|RAD1_HUMAN	72.4	279	76	1	1	278	1	279	2.32e-141	402	285	282	Cell cycle checkpoint protein RAD1 OS=Homo sapiens OX=9606 GN=RAD1 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g21081.t2	sp|Q68CQ4|UTP25_HUMAN	39.4	602	304	14	236	791	169	755	3.56e-119	380	794	756	U3 small nucleolar RNA-associated protein 25 homolog OS=Homo sapiens OX=9606 GN=UTP25 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g27676.t1	sp|Q9NPF5|DMAP1_HUMAN	50.1	475	211	11	2	463	5	466	4.08e-129	385	464	467	DNA methyltransferase 1-associated protein 1 OS=Homo sapiens OX=9606 GN=DMAP1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g14766.t1	sp|Q3SZY9|MED6_BOVIN	57.3	218	74	2	2	219	3	201	1.41e-80	246	283	246	Mediator of RNA polymerase II transcription subunit 6 OS=Bos taurus OX=9913 GN=MED6 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44715.t1	sp|O88597|BECN1_MOUSE	59.8	453	172	6	1	448	1	448	1.41e-169	486	448	448	Beclin-1 OS=Mus musculus OX=10090 GN=Becn1 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g4584.t1	sp|Q00004|SRP68_CANLF	48.8	586	270	8	32	610	54	616	1.23e-178	523	617	622	Signal recognition particle subunit SRP68 OS=Canis lupus familiaris OX=9615 GN=SRP68 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g26043.t1	sp|O95352|ATG7_HUMAN	56.6	696	282	9	6	684	9	701	1.65e-271	765	687	703	Ubiquitin-like modifier-activating enzyme ATG7 OS=Homo sapiens OX=9606 GN=ATG7 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g19766.t1	sp|P47823|EI2BE_RABIT	43.8	683	348	14	24	681	44	715	1.86e-167	500	692	721	Translation initiation factor eIF-2B subunit epsilon OS=Oryctolagus cuniculus OX=9986 GN=EIF2B5 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g40457.t1	sp|Q3MHZ7|GPI8_BOVIN	69.3	293	90	0	19	311	25	317	5.43e-154	442	382	395	GPI-anchor transamidase OS=Bos taurus OX=9913 GN=PIGK PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g45538.t1	sp|Q3SZK1|AAMP_BOVIN	48.2	359	169	4	60	406	81	434	4.07e-116	348	406	434	Angio-associated migratory cell protein OS=Bos taurus OX=9913 GN=AAMP PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g3145.t1	sp|O60921|HUS1_HUMAN	54.1	281	127	2	1	280	1	280	3.69e-103	305	281	280	Checkpoint protein HUS1 OS=Homo sapiens OX=9606 GN=HUS1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g48714.t1	sp|A7S710|DRE2_NEMVE	58.1	291	102	5	12	301	11	282	1.89e-106	314	301	282	Anamorsin homolog OS=Nematostella vectensis OX=45351 GN=v1g167244 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g6616.t1	sp|A7M7B9|NTH_CHICK	63.7	226	82	0	78	303	56	281	3.56e-105	311	325	281	Endonuclease III-like protein 1 OS=Gallus gallus OX=9031 GN=NTHL1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g27614.t1	sp|Q13042|CDC16_HUMAN	56.0	527	216	4	7	520	1	524	2.57e-211	603	549	620	Cell division cycle protein 16 homolog OS=Homo sapiens OX=9606 GN=CDC16 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g27816.t1	sp|Q6NRQ2|NOC41_XENLA	40.8	520	266	7	12	516	22	514	1.07e-121	370	526	526	Nucleolar complex protein 4 homolog A OS=Xenopus laevis OX=8355 GN=noc4l-a PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g47427.t1	sp|Q6GR45|IF6_XENLA	82.0	245	44	0	1	245	1	245	2.00e-146	411	245	245	Eukaryotic translation initiation factor 6 OS=Xenopus laevis OX=8355 GN=eif6 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g7235.t1	sp|Q9NYV6|RRN3_HUMAN	46.4	295	153	4	2	292	291	584	1.28e-85	276	392	651	RNA polymerase I-specific transcription initiation factor RRN3 OS=Homo sapiens OX=9606 GN=RRN3 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g10194.t1	sp|A7RVK7|TPPC2_NEMVE	66.0	162	38	4	1	156	1	151	2.80e-68	206	158	153	Probable trafficking protein particle complex subunit 2 OS=Nematostella vectensis OX=45351 GN=v1g94938 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g14698.t1	sp|Q147X3|NAA30_HUMAN	82.4	148	26	0	116	263	215	362	1.99e-81	251	263	362	N-alpha-acetyltransferase 30 OS=Homo sapiens OX=9606 GN=NAA30 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g47589.t1	sp|A0JMQ0|BOP1_DANRE	62.8	627	225	5	118	741	156	777	1.58e-294	828	741	777	Ribosome biogenesis protein bop1 OS=Danio rerio OX=7955 GN=bop1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g5404.t1	sp|O46419|LIPT_BOVIN	48.0	254	129	2	30	282	33	284	8.68e-78	246	367	373	Lipoyltransferase 1, mitochondrial OS=Bos taurus OX=9913 GN=LIPT1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g7239.t1	sp|O93610|DPOD2_XENLA	55.4	433	184	4	39	469	28	453	5.52e-161	466	479	463	DNA polymerase delta subunit 2 OS=Xenopus laevis OX=8355 GN=pold2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44089.t1	sp|Q6TGY8|EMC2_DANRE	56.1	287	123	3	6	289	10	296	7.25e-105	310	301	297	ER membrane protein complex subunit 2 OS=Danio rerio OX=7955 GN=emc2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g33741.t1	sp|P61759|PFD3_MOUSE	63.9	166	60	0	21	186	21	186	2.27e-72	220	195	196	Prefoldin subunit 3 OS=Mus musculus OX=10090 GN=Vbp1 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g37420.t1	sp|Q3SZM6|COXM1_BOVIN	57.3	82	35	0	28	109	9	90	4.67e-28	102	128	106	COX assembly mitochondrial protein homolog OS=Bos taurus OX=9913 GN=CMC1 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g6397.t1	sp|Q8CFY5|COX10_MOUSE	55.8	321	131	1	79	399	122	431	1.71e-110	334	411	443	Protoheme IX farnesyltransferase, mitochondrial OS=Mus musculus OX=10090 GN=Cox10 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g2805.t1	sp|O75533|SF3B1_HUMAN	77.1	1327	269	17	5	1319	1	1304	0.0	1823	1319	1304	Splicing factor 3B subunit 1 OS=Homo sapiens OX=9606 GN=SF3B1 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g25313.t1	sp|Q8BVQ5|PPME1_MOUSE	52.7	389	158	7	14	389	11	386	2.02e-136	397	389	386	Protein phosphatase methylesterase 1 OS=Mus musculus OX=10090 GN=Ppme1 PE=1 SV=5
+Montipora_capitata_KBHIv3___RNAseq.g613.t1	sp|Q8N983|RM43_HUMAN	44.3	122	68	0	12	133	20	141	2.72e-31	114	148	215	39S ribosomal protein L43, mitochondrial OS=Homo sapiens OX=9606 GN=MRPL43 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g542.t1	sp|Q96H20|SNF8_HUMAN	59.3	236	95	1	7	241	7	242	3.59e-100	295	242	258	Vacuolar-sorting protein SNF8 OS=Homo sapiens OX=9606 GN=SNF8 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g35525.t1	sp|Q7ZY11|EIF2A_XENLA	54.6	581	255	5	1	573	1	580	1.28e-211	603	575	582	Eukaryotic translation initiation factor 2A OS=Xenopus laevis OX=8355 GN=eif2a PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g49020.t1	sp|A7S7F2|BYST_NEMVE	73.5	422	108	2	7	427	1	419	5.06e-201	565	436	430	Bystin OS=Nematostella vectensis OX=45351 GN=bysl PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g27721.t1	sp|Q7KWX9|EXOS3_DICDI	45.6	226	114	2	9	233	4	221	4.37e-64	202	242	237	Putative exosome complex component rrp40 OS=Dictyostelium discoideum OX=44689 GN=exosc3 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g2535.t1	sp|Q2KJ46|PSMD3_BOVIN	65.3	475	164	1	24	497	60	534	1.44e-210	596	497	534	26S proteasome non-ATPase regulatory subunit 3 OS=Bos taurus OX=9913 GN=PSMD3 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g6841.t1a	sp|Q9UJK0|TSR3_HUMAN	56.1	198	86	1	94	291	56	252	2.75e-77	241	321	312	18S rRNA aminocarboxypropyltransferase OS=Homo sapiens OX=9606 GN=TSR3 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41443.t1	sp|Q5M8Y1|SPCS2_XENTR	55.3	197	87	1	12	208	6	201	1.76e-71	218	208	201	Signal peptidase complex subunit 2 OS=Xenopus tropicalis OX=8364 GN=spcs2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g15648.t1	sp|Q08B12|CTU2A_XENLA	38.2	500	235	9	17	445	11	507	2.02e-94	296	445	512	Cytoplasmic tRNA 2-thiolation protein 2-A OS=Xenopus laevis OX=8355 GN=ctu2-a PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44701.t2	sp|P37287|PIGA_HUMAN	64.5	375	123	1	8	382	33	397	4.24e-173	494	385	484	Phosphatidylinositol N-acetylglucosaminyltransferase subunit A OS=Homo sapiens OX=9606 GN=PIGA PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g43349.t1	sp|Q9CR47|NSA2_MOUSE	82.3	260	46	0	1	260	1	260	2.90e-151	425	260	260	Ribosome biogenesis protein NSA2 homolog OS=Mus musculus OX=10090 GN=Nsa2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.3837_t	sp|Q6P2Q9|PRP8_HUMAN	92.2	2321	180	2	7	2325	15	2335	0.0	4456	2325	2335	Pre-mRNA-processing-splicing factor 8 OS=Homo sapiens OX=9606 GN=PRPF8 PE=1 SV=2
+Montipora_capitata_KBHIv3___TS.g24212.t1	sp|Q9Y5Q9|TF3C3_HUMAN	36.6	771	435	11	149	911	117	841	6.49e-153	476	941	886	General transcription factor 3C polypeptide 3 OS=Homo sapiens OX=9606 GN=GTF3C3 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g750.t1	sp|A6H791|TRM61_BOVIN	60.5	261	97	3	1	256	1	260	3.04e-108	322	398	285	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit TRMT61A OS=Bos taurus OX=9913 GN=TRMT61A PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g24538.t1	sp|Q7ZVK4|VPS36_DANRE	53.9	386	172	3	1	384	1	382	8.76e-137	398	389	382	Vacuolar protein-sorting-associated protein 36 OS=Danio rerio OX=7955 GN=vps36 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g30414.t1	sp|Q8K2A8|ALG3_MOUSE	59.0	305	121	1	27	327	35	339	5.28e-120	355	337	438	Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransferase OS=Mus musculus OX=10090 GN=Alg3 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g27785.t1	sp|Q32PE0|RPAB2_BOVIN	81.1	90	17	0	39	128	38	127	1.80e-46	149	128	127	DNA-directed RNA polymerases I, II, and III subunit RPABC2 OS=Bos taurus OX=9913 GN=POLR2F PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g43752.t1	sp|Q92546|RGP1_HUMAN	43.1	415	205	7	1	410	1	389	5.88e-104	316	412	391	RAB6A-GEF complex partner protein 2 OS=Homo sapiens OX=9606 GN=RGP1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g32575.t1	sp|Q920Q2|REV1_MOUSE	33.3	1258	612	32	36	1092	17	1248	7.95e-171	539	1115	1249	DNA repair protein REV1 OS=Mus musculus OX=10090 GN=Rev1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g26610.t1	sp|Q9Y673|ALG5_HUMAN	62.8	293	106	2	37	329	29	318	3.25e-131	380	336	324	Dolichyl-phosphate beta-glucosyltransferase OS=Homo sapiens OX=9606 GN=ALG5 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g15842.t1	sp|Q05052|OST48_CANLF	70.6	418	118	1	30	447	32	444	2.93e-212	595	450	445	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit OS=Canis lupus familiaris OX=9615 GN=DDOST PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.6258_t	sp|Q5ZLD7|VPS53_CHICK	61.1	506	169	3	21	498	12	517	2.83e-204	591	500	831	Vacuolar protein sorting-associated protein 53 homolog OS=Gallus gallus OX=9031 GN=VPS53 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g3371.t1	sp|P49135|ERCC3_MOUSE	72.0	764	197	7	37	796	33	783	0.0	1067	796	783	General transcription and DNA repair factor IIH helicase subunit XPB OS=Mus musculus OX=10090 GN=Ercc3 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g17481.t1	sp|Q6NRQ7|SSU72_XENLA	69.3	189	58	0	5	193	6	194	4.48e-97	282	193	194	RNA polymerase II subunit A C-terminal domain phosphatase SSU72 OS=Xenopus laevis OX=8355 GN=ssu72 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g39901.t1	sp|Q9V3J1|VATH_DROME	54.5	437	191	4	28	462	21	451	2.18e-160	464	464	468	V-type proton ATPase subunit H OS=Drosophila melanogaster OX=7227 GN=VhaSFD PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g25303.t1	sp|Q7ZW24|ALG11_DANRE	61.0	438	163	2	272	707	63	494	4.80e-187	543	711	500	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase OS=Danio rerio OX=7955 GN=alg11 PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g20270.t1	sp|Q5E964|PSD13_BOVIN	54.4	375	171	0	1	375	1	375	3.10e-142	411	376	376	26S proteasome non-ATPase regulatory subunit 13 OS=Bos taurus OX=9913 GN=PSMD13 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g5551.t1	sp|Q6PD62|CTR9_HUMAN	75.7	898	217	1	4	901	5	901	0.0	1332	1109	1173	RNA polymerase-associated protein CTR9 homolog OS=Homo sapiens OX=9606 GN=CTR9 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g46451.t1	sp|Q7ZT01|PSF3_XENLA	42.1	197	114	0	8	204	8	204	3.51e-61	192	209	210	DNA replication complex GINS protein PSF3 OS=Xenopus laevis OX=8355 GN=gins3 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g14686.t2	sp|P49915|GUAA_HUMAN	65.2	655	228	0	40	694	39	693	0.0	893	694	693	GMP synthase [glutamine-hydrolyzing] OS=Homo sapiens OX=9606 GN=GMPS PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g18059.t1	sp|P48728|GCST_HUMAN	63.1	374	132	4	47	417	30	400	3.12e-155	447	420	403	Aminomethyltransferase, mitochondrial OS=Homo sapiens OX=9606 GN=AMT PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g36852.t1	sp|O00303|EIF3F_HUMAN	55.8	265	117	0	10	274	90	354	4.15e-102	305	278	357	Eukaryotic translation initiation factor 3 subunit F OS=Homo sapiens OX=9606 GN=EIF3F PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g524.t1	sp|Q0D2E8|RFT1_XENTR	49.8	534	256	4	16	545	14	539	1.06e-176	512	545	539	Protein RFT1 homolog OS=Xenopus tropicalis OX=8364 GN=rft1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g32691.t1	sp|Q5F3A1|SEC62_CHICK	57.9	280	115	1	22	301	16	292	3.96e-67	220	382	398	Translocation protein SEC62 OS=Gallus gallus OX=9031 GN=SEC62 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g9462.t1	sp|Q99KP6|PRP19_MOUSE	63.9	507	131	5	285	743	1	503	7.79e-198	572	744	504	Pre-mRNA-processing factor 19 OS=Mus musculus OX=10090 GN=Prpf19 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g20757.t2	sp|F1RAX8|COQ6_DANRE	48.3	478	193	6	1	477	60	484	6.90e-146	429	477	484	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial OS=Danio rerio OX=7955 GN=coq6 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g12143.t1	sp|A7RM20|EIF3I_NEMVE	77.3	321	73	0	1	321	1	321	1.81e-196	544	321	321	Eukaryotic translation initiation factor 3 subunit I OS=Nematostella vectensis OX=45351 GN=v1g239264 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g20397.t1	sp|Q99LI7|CSTF3_MOUSE	56.3	701	281	7	2	685	24	716	4.41e-287	805	686	717	Cleavage stimulation factor subunit 3 OS=Mus musculus OX=10090 GN=Cstf3 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g7438.t1	sp|Q9CQY1|ATG12_MOUSE	49.2	120	59	1	16	135	24	141	2.67e-36	124	135	141	Ubiquitin-like protein ATG12 OS=Mus musculus OX=10090 GN=Atg12 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g47514.t1	sp|Q5J8M3|EMC4_HUMAN	54.9	173	68	5	13	180	16	183	9.83e-50	161	180	183	ER membrane protein complex subunit 4 OS=Homo sapiens OX=9606 GN=EMC4 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g37385.t1	sp|Q7ZUX6|DOHH_DANRE	61.3	302	117	0	1	302	1	302	6.96e-125	362	304	305	Deoxyhypusine hydroxylase OS=Danio rerio OX=7955 GN=dohh PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g50810.t1	sp|O35094|TIM44_RAT	42.5	407	205	5	43	427	54	453	1.87e-96	299	427	453	Mitochondrial import inner membrane translocase subunit TIM44 OS=Rattus norvegicus OX=10116 GN=Timm44 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g48077.t2	sp|A5D9C6|MAF1_BOVIN	51.5	237	87	3	1	237	1	209	3.41e-76	235	270	260	Repressor of RNA polymerase III transcription MAF1 homolog OS=Bos taurus OX=9913 GN=MAF1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g11723.t1	sp|Q5ZIT8|TAF2_CHICK	57.8	831	337	5	18	846	71	889	0.0	981	850	1168	Transcription initiation factor TFIID subunit 2 OS=Gallus gallus OX=9031 GN=TAF2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g8900.t1	sp|Q8IWL3|HSC20_HUMAN	39.0	205	120	3	47	247	26	229	5.75e-38	135	253	235	Iron-sulfur cluster co-chaperone protein HscB OS=Homo sapiens OX=9606 GN=HSCB PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g46805.t1	sp|Q7ZT46|PSF2_XENLA	60.1	178	70	1	1	178	1	177	7.57e-72	218	181	185	DNA replication complex GINS protein PSF2 OS=Xenopus laevis OX=8355 GN=gins2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g22147.t1	sp|Q8BH74|NU107_MOUSE	45.2	945	470	18	34	963	14	925	8.48e-261	757	965	926	Nuclear pore complex protein Nup107 OS=Mus musculus OX=10090 GN=Nup107 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g45378.t1	sp|Q6TUG0|DJB11_RAT	60.8	357	138	1	1	357	1	355	1.66e-154	441	357	358	DnaJ homolog subfamily B member 11 OS=Rattus norvegicus OX=10116 GN=Dnajb11 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g13393.t1	sp|Q7ZT47|PSF1_XENLA	58.5	195	76	2	1	190	1	195	1.00e-81	243	190	196	DNA replication complex GINS protein PSF1 OS=Xenopus laevis OX=8355 GN=gins1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g21699.t1	sp|O95427|PIGN_HUMAN	52.3	945	412	8	9	943	7	922	1.39e-310	884	950	931	GPI ethanolamine phosphate transferase 1 OS=Homo sapiens OX=9606 GN=PIGN PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g15157.t1	sp|Q9Y316|MEMO1_HUMAN	60.3	290	112	2	4	293	8	294	4.05e-125	362	297	297	Protein MEMO1 OS=Homo sapiens OX=9606 GN=MEMO1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g45279.t1	sp|P20664|PRI1_MOUSE	58.5	398	155	3	17	405	4	400	2.72e-168	481	425	417	DNA primase small subunit OS=Mus musculus OX=10090 GN=Prim1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41979.t1c	sp|Q92878|RAD50_HUMAN	37.3	1316	812	5	11	1322	1	1307	4.28e-268	802	1330	1312	DNA repair protein RAD50 OS=Homo sapiens OX=9606 GN=RAD50 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g45418.t1	sp|Q6NWF4|VPS25_DANRE	60.7	178	65	1	4	181	2	174	1.11e-78	234	182	174	Vacuolar protein-sorting-associated protein 25 OS=Danio rerio OX=7955 GN=vps25 PE=2 SV=2
+Montipora_capitata_KBHIv3___TS.g9442.t1	sp|Q3SWZ4|EXOS9_BOVIN	57.1	312	132	2	6	316	4	314	2.78e-116	353	524	440	Exosome complex component RRP45 OS=Bos taurus OX=9913 GN=EXOSC9 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g6255.t1a	sp|Q0P5I8|GET4_BOVIN	52.6	289	129	5	27	315	28	308	1.99e-102	307	344	325	Golgi to ER traffic protein 4 homolog OS=Bos taurus OX=9913 GN=GET4 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g28216.t1	sp|Q69ZJ7|RIC1_MOUSE	43.2	1015	480	20	11	962	358	1338	9.28e-252	753	1030	1422	Guanine nucleotide exchange factor subunit RIC1 OS=Mus musculus OX=10090 GN=Ric1 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g5491.t1	sp|B4G9L6|KRR1_DROPE	60.8	311	99	3	33	321	22	331	8.10e-122	357	349	340	KRR1 small subunit processome component homolog OS=Drosophila persimilis OX=7234 GN=dbe PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g45000.t1	sp|Q9NES8|PPP5_CAEEL	58.4	473	190	5	17	487	28	495	5.76e-196	557	488	496	Serine/threonine-protein phosphatase 5 OS=Caenorhabditis elegans OX=6239 GN=pph-5 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g34381.t1	sp|Q9D554|SF3A3_MOUSE	67.9	501	160	1	1	500	1	501	9.24e-238	664	500	501	Splicing factor 3A subunit 3 OS=Mus musculus OX=10090 GN=Sf3a3 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g42636.t1	sp|Q5VZE5|NAA35_HUMAN	51.9	707	319	11	61	756	28	724	8.49e-232	667	757	725	N-alpha-acetyltransferase 35, NatC auxiliary subunit OS=Homo sapiens OX=9606 GN=NAA35 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g19612.t1	sp|Q921G8|GCP2_MOUSE	56.5	942	337	15	1	930	1	881	0.0	980	994	905	Gamma-tubulin complex component 2 OS=Mus musculus OX=10090 GN=Tubgcp2 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g47533.t1	sp|Q10568|CPSF2_BOVIN	60.3	789	284	10	1	767	1	782	0.0	917	812	782	Cleavage and polyadenylation specificity factor subunit 2 OS=Bos taurus OX=9913 GN=CPSF2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g38737.t1	sp|Q9W6I0|UQCC1_XENLA	48.2	170	85	3	118	287	17	183	2.04e-51	171	299	200	Ubiquinol-cytochrome-c reductase complex assembly factor 1 OS=Xenopus laevis OX=8355 GN=uqcc1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g11106.t1a	sp|P55060|XPO2_HUMAN	59.9	656	261	2	1	656	3	656	5.03e-271	773	660	971	Exportin-2 OS=Homo sapiens OX=9606 GN=CSE1L PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g35244.t1	sp|Q9ES56|TPPC4_MOUSE	64.6	212	74	1	1	211	1	212	3.64e-101	295	217	219	Trafficking protein particle complex subunit 4 OS=Mus musculus OX=10090 GN=Trappc4 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g40322.t1	sp|Q9H269|VPS16_HUMAN	47.3	820	411	7	5	807	5	820	1.30e-262	753	826	839	Vacuolar protein sorting-associated protein 16 homolog OS=Homo sapiens OX=9606 GN=VPS16 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g33475.t1	sp|A7SD85|CDC5L_NEMVE	78.2	756	162	2	6	761	51	803	0.0	1096	764	805	Cell division cycle 5-related protein OS=Nematostella vectensis OX=45351 GN=cdc5l PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g9281.t1	sp|Q13889|TF2H3_HUMAN	51.4	311	134	3	1	303	2	303	1.06e-104	311	311	308	General transcription factor IIH subunit 3 OS=Homo sapiens OX=9606 GN=GTF2H3 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g41047.t1	sp|O57593|SURF1_TAKRU	52.6	228	101	3	48	271	7	231	3.60e-75	232	286	240	Surfeit locus protein 1 (Fragment) OS=Takifugu rubripes OX=31033 GN=surf1 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g11219.t1	sp|Q9YHZ6|CDC45_XENLA	50.0	566	276	4	1	559	1	566	2.88e-198	568	562	567	Cell division control protein 45 homolog OS=Xenopus laevis OX=8355 GN=cdc45 PE=1 SV=2
+Montipora_capitata_KBHIv3___TS.g23084.t1a	sp|Q5R7R9|SNW1_PONAB	65.2	540	176	7	1	534	1	534	1.03e-230	649	535	536	SNW domain-containing protein 1 OS=Pongo abelii OX=9601 GN=SNW1 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g457.t2	sp|Q8CHJ1|PIGU_RAT	42.1	432	218	6	32	457	30	435	4.07e-99	306	457	435	Phosphatidylinositol glycan anchor biosynthesis class U protein OS=Rattus norvegicus OX=10116 GN=Pigu PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g44002.t1a	sp|Q5ZIK9|COPE_CHICK	59.1	296	119	2	4	297	13	308	4.00e-121	352	299	308	Coatomer subunit epsilon OS=Gallus gallus OX=9031 GN=COPE PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g11191.t1	sp|O43709|BUD23_HUMAN	62.9	283	101	4	1	281	1	281	2.79e-122	353	281	281	Probable 18S rRNA (guanine-N(7))-methyltransferase OS=Homo sapiens OX=9606 GN=BUD23 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g28456.t1	sp|Q9QYT7|PIGQ_MOUSE	37.2	349	190	6	135	483	261	580	7.43e-61	212	483	581	Phosphatidylinositol N-acetylglucosaminyltransferase subunit Q OS=Mus musculus OX=10090 GN=Pigq PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g33360.t1	sp|Q9CZJ1|UTP11_MOUSE	52.7	207	94	3	2	206	3	207	1.49e-57	186	251	253	Probable U3 small nucleolar RNA-associated protein 11 OS=Mus musculus OX=10090 GN=Utp11 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g37178.t1	sp|Q6YJI5|TRM11_CHICK	48.6	444	222	4	13	454	10	449	3.03e-143	420	454	461	tRNA (guanine(10)-N2)-methyltransferase homolog OS=Gallus gallus OX=9031 GN=TRMT11 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41567.t1	sp|Q96J01|THOC3_HUMAN	73.3	322	83	2	2	320	30	351	2.22e-188	525	321	351	THO complex subunit 3 OS=Homo sapiens OX=9606 GN=THOC3 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44036.t1	sp|Q5M7P5|NOL6_XENTR	46.1	1114	548	17	38	1131	57	1137	0.0	941	1135	1145	Nucleolar protein 6 OS=Xenopus tropicalis OX=8364 GN=nol6 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44708.t1	sp|Q2HJH0|LSM5_BOVIN	86.2	87	12	0	3	89	5	91	6.45e-50	155	89	91	U6 snRNA-associated Sm-like protein LSm5 OS=Bos taurus OX=9913 GN=LSM5 PE=3 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g18395.t1	sp|Q3ZCE0|LSM8_BOVIN	76.0	96	23	0	25	120	1	96	1.52e-48	153	120	96	U6 snRNA-associated Sm-like protein LSm8 OS=Bos taurus OX=9913 GN=LSM8 PE=3 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g43904.t1	sp|Q9JJQ0|PIGB_MOUSE	43.3	556	272	8	6	558	19	534	7.13e-156	459	561	542	GPI mannosyltransferase 3 OS=Mus musculus OX=10090 GN=Pigb PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g26546.t1	sp|Q7ZVE0|GAR1_DANRE	67.6	111	34	1	33	141	54	164	1.82e-48	161	227	226	H/ACA ribonucleoprotein complex subunit 1 OS=Danio rerio OX=7955 GN=gar1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44509.t1	sp|Q6P632|NAA20_XENTR	75.3	178	41	1	1	175	1	178	4.23e-96	278	175	178	N-alpha-acetyltransferase 20 OS=Xenopus tropicalis OX=8364 GN=naa20 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g43941.t1	sp|P51398|RT29_HUMAN	36.6	265	161	3	7	266	133	395	1.26e-52	179	269	398	28S ribosomal protein S29, mitochondrial OS=Homo sapiens OX=9606 GN=DAP3 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g37804.t1	sp|Q6P2Z6|NMD3_XENTR	58.1	492	202	4	1	491	1	489	4.63e-208	588	502	504	60S ribosomal export protein NMD3 OS=Xenopus tropicalis OX=8364 GN=nmd3 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g30710.t1	sp|Q6DFH9|NIP7_XENLA	74.4	180	46	0	1	180	1	180	1.55e-102	295	180	180	60S ribosome subunit biogenesis protein NIP7 homolog OS=Xenopus laevis OX=8355 GN=nip7 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g35555.t1	sp|Q3SZI7|COG6_BOVIN	60.1	614	241	3	5	615	28	640	1.87e-268	753	638	657	Conserved oligomeric Golgi complex subunit 6 OS=Bos taurus OX=9913 GN=COG6 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g43945.t2	sp|Q78PG9|CCD25_MOUSE	62.8	183	67	1	155	337	27	208	6.26e-65	207	337	208	Coiled-coil domain-containing protein 25 OS=Mus musculus OX=10090 GN=Ccdc25 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g46103.t2	sp|Q5RDE7|NFS1_PONAB	78.6	402	86	0	90	491	56	457	1.25e-236	659	491	457	Cysteine desulfurase, mitochondrial OS=Pongo abelii OX=9601 GN=NFS1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g4689.t1	sp|Q2HJ55|SAM50_BOVIN	50.8	437	211	4	18	451	34	469	1.28e-148	434	451	469	Sorting and assembly machinery component 50 homolog OS=Bos taurus OX=9913 GN=SAMM50 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g47626.t1	sp|Q969N2|PIGT_HUMAN	47.5	554	280	8	22	571	27	573	1.56e-176	514	588	578	GPI transamidase component PIG-T OS=Homo sapiens OX=9606 GN=PIGT PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44830.t1	sp|Q13257|MD2L1_HUMAN	55.3	206	86	1	1	206	1	200	4.83e-70	215	209	205	Mitotic spindle assembly checkpoint protein MAD2A OS=Homo sapiens OX=9606 GN=MAD2L1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g15310.t1	sp|P23381|SYWC_HUMAN	72.1	373	104	0	33	405	96	468	9.34e-200	562	410	471	Tryptophan--tRNA ligase, cytoplasmic OS=Homo sapiens OX=9606 GN=WARS1 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g41210.t1	sp|Q5RAW8|WDR48_PONAB	56.6	696	271	8	15	705	4	673	6.43e-235	672	708	677	WD repeat-containing protein 48 OS=Pongo abelii OX=9601 GN=WDR48 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g3541.t1	sp|Q9EP82|WDR4_MOUSE	32.0	359	223	8	63	411	31	378	6.97e-47	169	444	413	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit WDR4 OS=Mus musculus OX=10090 GN=Wdr4 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g8875.t1	sp|Q92616|GCN1_HUMAN	50.2	2695	1302	19	1	2684	1	2666	0.0	2464	2693	2671	eIF-2-alpha kinase activator GCN1 OS=Homo sapiens OX=9606 GN=GCN1 PE=1 SV=7
+Montipora_capitata_KBHIv3___RNAseq.g5451.t1	sp|Q9H0A0|NAT10_HUMAN	68.1	994	310	4	4	993	4	994	0.0	1363	1017	1025	RNA cytidine acetyltransferase OS=Homo sapiens OX=9606 GN=NAT10 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g28736.t1	sp|O75943|RAD17_HUMAN	43.4	551	275	9	96	636	91	614	2.23e-135	416	681	681	Cell cycle checkpoint protein RAD17 OS=Homo sapiens OX=9606 GN=RAD17 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g21715.t1	sp|Q6DRN3|NOC3L_DANRE	40.5	692	385	9	35	721	90	759	9.13e-153	468	786	800	Nucleolar complex protein 3 homolog OS=Danio rerio OX=7955 GN=noc3l PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g33717.t1	sp|Q24439|ATPO_DROME	45.8	201	106	1	40	240	9	206	7.73e-56	180	243	209	ATP synthase subunit O, mitochondrial OS=Drosophila melanogaster OX=7227 GN=ATPsynO PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g50136.t1	sp|Q3TIX9|SNUT2_MOUSE	63.8	287	99	3	1	286	269	551	3.66e-126	374	291	564	U4/U6.U5 tri-snRNP-associated protein 2 OS=Mus musculus OX=10090 GN=Usp39 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g43871.t1	sp|Q9CYR6|AGM1_MOUSE	56.6	541	225	6	5	540	3	538	7.12e-212	601	540	542	Phosphoacetylglucosamine mutase OS=Mus musculus OX=10090 GN=Pgm3 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g41267.t1	sp|Q5ZLM0|CDC73_CHICK	62.2	233	75	3	7	230	303	531	1.12e-92	284	230	531	Parafibromin OS=Gallus gallus OX=9031 GN=CDC73 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g7124.t2a	sp|Q8CI04|COG3_MOUSE	46.0	837	343	11	14	774	9	812	1.48e-235	682	787	820	Conserved oligomeric Golgi complex subunit 3 OS=Mus musculus OX=10090 GN=Cog3 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g44209.t1	sp|Q9CQS5|RIOK2_MOUSE	69.9	309	93	0	1	309	1	309	1.28e-156	459	487	547	Serine/threonine-protein kinase RIO2 OS=Mus musculus OX=10090 GN=Riok2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g1540.t1	sp|A7RG82|CLP1_NEMVE	77.2	338	76	1	1	337	91	428	1.04e-190	535	337	428	Protein CLP1 homolog OS=Nematostella vectensis OX=45351 GN=v1g236308 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g33958.t1	sp|Q32L63|VTA1_BOVIN	46.0	298	147	5	5	293	10	302	8.05e-74	231	295	307	Vacuolar protein sorting-associated protein VTA1 homolog OS=Bos taurus OX=9913 GN=VTA1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g34429.t1	sp|Q9JJ80|RPF2_MOUSE	62.6	265	99	0	1	265	1	265	1.36e-115	338	305	306	Ribosome production factor 2 homolog OS=Mus musculus OX=10090 GN=Rpf2 PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g18329.t1	sp|Q99JI4|PSMD6_MOUSE	69.7	389	118	0	1	389	1	389	1.26e-193	543	389	389	26S proteasome non-ATPase regulatory subunit 6 OS=Mus musculus OX=10090 GN=Psmd6 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g9641.t1	sp|B8JMH0|CAF17_DANRE	38.8	317	183	7	28	341	40	348	1.70e-63	208	347	354	Putative transferase CAF17 homolog, mitochondrial OS=Danio rerio OX=7955 GN=iba57 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g27981.t1	sp|Q865S1|AP3D1_BOVIN	52.1	1286	493	15	1	1260	13	1201	0.0	1110	1266	1207	AP-3 complex subunit delta-1 OS=Bos taurus OX=9913 GN=AP3D1 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g22922.t1	sp|Q6NTV9|NHP2_XENLA	62.0	129	49	0	32	160	20	148	3.65e-52	166	161	149	H/ACA ribonucleoprotein complex subunit 2-like protein OS=Xenopus laevis OX=8355 GN=nhp2 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g14522.t1	sp|Q8BRF7|SCFD1_MOUSE	66.6	640	199	8	3	637	10	639	5.82e-297	825	639	639	Sec1 family domain-containing protein 1 OS=Mus musculus OX=10090 GN=Scfd1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g6296.t1	sp|Q962X9|BUD31_BRABE	91.0	144	13	0	1	144	1	144	1.37e-99	285	144	144	Protein BUD31 homolog OS=Branchiostoma belcheri OX=7741 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.3408_t	sp|Q0IIF2|EI2BA_BOVIN	60.8	306	111	2	13	310	1	305	3.84e-121	352	310	305	Translation initiation factor eIF-2B subunit alpha OS=Bos taurus OX=9913 GN=EIF2B1 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g29049.t1	sp|P22570|ADRO_HUMAN	50.2	502	172	4	17	513	60	488	6.22e-152	446	520	491	NADPH:adrenodoxin oxidoreductase, mitochondrial OS=Homo sapiens OX=9606 GN=FDXR PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g34968.t1	sp|Q6NUB2|CW15A_XENLA	59.6	228	84	2	1	220	1	228	2.65e-70	217	220	228	Protein CWC15 homolog A OS=Xenopus laevis OX=8355 GN=cwc15-a PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g47248.t1	sp|P56812|PDCD5_MOUSE	61.1	126	46	1	1	126	1	123	1.65e-39	131	127	126	Programmed cell death protein 5 OS=Mus musculus OX=10090 GN=Pdcd5 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g47300.t1	sp|Q9NQP4|PFD4_HUMAN	61.7	133	51	0	1	133	1	133	1.47e-48	155	134	134	Prefoldin subunit 4 OS=Homo sapiens OX=9606 GN=PFDN4 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g1050.t1	sp|Q6NYP0|TM208_DANRE	47.7	151	78	1	1	150	1	151	2.13e-42	142	172	175	Transmembrane protein 208 OS=Danio rerio OX=7955 GN=tmem208 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g24539.t1	sp|Q2KIE4|MCTS1_BOVIN	63.5	178	65	0	1	178	1	178	5.16e-81	241	182	181	Malignant T-cell-amplified sequence 1 OS=Bos taurus OX=9913 GN=MCTS1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g902.t1	sp|O14929|HAT1_HUMAN	47.4	401	204	2	6	400	18	417	3.07e-124	368	402	419	Histone acetyltransferase type B catalytic subunit OS=Homo sapiens OX=9606 GN=HAT1 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g44949.t1	sp|P63154|CRNL1_MOUSE	73.3	662	177	0	10	671	9	670	6.57e-247	701	674	690	Crooked neck-like protein 1 OS=Mus musculus OX=10090 GN=Crnkl1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g12804.t1	sp|Q5XI79|NDUF7_RAT	50.9	385	165	7	63	445	41	403	5.90e-127	378	456	436	Protein arginine methyltransferase NDUFAF7, mitochondrial OS=Rattus norvegicus OX=10116 GN=Ndufaf7 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g13648.t1	sp|Q03701|CEBPZ_HUMAN	44.2	788	409	11	23	784	40	822	9.19e-197	598	1026	1054	CCAAT/enhancer-binding protein zeta OS=Homo sapiens OX=9606 GN=CEBPZ PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g17973.t1	sp|Q32PE9|LSM3_BOVIN	84.4	96	15	0	3	98	7	102	1.08e-55	170	99	102	U6 snRNA-associated Sm-like protein LSm3 OS=Bos taurus OX=9913 GN=LSM3 PE=3 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g25526.t2	sp|Q58DT8|WDR55_BOVIN	44.1	331	176	3	14	335	32	362	6.37e-94	287	335	382	WD repeat-containing protein 55 OS=Bos taurus OX=9913 GN=WDR55 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g34945.t1	sp|Q5F1R6|DJC21_HUMAN	45.8	356	172	5	3	338	2	356	6.53e-93	297	554	531	DnaJ homolog subfamily C member 21 OS=Homo sapiens OX=9606 GN=DNAJC21 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g48184.t1	sp|Q9Y2L5|TPPC8_HUMAN	36.9	1530	786	33	1	1467	1	1414	3.87e-282	848	1505	1435	Trafficking protein particle complex subunit 8 OS=Homo sapiens OX=9606 GN=TRAPPC8 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g7266.t1	sp|Q8VCE2|GPN1_MOUSE	64.3	322	110	3	35	356	19	335	8.30e-139	403	395	372	GPN-loop GTPase 1 OS=Mus musculus OX=10090 GN=Gpn1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g27689.t1	sp|Q92889|XPF_HUMAN	55.0	912	373	13	3	899	13	902	0.0	904	916	916	DNA repair endonuclease XPF OS=Homo sapiens OX=9606 GN=ERCC4 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g13168.t1	sp|Q9CTH6|FCF1_MOUSE	70.1	197	57	1	1	195	1	197	3.67e-100	290	196	198	rRNA-processing protein FCF1 homolog OS=Mus musculus OX=10090 GN=Fcf1 PE=2 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g6487.t1	sp|Q9DCJ1|LST8_MOUSE	73.6	314	75	2	8	314	10	322	1.88e-152	433	318	326	Target of rapamycin complex subunit LST8 OS=Mus musculus OX=10090 GN=Mlst8 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g44212.t1	sp|Q5BK63|NDUA9_RAT	50.4	359	170	3	13	364	16	373	1.53e-111	333	372	377	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9, mitochondrial OS=Rattus norvegicus OX=10116 GN=Ndufa9 PE=1 SV=2
+Montipora_capitata_KBHIv3___TS.g19676.t1	sp|Q9NX74|DUS2L_HUMAN	48.9	411	167	2	1	368	6	416	2.63e-121	371	609	493	tRNA-dihydrouridine(20) synthase [NAD(P)+]-like OS=Homo sapiens OX=9606 GN=DUS2 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g8721.t1	sp|Q5ZIY4|SBDS_CHICK	74.9	215	53	1	1	215	37	250	2.80e-107	311	215	250	Ribosome maturation protein SBDS OS=Gallus gallus OX=9031 GN=SBDS PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g21159.t1	sp|P56282|DPOE2_HUMAN	57.0	528	215	2	5	529	6	524	2.22e-219	619	531	527	DNA polymerase epsilon subunit 2 OS=Homo sapiens OX=9606 GN=POLE2 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g37072.t1	sp|Q3SZ19|PSMD9_BOVIN	49.5	204	97	2	4	202	18	220	5.05e-59	187	202	221	26S proteasome non-ATPase regulatory subunit 9 OS=Bos taurus OX=9913 GN=PSMD9 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g15020.t1	sp|Q0MQ83|CIA30_GORGO	35.2	179	110	3	41	213	123	301	7.75e-31	120	281	327	Complex I intermediate-associated protein 30, mitochondrial OS=Gorilla gorilla gorilla OX=9595 GN=NDUFAF1 PE=2 SV=1
+Montipora_capitata_KBHIv3___TS.g3136.t1c	sp|Q5ZJ85|PRPF3_CHICK	57.2	505	205	6	10	505	182	684	1.18e-166	490	506	684	U4/U6 small nuclear ribonucleoprotein Prp3 OS=Gallus gallus OX=9031 GN=PRPF3 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g27661.t1	sp|Q8NI36|WDR36_HUMAN	46.3	899	463	7	5	897	67	951	1.48e-298	852	897	951	WD repeat-containing protein 36 OS=Homo sapiens OX=9606 GN=WDR36 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g44629.t1	sp|A7SWH1|PESC_NEMVE	65.6	524	169	4	1	523	1	514	4.93e-235	658	523	515	Pescadillo homolog OS=Nematostella vectensis OX=45351 GN=v1g194255 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g48223.t1	sp|O60762|DPM1_HUMAN	81.4	237	44	0	5	241	24	260	5.62e-144	405	241	260	Dolichol-phosphate mannosyltransferase subunit 1 OS=Homo sapiens OX=9606 GN=DPM1 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g33136.t1	sp|Q15427|SF3B4_HUMAN	90.1	223	22	0	1	223	1	223	4.38e-143	417	421	424	Splicing factor 3B subunit 4 OS=Homo sapiens OX=9606 GN=SF3B4 PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g30085.t1	sp|Q99570|PI3R4_HUMAN	51.4	1410	623	15	1	1400	1	1358	0.0	1356	1400	1358	Phosphoinositide 3-kinase regulatory subunit 4 OS=Homo sapiens OX=9606 GN=PIK3R4 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g28210.t1	sp|Q9H2P9|DPH5_HUMAN	64.3	272	96	1	1	271	1	272	6.07e-129	370	279	285	Diphthine methyl ester synthase OS=Homo sapiens OX=9606 GN=DPH5 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g23571.t1	sp|Q9DAA6|EXOS1_MOUSE	63.6	162	56	2	11	170	9	169	2.93e-62	195	221	195	Exosome complex component CSL4 OS=Mus musculus OX=10090 GN=Exosc1 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g47848.t2	sp|A7SNR3|COQ4_NEMVE	54.1	222	78	4	80	297	1	202	3.33e-75	232	304	208	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial OS=Nematostella vectensis OX=45351 GN=v1g191789 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g18186.t1	sp|Q6AYB3|ISY1_RAT	68.6	287	81	5	1	282	1	283	4.74e-122	353	283	284	Pre-mRNA-splicing factor ISY1 homolog OS=Rattus norvegicus OX=10116 GN=Isy1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g23247.t1	sp|A1A4R8|CDC23_BOVIN	54.1	294	130	3	9	298	29	321	6.71e-98	313	579	597	Cell division cycle protein 23 homolog OS=Bos taurus OX=9913 GN=CDC23 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g2926.t1	sp|P78318|IGBP1_HUMAN	35.8	265	158	4	16	274	15	273	2.48e-41	149	322	339	Immunoglobulin-binding protein 1 OS=Homo sapiens OX=9606 GN=IGBP1 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g37247.t1	sp|Q4VC33|MAEA_MOUSE	54.5	385	165	5	30	412	20	396	4.61e-141	410	412	396	E3 ubiquitin-protein transferase MAEA OS=Mus musculus OX=10090 GN=Maea PE=1 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g35078.t1	sp|Q9CPX6|ATG3_MOUSE	67.5	314	93	4	1	312	8	314	1.95e-145	414	312	314	Ubiquitin-like-conjugating enzyme ATG3 OS=Mus musculus OX=10090 GN=Atg3 PE=1 SV=1
+Montipora_capitata_KBHIv3___TS.g1797.t1	sp|O14662|STX16_HUMAN	57.4	265	105	3	61	325	47	303	2.70e-90	276	347	325	Syntaxin-16 OS=Homo sapiens OX=9606 GN=STX16 PE=1 SV=3
+Montipora_capitata_KBHIv3___RNAseq.g48276.t1	sp|A0JN52|SF3B3_BOVIN	79.8	1209	234	3	20	1223	1	1204	0.0	1967	1304	1217	Splicing factor 3B subunit 3 OS=Bos taurus OX=9913 GN=SF3B3 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g47529.t1	sp|Q9EQY6|PIGM_RAT	49.7	394	193	1	18	411	25	413	2.92e-127	377	418	423	GPI mannosyltransferase 1 OS=Rattus norvegicus OX=10116 GN=Pigm PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g28061.t1	sp|Q0V8E4|ASND1_BOVIN	38.7	751	262	16	1	734	60	629	8.05e-140	428	735	640	Asparagine synthetase domain-containing protein 1 OS=Bos taurus OX=9913 GN=ASNSD1 PE=2 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g35241.t1	sp|Q9VPH8|RBBP5_DROME	64.9	427	146	4	1	427	1	423	1.61e-195	556	513	489	Retinoblastoma-binding protein 5 homolog OS=Drosophila melanogaster OX=7227 GN=Rbbp5 PE=1 SV=2
+Montipora_capitata_KBHIv3___RNAseq.g11930.t1	sp|A7SA47|EIF3H_NEMVE	70.9	327	95	0	15	341	5	331	4.50e-170	479	341	332	Eukaryotic translation initiation factor 3 subunit H OS=Nematostella vectensis OX=45351 GN=v1g168210 PE=3 SV=1
+Montipora_capitata_KBHIv3___RNAseq.g10748.t1	sp|Q6DGQ0|SPT4H_DANRE	64.9	111	39	0	11	121	2	112	1.16e-53	167	125	117	Transcription elongation factor SPT4 OS=Danio rerio OX=7955 GN=supt4h1 PE=3 SV=1
