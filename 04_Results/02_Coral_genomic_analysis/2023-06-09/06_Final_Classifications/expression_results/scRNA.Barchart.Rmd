@@ -1,0 +1,263 @@
+---
+title: "scRNA Cell Type Expression Data"
+author: "Timothy Stephens"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+
+
+# Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 8, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(tibble)
+library(reshape2)
+library(ggplot2)
+library(RColorBrewer)
+library(cowplot)
+library(gridExtra)
+library(dplyr)
+library(ggh4x)
+library(gtools)
+options(scipen = 999) #Prevent scientific notation
+```
+
+
+
+
+
+# Function to plot barchart
+
+``` {r func_load_data}
+load_data <- function(sp, ct){
+  data <- read.table(paste("scRNA.",sp,".",ct,".filtered.long.no_genes_per_designation_LvD_and_cellType.prop.colors.tsv", sep=''),  
+                     sep='\t', header=TRUE)
+  
+  u <- unique(data$Conditions)
+  u <- u[!u %in% c("Total")]
+
+  if("1" %in% u){
+    u <- mixedsort(u)
+    u <- c("Total", u)
+  } else {
+    u <- sort(u)
+    u <- c("Total", u)
+  }
+
+  data <- data %>%
+    mutate(Conditions = factor(Conditions, levels=u))
+
+  u <- unique(data$BroadCellType)
+  u <- u[!u %in% c("Total")]
+  u <- sort(u)
+  u <- c("Total", u)
+
+  data <- data %>%
+    mutate(BroadCellType = factor(BroadCellType, levels=u))
+  
+  return(data)
+}
+```
+
+
+```{r func_plot_bar_FC}
+plot_bar_FC <- function(df, 
+                        axis.text.x.size=3,
+                        geom_text.size=0.8,
+                        plot.title=""
+                        ){
+  ##
+  ## Get colors to use for facet header/strip colors 
+  ##
+  df.colors <- unique(df[c("BroadCellType", "BroadCellColor")])
+  df.colors <- with(df.colors, df.colors[order(BroadCellType, BroadCellColor),])
+  t <- df.colors$BroadCellColor
+  names(t) <- df.colors$BroadCellType
+  strip <- strip_themed(background_x = elem_list_rect(fill = t))
+  
+  ##
+  ## Get number of columns per panel (use either number of columns in Metacell or Cell)
+  ##
+  num.columns.per.panel <- merge(
+    df %>%
+        filter(Type=="Metacell") %>%
+        group_by(BroadCellType) %>%
+        summarize(distinct_points = n()),
+    df %>%
+        filter(Type=="Cell") %>%
+        group_by(BroadCellType) %>%
+        summarize(distinct_points = n()),
+    by = "BroadCellType", sort=FALSE
+  ) %>% 
+    mutate(distinct_points = if_else(distinct_points.x > distinct_points.y, 
+                                     distinct_points.x, 
+                                     distinct_points.y
+                                     )
+           )
+  
+  ##
+  ## Plot
+  ##
+  # Setup bar chart
+  p <- df %>%
+    arrange(-Percent) %>%
+    ggplot(aes(fill=Designation, x=Conditions, y=Percent)) + 
+    geom_bar(position=position_identity(), stat="identity") +
+    facet_grid2(Type~BroadCellType, 
+                independent = "x", 
+                scales = "free_x", 
+                strip=strip,
+                switch = "y"
+                ) +
+    geom_text(aes(label = Count), 
+              hjust    = -0.2, 
+              position = position_dodge(1.0),
+              angle    = 90,
+              size     = geom_text.size
+              ) +
+    scale_fill_manual(values=c("Dark"  = "#984ea3",
+                               "Light" = "#ff7f00"
+                               )
+                      ) +
+    scale_y_continuous(expand=c(0,0), limits=c(0, max(df$Percent) * 1.05)) +
+    ylab("Percent genes with significant FC in a given cell type (%)") + 
+    labs(title=plot.title) +
+    theme_bw() +
+    theme(axis.text.x=element_text(
+      angle = 90, 
+      vjust = 0.5, 
+      hjust = 1, 
+      size  = axis.text.x.size
+      ),
+    plot.title=element_text(
+      size  = 16,
+      hjust = 0.5
+      )
+    ) +
+    theme(panel.border=element_blank()) +
+    theme(panel.grid.major.x = element_blank()) +
+    theme(legend.position = "none") + force_panelsizes(
+      rows = seq(max(num.columns.per.panel$distinct_points), length(unique(data$Type))),
+      cols = num.columns.per.panel$distinct_points
+      ) +
+    theme(strip.text.x.top = element_text(angle = 90, size = 4, face = "bold"))
+
+  ## Return plot
+  return(p)
+}
+```
+
+
+
+
+
+# Plots
+
+```{r plot_Stylophora_pistillata_GAJOv1_adult}
+sp <- "Stylophora_pistillata_GAJOv1"
+
+data.1 <- load_data(sp, "adult_broad_cell_type_gene_FC") %>% mutate(Type="Broad")
+data.2 <- load_data(sp, "adult_cell_type_gene_FC")       %>% mutate(Type="Cell")
+data.3 <- load_data(sp, "adult_metacell_gene_FC")        %>% mutate(Type="Metacell")
+
+data <- rbind(data.1, data.2, data.3) %>%
+  mutate(Type = factor(Type, levels=c("Broad","Cell", "Metacell")))
+
+p.SP.adult <- plot_bar_FC(data, 2.5, 0.8, plot.title=gsub("_"," ", paste(sp," Adult",sep='')))
+p.SP.adult
+```
+
+```{r plot_Stylophora_pistillata_GAJOv1_polyp}
+sp <- "Stylophora_pistillata_GAJOv1"
+
+data.2 <- load_data(sp, "polyp_cell_type_gene_FC")       %>% mutate(Type="Cell")
+data.3 <- load_data(sp, "polyp_metacell_gene_FC")        %>% mutate(Type="Metacell")
+
+data <- rbind(data.2, data.3) %>%
+  mutate(Type = factor(Type, levels=c("Cell", "Metacell")))
+
+p.SP.polyp <- plot_bar_FC(data, 5.0, 0.8, plot.title=gsub("_"," ", paste(sp," Polyp",sep='')))
+p.SP.polyp
+```
+
+```{r plot_Stylophora_pistillata_GAJOv1_larva}
+sp <- "Stylophora_pistillata_GAJOv1"
+
+data.2 <- load_data(sp, "larva_cell_type_gene_FC")       %>% mutate(Type="Cell")
+data.3 <- load_data(sp, "larva_metacell_gene_FC")        %>% mutate(Type="Metacell")
+
+data <- rbind(data.2, data.3) %>%
+  mutate(Type = factor(Type, levels=c("Cell", "Metacell")))
+
+p.SP.larva <- plot_bar_FC(data, 5.0, 0.8, plot.title=gsub("_"," ", paste(sp," Larva",sep='')))
+p.SP.larva
+```
+
+```{r plot_Nematostella_vectensis_RRUSv1}
+sp <- "Nematostella_vectensis_RRUSv1"
+
+data.1 <- load_data(sp, "broad_cell_type_gene_FC") %>% mutate(Type="Broad")
+data.2 <- load_data(sp, "cell_type_gene_FC")       %>% mutate(Type="Cell")
+data.3 <- load_data(sp, "metacell_gene_FC")        %>% mutate(Type="Metacell")
+
+data <- rbind(data.1, data.2, data.3) %>%
+  mutate(Type = factor(Type, levels=c("Broad","Cell", "Metacell")))
+
+p.NV <- plot_bar_FC(data, 3.0, 0.8, plot.title=gsub("_"," ", paste(sp,"",sep='')))
+p.NV
+```
+
+```{r plot_Xenia_sp_CTEAv1}
+sp <- "Xenia_sp_CTEAv1"
+
+data.1 <- load_data(sp, "broad_cell_type_gene_FC") %>% mutate(Type="Broad")
+data.2 <- load_data(sp, "cell_type_gene_FC")       %>% mutate(Type="Cell")
+data.3 <- load_data(sp, "metacell_gene_FC")        %>% mutate(Type="Metacell")
+
+data <- rbind(data.1, data.2, data.3) %>%
+  mutate(Type = factor(Type, levels=c("Broad", "Cell", "Metacell")))
+
+p.Xs <- plot_bar_FC(data, 2.0, 0.8, plot.title=gsub("_"," ", paste(sp,"",sep='')))
+p.Xs
+```
+
+```{r plot_Hydra_vulgaris_MIJPv3}
+sp <- "Hydra_vulgaris_MIJPv3"
+
+data.1 <- load_data(sp, "broad_cell_type_gene_FC") %>% mutate(Type="Broad")
+data.2 <- load_data(sp, "cell_type_gene_FC")       %>% mutate(Type="Cell")
+data.3 <- load_data(sp, "metacell_gene_FC")        %>% mutate(Type="Metacell")
+
+data <- rbind(data.1, data.2, data.3) %>%
+  mutate(Type = factor(Type, levels=c("Broad","Cell", "Metacell")))
+
+p.HV <- plot_bar_FC(data, 3.3, 0.8, plot.title=gsub("_"," ", paste(sp,"",sep='')))
+p.HV
+```
+
+
+```{r plot_total_seqs}
+plot.list <- list(p.SP.adult, p.SP.polyp, p.SP.larva, p.NV, p.Xs, p.HV)
+plots<-marrangeGrob(plot.list, nrow=1, ncol=1)
+#plots
+ggsave(filename="scRNA.Barchart.pdf", plots, width=21, height=29.7, units="cm")
+```
+
+
+
+
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```

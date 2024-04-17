@@ -1,0 +1,17 @@
+Designation	Conditions	Count	Percent	BroadCellType	BroadCellColor
+Dark	cnidocyte	26	18.1818	cnidocyte	plum3
+Light	cnidocyte	222	10.5114	cnidocyte	plum3
+Dark	epidermis	29	20.2797	epidermis	turquoise3
+Light	epidermis	383	18.1345	epidermis	turquoise3
+Dark	gastrodermis	40	27.972	gastrodermis	chartreuse4
+Light	gastrodermis	467	22.1117	gastrodermis	chartreuse4
+Dark	germline	21	14.6853	germline	mediumorchid4
+Light	germline	527	24.9527	germline	mediumorchid4
+Dark	gland	17	11.8881	gland	orange1
+Light	gland	209	9.89583	gland	orange1
+Dark	neuron	43	30.0699	neuron	skyblue
+Light	neuron	570	26.9886	neuron	skyblue
+Dark	precursors	6	4.1958	precursors	grey
+Light	precursors	298	14.1098	precursors	grey
+Dark	Total	143	13.8298	Total	white
+Light	Total	2112	10.3779	Total	white

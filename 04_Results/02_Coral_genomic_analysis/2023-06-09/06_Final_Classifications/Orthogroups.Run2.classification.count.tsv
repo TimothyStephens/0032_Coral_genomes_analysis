@@ -1,0 +1,585 @@
+Designation	Taxonomic level	Taxonomic group	Orthogroup count
+Dark-Restricted	clade1	Eumetazoa	43
+Dark-Restricted	clade	Opisthokonta	35
+Dark-Restricted	class	Anthozoa	202
+Dark-Restricted	genus	Acropora	1292
+Dark-Restricted	genus	Haliclystus	474
+Dark-Restricted	genus	Hydra	229
+Dark-Restricted	genus	Hydractinia	539
+Dark-Restricted	genus	Millepora	6222
+Dark-Restricted	genus	Montipora	607
+Dark-Restricted	genus	Platygyra	26
+Dark-Restricted	genus	Plexaura	312
+Dark-Restricted	genus	Pocillopora	872
+Dark-Restricted	genus	Porites	1928
+Dark-Restricted	genus	Trichoplax	185
+Dark-Restricted	kingdom	Metazoa	48
+Dark-Restricted	order	Alcyonacea	375
+Dark-Restricted	order	Anthoathecata	338
+Dark-Restricted	order	Scleractinia	1350
+Dark-Restricted	order	Stauromedusae	1073
+Dark-Restricted	phylum	Cnidaria	3149
+Dark-Restricted	species	Acropora	4
+Dark-Restricted	species	Aurelia	611
+Dark-Restricted	species	Calvadosia	333
+Dark-Restricted	species	Montastraea	88
+Dark-Restricted	species	Montipora	293
+Dark-Restricted	species	Pocillopora	8
+Dark-Restricted	species	Pocillopora	2
+Dark-Restricted	species	Pocillopora	3
+Dark-Restricted	species	Porites	1
+Dark-Restricted	subclass	Heteroscleromorpha	270
+Dark-Restricted	subclass	Hexacorallia	1529
+Dark-Restricted	subclass	Hydroidolina	778
+Dark-Restricted	subclass	Myxosporea	19
+Dark-Restricted	subclass	NA	1388
+Dark-Restricted	subclass	Octocorallia	235
+Dark-Restricted	subfamily	Faviinae	5
+Dark-Restricted	subfamily	NA	2487
+Dark-Restricted	suborder	Amyostaurida	101
+Dark-Restricted	suborder	Astrocoeniina	89
+Dark-Restricted	suborder	Capitata	558
+Dark-Restricted	suborder	Faviina	269
+Dark-Restricted	suborder	Filifera	125
+Dark-Restricted	suborder	Fungiina	47
+Dark-Restricted	suborder	Holaxonia	182
+Dark-Restricted	suborder	Myostaurida	147
+Dark-Restricted	suborder	NA	1111
+Dark-Restricted	tax_id	102202 (Astreopora myriophthalma)	882
+Dark-Restricted	tax_id	102205 (Platygyra sinensis)	1026
+Dark-Restricted	tax_id	10228 (Trichoplax adhaerens)	75
+Dark-Restricted	tax_id	104178 (Porites evermanni)	528
+Dark-Restricted	tax_id	104758 (Porites astreoides)	2673
+Dark-Restricted	tax_id	104759 (Porites lobata)	1052
+Dark-Restricted	tax_id	105609 (Montipora aequituberculata)	138
+Dark-Restricted	tax_id	105610 (Montipora efflorescens)	1057
+Dark-Restricted	tax_id	1136245 (Platygyra carnosa)	4309
+Dark-Restricted	tax_id	114500 (Acropora intermedia)	193
+Dark-Restricted	tax_id	117778 (Acropora yongei)	232
+Dark-Restricted	tax_id	1193083 (Alatina alata)	29091
+Dark-Restricted	tax_id	12993 (Cassiopea xamachana)	3284
+Dark-Restricted	tax_id	13093 (Hydractinia symbiolongicarpus)	597
+Dark-Restricted	tax_id	1403702 (Hormiphora californensis)	1571
+Dark-Restricted	tax_id	142104 (Corallium rubrum)	1591
+Dark-Restricted	tax_id	1428006 (Pseudodiploria strigosa)	420
+Dark-Restricted	tax_id	1491507 (Pocillopora acuta)	1627
+Dark-Restricted	tax_id	151771 (Dendronephthya gigantea)	150
+Dark-Restricted	tax_id	1540031 (Coelastrea aspera)	555
+Dark-Restricted	tax_id	156436 (Acropora microphthalma)	195
+Dark-Restricted	tax_id	159855 (Acropora muricata)	924
+Dark-Restricted	tax_id	165727 (Acropora selago)	220
+Dark-Restricted	tax_id	168739 (Haliclystus sanjuanensis)	1381
+Dark-Restricted	tax_id	168775 (Physalia physalis)	1183
+Dark-Restricted	tax_id	1784781 (Turritopsis sp. SK-2016)	1618
+Dark-Restricted	tax_id	178554 (Xestospongia testudinaria)	2054
+Dark-Restricted	tax_id	1843192 (Calvadosia cruxmelitensis)	5508
+Dark-Restricted	tax_id	1843199 (Lucernaria quadricornis)	1859
+Dark-Restricted	tax_id	1869260 (Dipsastraea lizardensis)	225
+Dark-Restricted	tax_id	1916238 (Millepora sp. RR-2016)	3232
+Dark-Restricted	tax_id	1929007 (Acropora awi)	174
+Dark-Restricted	tax_id	1954221 (Haliclystus auricula)	942
+Dark-Restricted	tax_id	1964320 (Hoilungia hongkongensis)	222
+Dark-Restricted	tax_id	203993 (Pocillopora verrucosa)	783
+Dark-Restricted	tax_id	204384 (Gorgonia ventalina)	1268
+Dark-Restricted	tax_id	2072708 (Scolanthus callimorphus)	768
+Dark-Restricted	tax_id	246299 (Montipora cactus)	1021
+Dark-Restricted	tax_id	252671 (Clytia hemisphaerica)	1914
+Dark-Restricted	tax_id	2619190 (Favia_sp_REEFv1)	1242
+Dark-Restricted	tax_id	262591 (Porites rus)	787
+Dark-Restricted	tax_id	2635559 (Fungia_spp_REEFv1)	1243
+Dark-Restricted	tax_id	264060 (Velella velella)	10050
+Dark-Restricted	tax_id	2643297 (Astreopora_sp_REEFv1)	1354
+Dark-Restricted	tax_id	2652724 (Exaiptasia diaphana)	1212
+Dark-Restricted	tax_id	269814 (Kudoa iwatai)	973
+Dark-Restricted	tax_id	2789654 (Plexaura kukenthali)	1424
+Dark-Restricted	tax_id	27923 (Mnemiopsis leidyi)	1980
+Dark-Restricted	tax_id	279588 (Stylissa carteri)	6021
+Dark-Restricted	tax_id	287889 (Trichoplax sp. H2)	259
+Dark-Restricted	tax_id	308606 (Dynamena pumila)	1862
+Dark-Restricted	tax_id	316235 (Porpita porpita)	1478
+Dark-Restricted	tax_id	317549 (Paramuricea clavata)	2937
+Dark-Restricted	tax_id	35630 (Hydractinia echinata)	1094
+Dark-Restricted	tax_id	367763 (Acropora acuminata)	164
+Dark-Restricted	tax_id	37510 (Renilla muelleri)	1770
+Dark-Restricted	tax_id	37531 (Craterolophus convolvulus)	1755
+Dark-Restricted	tax_id	400682 (Amphimedon queenslandica)	397
+Dark-Restricted	tax_id	43186 (Polypodium hydriforme)	1751
+Dark-Restricted	tax_id	45264 (Acropora millepora)	51
+Dark-Restricted	tax_id	45351 (Nematostella vectensis)	379
+Dark-Restricted	tax_id	46686 (Acropora cytherea)	178
+Dark-Restricted	tax_id	46704 (Montipora capitata)	1903
+Dark-Restricted	tax_id	46714 (Lobactis scutaria)	723
+Dark-Restricted	tax_id	46720 (Porites compressa)	1530
+Dark-Restricted	tax_id	46731 (Pocillopora damicornis)	759
+Dark-Restricted	tax_id	46732 (Pocillopora meandrina)	563
+Dark-Restricted	tax_id	46745 (Galaxea fascicularis)	796
+Dark-Restricted	tax_id	47982 (Plexaura homomalla)	624
+Dark-Restricted	tax_id	48498 (Orbicella faveolata)	117
+Dark-Restricted	tax_id	486192 (Ctenactis echinata)	177
+Dark-Restricted	tax_id	490831 (Pocillopora effusa)	155
+Dark-Restricted	tax_id	497657 (Pachyseris speciosa)	464
+Dark-Restricted	tax_id	50429 (Stylophora pistillata)	282
+Dark-Restricted	tax_id	51061 (Porites australiensis)	825
+Dark-Restricted	tax_id	51062 (Porites lutea)	632
+Dark-Restricted	tax_id	51070 (Seriatopora hystrix)	609
+Dark-Restricted	tax_id	513064 (Acropora echinata)	183
+Dark-Restricted	tax_id	51772 (Corynactis australis)	1791
+Dark-Restricted	tax_id	51823 (Amplexidiscus fenestrafer)	530
+Dark-Restricted	tax_id	51832 (Ricordea yuma)	953
+Dark-Restricted	tax_id	541185 (Rhodactis indosinensis)	1372
+Dark-Restricted	tax_id	544493 (Millepora alcicornis)	3493
+Dark-Restricted	tax_id	544496 (Millepora complanata)	2645
+Dark-Restricted	tax_id	544505 (Millepora squarrosa)	2907
+Dark-Restricted	tax_id	55974 (Acropora hyacinthus)	307
+Dark-Restricted	tax_id	591990 (Montipora foliosa)	1155
+Dark-Restricted	tax_id	59783 (Myxobolus cerebralis)	1241
+Dark-Restricted	tax_id	6052 (Ephydatia muelleri)	2285
+Dark-Restricted	tax_id	6082 (Hydra viridissima)	990
+Dark-Restricted	tax_id	6087 (Hydra vulgaris)	144
+Dark-Restricted	tax_id	6088 (Hydra oligactis)	319
+Dark-Restricted	tax_id	6096 (Podocoryna carnea)	1987
+Dark-Restricted	tax_id	6106 (Actinia equina)	5338
+Dark-Restricted	tax_id	6110 (Anthopleura elegantissima)	977
+Dark-Restricted	tax_id	6141 (Tripedalia cystophora)	1144
+Dark-Restricted	tax_id	6145 (Aurelia aurita)	10574
+Dark-Restricted	tax_id	63558 (Montastraea cavernosa)	1748
+Dark-Restricted	tax_id	686327 (Morbakka virulenta)	2371
+Dark-Restricted	tax_id	70778 (Acropora nasuta)	197
+Dark-Restricted	tax_id	70779 (Acropora digitifera)	231
+Dark-Restricted	tax_id	70780 (Acropora gemmifera)	152
+Dark-Restricted	tax_id	70782 (Acropora florida)	206
+Dark-Restricted	tax_id	70783 (Acropora tenuis)	277
+Dark-Restricted	tax_id	81824 (Monosiga brevicollis)	1223
+Dark-Restricted	tax_id	86540 (Xenia sp.)	1460
+Dark-Restricted	tax_id	86597 (Palythoa variabilis)	2543
+Dark-Restricted	tax_id	86600 (Discosoma sp.)	589
+Dark-Restricted	tax_id	946362 (Salpingoeca rosetta)	1522
+Dark-Restricted	tax_id	999287 (Madracis auretenra)	3316
+Dark-Shared	clade1	Eumetazoa	19
+Dark-Shared	clade	Opisthokonta	22
+Dark-Shared	class	Anthozoa	110
+Dark-Shared	genus	Acropora	7
+Dark-Shared	genus	Haliclystus	8
+Dark-Shared	genus	Hydra	51
+Dark-Shared	genus	Hydractinia	20
+Dark-Shared	genus	Millepora	621
+Dark-Shared	genus	Montipora	6
+Dark-Shared	genus	Plexaura	4
+Dark-Shared	genus	Pocillopora	11
+Dark-Shared	genus	Porites	45
+Dark-Shared	genus	Trichoplax	10
+Dark-Shared	kingdom	Metazoa	24
+Dark-Shared	order	Alcyonacea	13
+Dark-Shared	order	Anthoathecata	29
+Dark-Shared	order	Scleractinia	70
+Dark-Shared	order	Stauromedusae	29
+Dark-Shared	phylum	Cnidaria	4207
+Dark-Shared	species	Aurelia	10
+Dark-Shared	species	Calvadosia	12
+Dark-Shared	species	Montipora	13
+Dark-Shared	subclass	Heteroscleromorpha	48
+Dark-Shared	subclass	Hexacorallia	303
+Dark-Shared	subclass	Hydroidolina	71
+Dark-Shared	subclass	NA	29
+Dark-Shared	subclass	Octocorallia	7
+Dark-Shared	subfamily	NA	77
+Dark-Shared	suborder	Amyostaurida	6
+Dark-Shared	suborder	Astrocoeniina	9
+Dark-Shared	suborder	Capitata	29
+Dark-Shared	suborder	Faviina	17
+Dark-Shared	suborder	Filifera	4
+Dark-Shared	suborder	Fungiina	4
+Dark-Shared	suborder	Holaxonia	4
+Dark-Shared	suborder	Myostaurida	1
+Dark-Shared	suborder	NA	20
+Dark-Shared	tax_id	102202 (Astreopora myriophthalma)	2
+Dark-Shared	tax_id	102205 (Platygyra sinensis)	14
+Dark-Shared	tax_id	10228 (Trichoplax adhaerens)	21
+Dark-Shared	tax_id	104178 (Porites evermanni)	2
+Dark-Shared	tax_id	104758 (Porites astreoides)	70
+Dark-Shared	tax_id	104759 (Porites lobata)	4
+Dark-Shared	tax_id	105609 (Montipora aequituberculata)	2
+Dark-Shared	tax_id	1136245 (Platygyra carnosa)	251
+Dark-Shared	tax_id	114500 (Acropora intermedia)	1
+Dark-Shared	tax_id	117778 (Acropora yongei)	2
+Dark-Shared	tax_id	1193083 (Alatina alata)	290
+Dark-Shared	tax_id	12993 (Cassiopea xamachana)	382
+Dark-Shared	tax_id	13093 (Hydractinia symbiolongicarpus)	14
+Dark-Shared	tax_id	1403702 (Hormiphora californensis)	11
+Dark-Shared	tax_id	142104 (Corallium rubrum)	3
+Dark-Shared	tax_id	1428006 (Pseudodiploria strigosa)	4
+Dark-Shared	tax_id	1491507 (Pocillopora acuta)	2
+Dark-Shared	tax_id	151771 (Dendronephthya gigantea)	1
+Dark-Shared	tax_id	1540031 (Coelastrea aspera)	16
+Dark-Shared	tax_id	156436 (Acropora microphthalma)	1
+Dark-Shared	tax_id	159855 (Acropora muricata)	11
+Dark-Shared	tax_id	168739 (Haliclystus sanjuanensis)	9
+Dark-Shared	tax_id	168775 (Physalia physalis)	8
+Dark-Shared	tax_id	1784781 (Turritopsis sp. SK-2016)	127
+Dark-Shared	tax_id	178554 (Xestospongia testudinaria)	31
+Dark-Shared	tax_id	1843192 (Calvadosia cruxmelitensis)	51
+Dark-Shared	tax_id	1843199 (Lucernaria quadricornis)	7
+Dark-Shared	tax_id	1869260 (Dipsastraea lizardensis)	1
+Dark-Shared	tax_id	1916238 (Millepora sp. RR-2016)	122
+Dark-Shared	tax_id	1954221 (Haliclystus auricula)	33
+Dark-Shared	tax_id	1964320 (Hoilungia hongkongensis)	5
+Dark-Shared	tax_id	203993 (Pocillopora verrucosa)	60
+Dark-Shared	tax_id	204384 (Gorgonia ventalina)	306
+Dark-Shared	tax_id	2072708 (Scolanthus callimorphus)	2
+Dark-Shared	tax_id	246299 (Montipora cactus)	4
+Dark-Shared	tax_id	252671 (Clytia hemisphaerica)	26
+Dark-Shared	tax_id	2619190 (Favia_sp_REEFv1)	127
+Dark-Shared	tax_id	262591 (Porites rus)	3
+Dark-Shared	tax_id	2635559 (Fungia_spp_REEFv1)	40
+Dark-Shared	tax_id	264060 (Velella velella)	1057
+Dark-Shared	tax_id	2643297 (Astreopora_sp_REEFv1)	276
+Dark-Shared	tax_id	2652724 (Exaiptasia diaphana)	20
+Dark-Shared	tax_id	269814 (Kudoa iwatai)	2
+Dark-Shared	tax_id	2789654 (Plexaura kukenthali)	10
+Dark-Shared	tax_id	27923 (Mnemiopsis leidyi)	23
+Dark-Shared	tax_id	279588 (Stylissa carteri)	97
+Dark-Shared	tax_id	287889 (Trichoplax sp. H2)	1
+Dark-Shared	tax_id	308606 (Dynamena pumila)	15
+Dark-Shared	tax_id	316235 (Porpita porpita)	34
+Dark-Shared	tax_id	317549 (Paramuricea clavata)	54
+Dark-Shared	tax_id	35630 (Hydractinia echinata)	26
+Dark-Shared	tax_id	367763 (Acropora acuminata)	1
+Dark-Shared	tax_id	37510 (Renilla muelleri)	21
+Dark-Shared	tax_id	37531 (Craterolophus convolvulus)	28
+Dark-Shared	tax_id	400682 (Amphimedon queenslandica)	10
+Dark-Shared	tax_id	43186 (Polypodium hydriforme)	14
+Dark-Shared	tax_id	45351 (Nematostella vectensis)	2
+Dark-Shared	tax_id	46704 (Montipora capitata)	16
+Dark-Shared	tax_id	46714 (Lobactis scutaria)	4
+Dark-Shared	tax_id	46720 (Porites compressa)	7
+Dark-Shared	tax_id	46731 (Pocillopora damicornis)	3
+Dark-Shared	tax_id	46732 (Pocillopora meandrina)	1
+Dark-Shared	tax_id	46745 (Galaxea fascicularis)	1
+Dark-Shared	tax_id	47982 (Plexaura homomalla)	7
+Dark-Shared	tax_id	497657 (Pachyseris speciosa)	75
+Dark-Shared	tax_id	50429 (Stylophora pistillata)	6
+Dark-Shared	tax_id	51061 (Porites australiensis)	1
+Dark-Shared	tax_id	51062 (Porites lutea)	6
+Dark-Shared	tax_id	51070 (Seriatopora hystrix)	5
+Dark-Shared	tax_id	51772 (Corynactis australis)	83
+Dark-Shared	tax_id	51823 (Amplexidiscus fenestrafer)	14
+Dark-Shared	tax_id	51832 (Ricordea yuma)	5
+Dark-Shared	tax_id	541185 (Rhodactis indosinensis)	4
+Dark-Shared	tax_id	544493 (Millepora alcicornis)	217
+Dark-Shared	tax_id	544496 (Millepora complanata)	94
+Dark-Shared	tax_id	544505 (Millepora squarrosa)	87
+Dark-Shared	tax_id	59783 (Myxobolus cerebralis)	12
+Dark-Shared	tax_id	6052 (Ephydatia muelleri)	99
+Dark-Shared	tax_id	6082 (Hydra viridissima)	59
+Dark-Shared	tax_id	6087 (Hydra vulgaris)	23
+Dark-Shared	tax_id	6088 (Hydra oligactis)	78
+Dark-Shared	tax_id	6096 (Podocoryna carnea)	57
+Dark-Shared	tax_id	6106 (Actinia equina)	9
+Dark-Shared	tax_id	6141 (Tripedalia cystophora)	16
+Dark-Shared	tax_id	6145 (Aurelia aurita)	85
+Dark-Shared	tax_id	63558 (Montastraea cavernosa)	27
+Dark-Shared	tax_id	686327 (Morbakka virulenta)	35
+Dark-Shared	tax_id	70779 (Acropora digitifera)	1
+Dark-Shared	tax_id	70783 (Acropora tenuis)	1
+Dark-Shared	tax_id	81824 (Monosiga brevicollis)	18
+Dark-Shared	tax_id	86540 (Xenia sp.)	13
+Dark-Shared	tax_id	86597 (Palythoa variabilis)	238
+Dark-Shared	tax_id	86600 (Discosoma sp.)	13
+Dark-Shared	tax_id	946362 (Salpingoeca rosetta)	29
+Dark-Shared	tax_id	999287 (Madracis auretenra)	246
+Light-Restricted	clade1	Eumetazoa	17
+Light-Restricted	clade	Opisthokonta	8
+Light-Restricted	class	Anthozoa	140
+Light-Restricted	genus	Acropora	186
+Light-Restricted	genus	Haliclystus	14
+Light-Restricted	genus	Hydra	105
+Light-Restricted	genus	Hydractinia	24
+Light-Restricted	genus	Millepora	104
+Light-Restricted	genus	Montipora	66
+Light-Restricted	genus	Platygyra	5
+Light-Restricted	genus	Plexaura	107
+Light-Restricted	genus	Pocillopora	307
+Light-Restricted	genus	Porites	262
+Light-Restricted	genus	Trichoplax	53
+Light-Restricted	kingdom	Metazoa	22
+Light-Restricted	order	Alcyonacea	228
+Light-Restricted	order	Anthoathecata	109
+Light-Restricted	order	Scleractinia	771
+Light-Restricted	order	Stauromedusae	68
+Light-Restricted	phylum	Cnidaria	419
+Light-Restricted	species	Aurelia	12
+Light-Restricted	species	Calvadosia	6
+Light-Restricted	species	Montastraea	7
+Light-Restricted	species	Montipora	30
+Light-Restricted	species	Pocillopora	3
+Light-Restricted	species	Porites	1
+Light-Restricted	subclass	Heteroscleromorpha	84
+Light-Restricted	subclass	Hexacorallia	591
+Light-Restricted	subclass	Hydroidolina	193
+Light-Restricted	subclass	Myxosporea	3
+Light-Restricted	subclass	NA	33
+Light-Restricted	subclass	Octocorallia	103
+Light-Restricted	subfamily	Faviinae	3
+Light-Restricted	subfamily	NA	617
+Light-Restricted	suborder	Amyostaurida	5
+Light-Restricted	suborder	Astrocoeniina	38
+Light-Restricted	suborder	Capitata	72
+Light-Restricted	suborder	Faviina	95
+Light-Restricted	suborder	Filifera	27
+Light-Restricted	suborder	Fungiina	12
+Light-Restricted	suborder	Holaxonia	176
+Light-Restricted	suborder	Myostaurida	15
+Light-Restricted	suborder	NA	293
+Light-Restricted	tax_id	102202 (Astreopora myriophthalma)	2
+Light-Restricted	tax_id	102205 (Platygyra sinensis)	87
+Light-Restricted	tax_id	10228 (Trichoplax adhaerens)	20
+Light-Restricted	tax_id	104178 (Porites evermanni)	11
+Light-Restricted	tax_id	104758 (Porites astreoides)	357
+Light-Restricted	tax_id	104759 (Porites lobata)	25
+Light-Restricted	tax_id	105609 (Montipora aequituberculata)	12
+Light-Restricted	tax_id	105610 (Montipora efflorescens)	8
+Light-Restricted	tax_id	1136245 (Platygyra carnosa)	6
+Light-Restricted	tax_id	114500 (Acropora intermedia)	10
+Light-Restricted	tax_id	117778 (Acropora yongei)	7
+Light-Restricted	tax_id	1193083 (Alatina alata)	20
+Light-Restricted	tax_id	12993 (Cassiopea xamachana)	10
+Light-Restricted	tax_id	13093 (Hydractinia symbiolongicarpus)	3
+Light-Restricted	tax_id	1403702 (Hormiphora californensis)	25
+Light-Restricted	tax_id	142104 (Corallium rubrum)	33
+Light-Restricted	tax_id	1428006 (Pseudodiploria strigosa)	5
+Light-Restricted	tax_id	1491507 (Pocillopora acuta)	70
+Light-Restricted	tax_id	151771 (Dendronephthya gigantea)	110
+Light-Restricted	tax_id	1540031 (Coelastrea aspera)	45
+Light-Restricted	tax_id	156436 (Acropora microphthalma)	4
+Light-Restricted	tax_id	159855 (Acropora muricata)	11
+Light-Restricted	tax_id	165727 (Acropora selago)	3
+Light-Restricted	tax_id	168739 (Haliclystus sanjuanensis)	9
+Light-Restricted	tax_id	168775 (Physalia physalis)	11
+Light-Restricted	tax_id	1784781 (Turritopsis sp. SK-2016)	25
+Light-Restricted	tax_id	178554 (Xestospongia testudinaria)	121
+Light-Restricted	tax_id	1843192 (Calvadosia cruxmelitensis)	4
+Light-Restricted	tax_id	1843199 (Lucernaria quadricornis)	4
+Light-Restricted	tax_id	1869260 (Dipsastraea lizardensis)	1
+Light-Restricted	tax_id	1929007 (Acropora awi)	9
+Light-Restricted	tax_id	1964320 (Hoilungia hongkongensis)	25
+Light-Restricted	tax_id	203993 (Pocillopora verrucosa)	23
+Light-Restricted	tax_id	204384 (Gorgonia ventalina)	36
+Light-Restricted	tax_id	2072708 (Scolanthus callimorphus)	54
+Light-Restricted	tax_id	246299 (Montipora cactus)	5
+Light-Restricted	tax_id	252671 (Clytia hemisphaerica)	27
+Light-Restricted	tax_id	2619190 (Favia_sp_REEFv1)	6
+Light-Restricted	tax_id	262591 (Porites rus)	14
+Light-Restricted	tax_id	2635559 (Fungia_spp_REEFv1)	73
+Light-Restricted	tax_id	264060 (Velella velella)	10
+Light-Restricted	tax_id	2643297 (Astreopora_sp_REEFv1)	2
+Light-Restricted	tax_id	2652724 (Exaiptasia diaphana)	237
+Light-Restricted	tax_id	269814 (Kudoa iwatai)	2
+Light-Restricted	tax_id	2789654 (Plexaura kukenthali)	153
+Light-Restricted	tax_id	27923 (Mnemiopsis leidyi)	7
+Light-Restricted	tax_id	279588 (Stylissa carteri)	100
+Light-Restricted	tax_id	287889 (Trichoplax sp. H2)	29
+Light-Restricted	tax_id	308606 (Dynamena pumila)	25
+Light-Restricted	tax_id	316235 (Porpita porpita)	14
+Light-Restricted	tax_id	317549 (Paramuricea clavata)	235
+Light-Restricted	tax_id	35630 (Hydractinia echinata)	8
+Light-Restricted	tax_id	367763 (Acropora acuminata)	3
+Light-Restricted	tax_id	37510 (Renilla muelleri)	27
+Light-Restricted	tax_id	37531 (Craterolophus convolvulus)	4
+Light-Restricted	tax_id	400682 (Amphimedon queenslandica)	234
+Light-Restricted	tax_id	43186 (Polypodium hydriforme)	14
+Light-Restricted	tax_id	45264 (Acropora millepora)	26
+Light-Restricted	tax_id	45351 (Nematostella vectensis)	61
+Light-Restricted	tax_id	46686 (Acropora cytherea)	1
+Light-Restricted	tax_id	46704 (Montipora capitata)	42
+Light-Restricted	tax_id	46714 (Lobactis scutaria)	10
+Light-Restricted	tax_id	46720 (Porites compressa)	17
+Light-Restricted	tax_id	46731 (Pocillopora damicornis)	35
+Light-Restricted	tax_id	46732 (Pocillopora meandrina)	30
+Light-Restricted	tax_id	46745 (Galaxea fascicularis)	11
+Light-Restricted	tax_id	47982 (Plexaura homomalla)	42
+Light-Restricted	tax_id	48498 (Orbicella faveolata)	58
+Light-Restricted	tax_id	490831 (Pocillopora effusa)	25
+Light-Restricted	tax_id	497657 (Pachyseris speciosa)	20
+Light-Restricted	tax_id	50429 (Stylophora pistillata)	62
+Light-Restricted	tax_id	51061 (Porites australiensis)	2
+Light-Restricted	tax_id	51062 (Porites lutea)	11
+Light-Restricted	tax_id	51070 (Seriatopora hystrix)	56
+Light-Restricted	tax_id	513064 (Acropora echinata)	1
+Light-Restricted	tax_id	51772 (Corynactis australis)	14
+Light-Restricted	tax_id	51832 (Ricordea yuma)	5
+Light-Restricted	tax_id	541185 (Rhodactis indosinensis)	2
+Light-Restricted	tax_id	544493 (Millepora alcicornis)	1
+Light-Restricted	tax_id	544496 (Millepora complanata)	2
+Light-Restricted	tax_id	544505 (Millepora squarrosa)	4
+Light-Restricted	tax_id	55974 (Acropora hyacinthus)	26
+Light-Restricted	tax_id	591990 (Montipora foliosa)	1
+Light-Restricted	tax_id	59783 (Myxobolus cerebralis)	90
+Light-Restricted	tax_id	6052 (Ephydatia muelleri)	59
+Light-Restricted	tax_id	6082 (Hydra viridissima)	31
+Light-Restricted	tax_id	6087 (Hydra vulgaris)	81
+Light-Restricted	tax_id	6088 (Hydra oligactis)	75
+Light-Restricted	tax_id	6096 (Podocoryna carnea)	32
+Light-Restricted	tax_id	6106 (Actinia equina)	253
+Light-Restricted	tax_id	6110 (Anthopleura elegantissima)	240
+Light-Restricted	tax_id	6141 (Tripedalia cystophora)	33
+Light-Restricted	tax_id	6145 (Aurelia aurita)	18
+Light-Restricted	tax_id	63558 (Montastraea cavernosa)	30
+Light-Restricted	tax_id	686327 (Morbakka virulenta)	4
+Light-Restricted	tax_id	70778 (Acropora nasuta)	4
+Light-Restricted	tax_id	70779 (Acropora digitifera)	5
+Light-Restricted	tax_id	70780 (Acropora gemmifera)	3
+Light-Restricted	tax_id	70782 (Acropora florida)	3
+Light-Restricted	tax_id	70783 (Acropora tenuis)	6
+Light-Restricted	tax_id	81824 (Monosiga brevicollis)	12
+Light-Restricted	tax_id	86540 (Xenia sp.)	221
+Light-Restricted	tax_id	86597 (Palythoa variabilis)	16
+Light-Restricted	tax_id	86600 (Discosoma sp.)	2
+Light-Restricted	tax_id	946362 (Salpingoeca rosetta)	24
+Light-Restricted	tax_id	999287 (Madracis auretenra)	32
+Light-Shared	clade1	Eumetazoa	1111
+Light-Shared	clade	Opisthokonta	6209
+Light-Shared	class	Anthozoa	1520
+Light-Shared	genus	Acropora	124
+Light-Shared	genus	Haliclystus	109
+Light-Shared	genus	Hydra	465
+Light-Shared	genus	Hydractinia	172
+Light-Shared	genus	Millepora	3128
+Light-Shared	genus	Montipora	130
+Light-Shared	genus	Platygyra	2
+Light-Shared	genus	Plexaura	72
+Light-Shared	genus	Pocillopora	206
+Light-Shared	genus	Porites	578
+Light-Shared	genus	Trichoplax	84
+Light-Shared	kingdom	Metazoa	5212
+Light-Shared	order	Alcyonacea	405
+Light-Shared	order	Anthoathecata	403
+Light-Shared	order	Scleractinia	1422
+Light-Shared	order	Stauromedusae	585
+Light-Shared	phylum	Cnidaria	27771
+Light-Shared	species	Aurelia	143
+Light-Shared	species	Calvadosia	152
+Light-Shared	species	Montastraea	11
+Light-Shared	species	Montipora	88
+Light-Shared	species	Pocillopora	1
+Light-Shared	species	Porites	1
+Light-Shared	subclass	Heteroscleromorpha	735
+Light-Shared	subclass	Hexacorallia	2568
+Light-Shared	subclass	Hydroidolina	676
+Light-Shared	subclass	Myxosporea	8
+Light-Shared	subclass	NA	539
+Light-Shared	subclass	Octocorallia	226
+Light-Shared	subfamily	Faviinae	1
+Light-Shared	subfamily	NA	1371
+Light-Shared	suborder	Amyostaurida	34
+Light-Shared	suborder	Astrocoeniina	96
+Light-Shared	suborder	Capitata	474
+Light-Shared	suborder	Faviina	122
+Light-Shared	suborder	Filifera	65
+Light-Shared	suborder	Fungiina	54
+Light-Shared	suborder	Holaxonia	150
+Light-Shared	suborder	Myostaurida	45
+Light-Shared	suborder	NA	609
+Light-Shared	tax_id	102202 (Astreopora myriophthalma)	6
+Light-Shared	tax_id	102205 (Platygyra sinensis)	160
+Light-Shared	tax_id	10228 (Trichoplax adhaerens)	29
+Light-Shared	tax_id	104178 (Porites evermanni)	25
+Light-Shared	tax_id	104758 (Porites astreoides)	673
+Light-Shared	tax_id	104759 (Porites lobata)	58
+Light-Shared	tax_id	105609 (Montipora aequituberculata)	52
+Light-Shared	tax_id	105610 (Montipora efflorescens)	3
+Light-Shared	tax_id	1136245 (Platygyra carnosa)	617
+Light-Shared	tax_id	114500 (Acropora intermedia)	5
+Light-Shared	tax_id	117778 (Acropora yongei)	3
+Light-Shared	tax_id	1193083 (Alatina alata)	1715
+Light-Shared	tax_id	12993 (Cassiopea xamachana)	1570
+Light-Shared	tax_id	13093 (Hydractinia symbiolongicarpus)	100
+Light-Shared	tax_id	1403702 (Hormiphora californensis)	79
+Light-Shared	tax_id	142104 (Corallium rubrum)	56
+Light-Shared	tax_id	1428006 (Pseudodiploria strigosa)	12
+Light-Shared	tax_id	1491507 (Pocillopora acuta)	16
+Light-Shared	tax_id	151771 (Dendronephthya gigantea)	42
+Light-Shared	tax_id	1540031 (Coelastrea aspera)	63
+Light-Shared	tax_id	159855 (Acropora muricata)	9
+Light-Shared	tax_id	168739 (Haliclystus sanjuanensis)	110
+Light-Shared	tax_id	168775 (Physalia physalis)	34
+Light-Shared	tax_id	1784781 (Turritopsis sp. SK-2016)	526
+Light-Shared	tax_id	178554 (Xestospongia testudinaria)	2417
+Light-Shared	tax_id	1843192 (Calvadosia cruxmelitensis)	282
+Light-Shared	tax_id	1843199 (Lucernaria quadricornis)	66
+Light-Shared	tax_id	1916238 (Millepora sp. RR-2016)	387
+Light-Shared	tax_id	1929007 (Acropora awi)	1
+Light-Shared	tax_id	1954221 (Haliclystus auricula)	252
+Light-Shared	tax_id	1964320 (Hoilungia hongkongensis)	42
+Light-Shared	tax_id	203993 (Pocillopora verrucosa)	180
+Light-Shared	tax_id	204384 (Gorgonia ventalina)	2726
+Light-Shared	tax_id	2072708 (Scolanthus callimorphus)	67
+Light-Shared	tax_id	246299 (Montipora cactus)	1
+Light-Shared	tax_id	252671 (Clytia hemisphaerica)	147
+Light-Shared	tax_id	2619190 (Favia_sp_REEFv1)	410
+Light-Shared	tax_id	262591 (Porites rus)	24
+Light-Shared	tax_id	2635559 (Fungia_spp_REEFv1)	174
+Light-Shared	tax_id	264060 (Velella velella)	3162
+Light-Shared	tax_id	2643297 (Astreopora_sp_REEFv1)	888
+Light-Shared	tax_id	2652724 (Exaiptasia diaphana)	169
+Light-Shared	tax_id	269814 (Kudoa iwatai)	10
+Light-Shared	tax_id	2789654 (Plexaura kukenthali)	72
+Light-Shared	tax_id	27923 (Mnemiopsis leidyi)	124
+Light-Shared	tax_id	279588 (Stylissa carteri)	1070
+Light-Shared	tax_id	287889 (Trichoplax sp. H2)	12
+Light-Shared	tax_id	308606 (Dynamena pumila)	137
+Light-Shared	tax_id	316235 (Porpita porpita)	362
+Light-Shared	tax_id	317549 (Paramuricea clavata)	911
+Light-Shared	tax_id	35630 (Hydractinia echinata)	118
+Light-Shared	tax_id	367763 (Acropora acuminata)	1
+Light-Shared	tax_id	37510 (Renilla muelleri)	215
+Light-Shared	tax_id	37531 (Craterolophus convolvulus)	221
+Light-Shared	tax_id	400682 (Amphimedon queenslandica)	157
+Light-Shared	tax_id	43186 (Polypodium hydriforme)	254
+Light-Shared	tax_id	45264 (Acropora millepora)	8
+Light-Shared	tax_id	45351 (Nematostella vectensis)	9
+Light-Shared	tax_id	46686 (Acropora cytherea)	2
+Light-Shared	tax_id	46704 (Montipora capitata)	121
+Light-Shared	tax_id	46714 (Lobactis scutaria)	10
+Light-Shared	tax_id	46720 (Porites compressa)	18
+Light-Shared	tax_id	46731 (Pocillopora damicornis)	13
+Light-Shared	tax_id	46732 (Pocillopora meandrina)	17
+Light-Shared	tax_id	46745 (Galaxea fascicularis)	18
+Light-Shared	tax_id	47982 (Plexaura homomalla)	23
+Light-Shared	tax_id	48498 (Orbicella faveolata)	5
+Light-Shared	tax_id	490831 (Pocillopora effusa)	48
+Light-Shared	tax_id	497657 (Pachyseris speciosa)	194
+Light-Shared	tax_id	50429 (Stylophora pistillata)	59
+Light-Shared	tax_id	51061 (Porites australiensis)	6
+Light-Shared	tax_id	51062 (Porites lutea)	19
+Light-Shared	tax_id	51070 (Seriatopora hystrix)	7
+Light-Shared	tax_id	513064 (Acropora echinata)	2
+Light-Shared	tax_id	51772 (Corynactis australis)	203
+Light-Shared	tax_id	51823 (Amplexidiscus fenestrafer)	48
+Light-Shared	tax_id	51832 (Ricordea yuma)	9
+Light-Shared	tax_id	541185 (Rhodactis indosinensis)	3
+Light-Shared	tax_id	544493 (Millepora alcicornis)	546
+Light-Shared	tax_id	544496 (Millepora complanata)	283
+Light-Shared	tax_id	544505 (Millepora squarrosa)	331
+Light-Shared	tax_id	55974 (Acropora hyacinthus)	11
+Light-Shared	tax_id	591990 (Montipora foliosa)	1
+Light-Shared	tax_id	59783 (Myxobolus cerebralis)	158
+Light-Shared	tax_id	6052 (Ephydatia muelleri)	1226
+Light-Shared	tax_id	6082 (Hydra viridissima)	236
+Light-Shared	tax_id	6087 (Hydra vulgaris)	176
+Light-Shared	tax_id	6088 (Hydra oligactis)	376
+Light-Shared	tax_id	6096 (Podocoryna carnea)	2455
+Light-Shared	tax_id	6106 (Actinia equina)	224
+Light-Shared	tax_id	6110 (Anthopleura elegantissima)	63
+Light-Shared	tax_id	6141 (Tripedalia cystophora)	363
+Light-Shared	tax_id	6145 (Aurelia aurita)	299
+Light-Shared	tax_id	63558 (Montastraea cavernosa)	98
+Light-Shared	tax_id	686327 (Morbakka virulenta)	552
+Light-Shared	tax_id	70779 (Acropora digitifera)	2
+Light-Shared	tax_id	70780 (Acropora gemmifera)	1
+Light-Shared	tax_id	70782 (Acropora florida)	2
+Light-Shared	tax_id	81824 (Monosiga brevicollis)	152
+Light-Shared	tax_id	86540 (Xenia sp.)	232
+Light-Shared	tax_id	86597 (Palythoa variabilis)	633
+Light-Shared	tax_id	86600 (Discosoma sp.)	33
+Light-Shared	tax_id	946362 (Salpingoeca rosetta)	163
+Light-Shared	tax_id	999287 (Madracis auretenra)	532

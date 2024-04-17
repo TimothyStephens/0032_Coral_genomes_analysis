@@ -1,0 +1,101 @@
+---
+title: "Differental Expression Data"
+author: "Timothy Stephens"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+
+
+# Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 8, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(tibble)
+library(reshape2)
+library(ggplot2)
+library(RColorBrewer)
+library(cowplot)
+library(gridExtra)
+library(dplyr)
+library(ggh4x)
+library(gtools)
+options(scipen = 999) #Prevent scientific notation
+```
+
+
+
+
+
+# Functions
+```{r func_plot_expression_results}
+plot_expression_results <- function(prefix, title, cols){
+  data  <- read.table(paste("DiffExprResults.",prefix,".filtered.long.no_genes_per_designation_LvD_and_exprCond.prop.tsv",sep=''),  
+                      sep='\t', header=TRUE) %>%
+    mutate(Group = if_else(Conditions=="Total", "Total", "Expression_Results")) %>%
+    mutate(Group = factor(Group, levels=c("Total", "Expression_Results"))) %>%
+    mutate(Conditions = factor(Conditions, levels=mixedsort(unique(Conditions))))
+  
+  p <- ggplot(data, aes(fill=Designation, x=Conditions, y=Percent)) + 
+    geom_bar(position="dodge", stat="identity") +
+    facet_wrap2(vars(Group), scales = "free_x") +
+    geom_text(aes(label=Count), 
+              hjust = -.2, position = position_dodge(.9),
+              angle=90, size=2
+              ) +
+    scale_fill_manual(values=c("Dark" = "#984ea3", "Light" = "#ff7f00")) +
+    scale_y_continuous(expand=c(0,0), limits=c(0, max(data$Percent) * 1.05)) +
+    theme_bw() +
+    ylab("Percent genes with significant differential expression between two conditions (%)") + 
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+    force_panelsizes(
+        cols = cols
+        ) +
+    theme(panel.border=element_blank()) +
+    theme(panel.grid.major.x = element_blank()) +
+    theme(strip.text.x.top = element_text(angle = 0, size = 12, face = "bold", hjust = 0.5)) +
+    labs(title=title) +
+    theme(plot.title=element_text(
+      size  = 16,
+      hjust = 0.5
+      ))
+  return(p)
+}
+```
+
+
+
+
+
+# Plots
+
+```{r plot_each_dataset}
+p1 <- plot_expression_results("Mcapitata.3TP", "M. capitata 3TP", c(1, 3))
+p2 <- plot_expression_results("Mcapitata.12TP", "M. capitata 12TP", c(1, 33))
+p3 <- plot_expression_results("Pacuta.12TP", "P. acuta 12TP", c(1, 30))
+```
+
+```{r plot_total_seqs}
+plot.list <- list(p1, p2, p3)
+plots <- marrangeGrob(plot.list, nrow=1, ncol=1)
+plots
+ggsave(filename="DiffExprResults.Barchart.pdf", plots, width=21, height=29.7, units="cm")
+```
+
+
+
+
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```

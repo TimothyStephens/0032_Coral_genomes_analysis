@@ -1,0 +1,314 @@
+---
+title: "Plot QC results for each genome/transcriptome used in Orthofinder Run2"
+author: "Timothy Stephens"
+date: "06/08/2023"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+# Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 8, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(ggplot2)
+library(ggtree)
+library(aplot)
+library(treeio)
+library(tibble)
+library(dplyr)
+library(reshape2)
+library(scales)
+library(ggrepel)
+library(stringr)
+library(glue)
+library(ggpubr)
+options(scipen = 999) #Prevent scientific notation
+```
+
+
+
+
+
+# Functions
+
+Function to plot BUSCO categories - uses the standard BUSCO color scheme and also plots the percent for each category.
+```{r func_plot_BUSCO_percentages}
+format_values_1 = function(values){
+  out <- c()
+  for(value in values) {
+    if(value != 0){
+      out <- c(out, sprintf("  %1.1f%%", value))
+    } else {
+      out <- c(out, "")
+    }
+  }
+  return(out)
+}
+
+plot_BUSCO_percentages = function(data, plot_title, 
+                                  plot.axis.text.y=FALSE,
+                                  plot.legend=FALSE,
+                                  plot_size_ratio=1, plot_family="sans",
+                                  my_colors=c("#56B4E9", "#3492C7", "#F0E442", "#F04442") # Color pallet for BUSCO gene categories.
+                                  )
+{
+  p <- data %>%
+    melt(id.var="SampleID") %>%
+    rename(BUSCO_categories = variable, Count = value) %>%
+    mutate(BUSCO_categories = factor(BUSCO_categories, c("Complete", "Single-copy", "Duplicated", "Fragmented", "Missing"))) %>%
+    filter(BUSCO_categories!="Complete") %>%
+    filter(BUSCO_categories!="Total") %>%
+    ggplot(aes(y = Count, x = SampleID, fill = BUSCO_categories)) +
+      geom_bar(position = position_stack(reverse = TRUE),
+               stat="identity") +
+      coord_flip() +
+      # geom_text_repel: https://ggrepel.slowkow.com/articles/examples.html
+      geom_text_repel(aes(label = format_values_1(Count)), # Add two spaces in from of text so it centers off the number not number%
+                size = rel(5)*plot_size_ratio,
+                fontface = "bold",
+                max.overlaps = Inf, #Set max.overlaps = Inf to override this behavior and always show all labels, regardless of too many overlaps.
+                position = position_stack(vjust=0.5, reverse = TRUE),
+                xlim = c(-Inf, Inf), # Set xlim or ylim to Inf or -Inf to disable repulsion away from the edges of the panel.
+                ylim = c(-Inf, Inf),
+                point.size = NA, #size of each point for each text label; Set point.size = NA to prevent label repulsion away from data points.
+                force=0.5, # force of repulsion between overlapping text labels
+                box.padding=0, # padding around the text label
+                direction="y") + # move text labels “both” (default), “x”, or “y” directions
+      theme_gray(base_size = 8) + 
+      scale_y_continuous(labels = c("0","20","40","60","80","100"), 
+                         breaks = c(0,20,40,60,80,100)) +
+      scale_fill_manual(values = my_colors,
+                        labels = c("Complete (C) and single-copy (S)",
+                                   "Complete (C) and duplicated (D)",
+                                   "Fragmented (F)",
+                                   "Missing (M)")) +
+      ggtitle(plot_title) +
+      xlab("") +
+      ylab("%BUSCOs") +
+      theme(plot.title = element_text(family = plot_family,
+                                      hjust=0.5, 
+                                      colour = "black", 
+                                      size = rel(2.2)*plot_size_ratio,
+                                      face = "bold")) +
+      theme(plot.margin=unit(c(0, 0, 0, 0), "mm")) +
+      theme(panel.background = element_rect(color = "#FFFFFF", fill = "white")) +
+      theme(panel.grid.minor = element_blank()) +
+      theme(panel.grid.major = element_blank()) +
+      theme(axis.text.y = element_text(family = plot_family, face = "bold", size = rel(1.66)*plot_size_ratio, colour = "black")) +
+      theme(axis.text.x = element_text(family = plot_family, face = "bold", size = rel(1.66)*plot_size_ratio, colour = "black")) +
+      theme(axis.line = element_line(linewidth = 1*plot_size_ratio, colour = "black")) +
+      theme(axis.ticks.length = unit(0.85*plot_size_ratio, "cm")) +
+      theme(axis.ticks.y = element_line(colour = "white", linewidth = 0)) +
+      theme(axis.ticks.x = element_line(colour = "#222222")) +
+      theme(axis.ticks.length = unit(0.4*plot_size_ratio, "cm")) + 
+      theme(axis.title.x = element_text(family = plot_family, size = rel(2)*plot_size_ratio)) +
+      theme(legend.position = "bottom", legend.title = element_blank()) + 
+      theme(legend.text = element_text(family = plot_family, size = rel(1.2)*plot_size_ratio)) +
+      theme(legend.key.size = unit(1.5*plot_size_ratio,"line")) +
+      guides(fill = guide_legend(override.aes = list(colour = NULL))) +
+      guides(fill = guide_legend(nrow = 1, byrow = TRUE))
+  if (!plot.axis.text.y) {
+    p <- p + theme(axis.text.y=element_blank())
+  }
+  if (!plot.legend) {
+    p <- p + theme(legend.position = "none")
+  }
+  return(p)
+}
+```
+
+Function to plot basic single-category bar chart (not stacked). User provided color for bars.
+```{r func_plot_barchart}
+format_values_2 = function(values){
+  out <- c()
+  for(value in values) {
+    if(value != 0){
+      out <- c(out, scales::comma(value))
+    } else {
+      out <- c(out, "")
+    }
+  }
+  return(out)
+}
+
+plot_barchart = function(data, column.id, 
+                         plot_title, xlab, bar.fill, 
+                         divide.by=1, y.log2=FALSE, y.log10=FALSE, 
+                         add.geom_text=TRUE, plot.axis.text.y=FALSE,
+                         plot_size_ratio=1, plot_family="sans")
+{
+  p <- data %>%
+    melt(id.var="SampleID") %>%
+    filter(variable==column.id) %>%
+    mutate(value = as.numeric(value)) %>%
+    mutate(value = value/divide.by) %>%
+    ggplot(aes(y = value, x = SampleID)) +
+      geom_bar(position = position_stack(),
+               stat="identity",
+               fill=bar.fill) +
+      scale_y_continuous(labels = comma) +
+      coord_flip() +
+      theme_gray(base_size = 8) + 
+      ggtitle(plot_title) +
+      xlab("") +
+      ylab(xlab) +
+      theme(plot.title = element_text(family = plot_family,
+                                      hjust=0.5, 
+                                      colour = "black", 
+                                      size = rel(2.2)*plot_size_ratio,
+                                      face = "bold")) +
+      theme(plot.margin=unit(c(0, 0, 0, 0), "mm")) +
+      theme(legend.position="top",legend.title = element_blank()) + 
+      theme(legend.text = element_text(family = plot_family, size = rel(1.2)*plot_size_ratio)) +
+      theme(legend.key.size = unit(1.5*plot_size_ratio,"line")) +
+      theme(panel.background = element_rect(color = "#FFFFFF", fill = "white")) +
+      theme(panel.grid.minor = element_blank()) +
+      theme(panel.grid.major = element_blank()) +
+      theme(axis.text.y = element_text(family = plot_family, face = "bold", size = rel(1.66)*plot_size_ratio, colour = "black")) +
+      theme(axis.text.x = element_text(family = plot_family, face = "bold", size = rel(1.66)*plot_size_ratio, colour = "black")) +
+      theme(axis.line = element_line(colour = "black", linewidth = 1*plot_size_ratio)) +
+      theme(axis.ticks.length = unit(0.85*plot_size_ratio, "cm")) +
+      theme(axis.ticks.y = element_line(colour = "white", linewidth = 0)) +
+      theme(axis.ticks.x = element_line(colour = "#222222")) +
+      theme(axis.ticks.length = unit(0.4*plot_size_ratio, "cm")) + 
+      theme(axis.title.x = element_text(family = plot_family, size = rel(2)*plot_size_ratio)) +
+      guides(fill = guide_legend(override.aes = list(colour = NULL))) +
+      guides(fill = guide_legend(nrow = 1, byrow = TRUE))
+  if (y.log10) {
+    p <- p + scale_y_continuous(trans="log10")
+  }
+  if (y.log2) {
+    p <- p + scale_y_continuous(trans="log2")
+  }
+  if (add.geom_text) {
+    p <- p + geom_text(aes(label=format_values_2(value), y=0), size=0.75, hjust='left')
+  }
+  if (!plot.axis.text.y) {
+    p <- p + theme(axis.text.y=element_blank())
+  }
+  return(p)
+}
+```
+
+Function to generate a formatted taxa names from samples sheet.
+```{r func_format_sp_name}
+# Format for plotting
+# See https://yulab-smu.top/treedata-book/faq.html?q=rename#faq-formatting-label
+format_sp_name = function(x){
+  n = x[["genera"]]
+  
+  # Add species if present
+  if(x[["species"]] != ""){
+    n = paste(n, x[["species"]], sep="~")
+  }
+  
+  # Either print with extra info (not italics) or not
+  if(x[["extra"]] != ""){
+    e = str_replace_all(x[["extra"]], " ", "~")
+    e = str_replace_all(e, ",", "")
+    lab = glue(paste("italic(",n,")~",e, sep=''))
+  } else {
+    lab = glue(paste("italic(",n,")", sep=''))
+  }
+  return(lab)
+}
+```
+
+
+
+
+
+# Load datasets into R
+
+Load the cleaned and processed datasets into R for plotting.
+```{r load_data}
+species.tree <- read.iqtree(
+  "../01_Orthofinder/Run2.SpeciesTree_rooted_node_labels.tre")
+species.names <- as.phylo(species.tree)$tip.label
+
+samples <- read.csv("../samples.txt", header=TRUE, sep='\t') %>% 
+  filter(sample_id %in% species.names)
+```
+Extract the sample order from dendrogram (using "working" sample names). Also load pretty sample names and replace the labels in the tree with these new names.
+
+
+
+
+
+# Generate plot
+
+Global setting for plotting
+```{r plot_settings}
+plot_size_ratio <- 0.2
+plot.axis.text.y <- FALSE
+plot.legend <- FALSE
+```
+
+Data.frame with clade positions in tree and colors.
+```{r clade_colors}
+# Dataframe of clades to highlight
+clade.colors <- data.frame(
+  node  = c(132,        138,         144,         146,       148,        164,            171,            172,          183,            179,                130,        126,        122,          124,                134,       136,          133,             56,          57),
+  fill  = c("blue",     "red",       "brown",     "pink",    "yellow",   "purple",       "green",        "orange",     "blue",         "red",             "purple",    "green",    "yellow",     "red",              "blue",    "blue",       "yellow",       "green",        "blue"),
+  alpha = c(0.2,        0.4,         0.2,         0.4,       0.2,        0.2,            0.2,            0.2,          0.2,            0.2,                0.5,        0.5,        0.5,          0.5,                0.5,       0.1,          0.2,            0.4,          0.2),
+  n     = c("Cnidaria", "Staurozoa", "Scyphozoa", "Cubozoa", "Hydrozoa", "Octocorallia", "Hexacorallia", "Actiniaria", "Scleractinia", "Corallimorpharia", "Placozoa", "Porifera", "Ctenophora", "Choanoflagellata", "Myxozoa", "Medusozoa",  "Endocnidozoa", "Zoantharia", "Scleractinia")
+)
+```
+
+Format species tree. Color clades and rename taxa into a pretty format (i.e., genera+species italics + extra info not italics).
+ - Show tree with full taxonomy to verify that our clades are in the correct position.
+```{r species_tree_taxonomy}
+samples$name <- apply(samples, 1, format_sp_name )
+p <- ggtree(species.tree) %<+% samples + 
+  geom_highlight(
+    data = clade.colors,
+    mapping = aes(
+      node=node,
+      fill=I(fill),
+      alpha=I(alpha),
+    ),
+    extendto = 1.85,
+    to.bottom=TRUE,
+  ) +
+  geom_cladelab(
+    data = clade.colors,
+    mapping = aes(
+      node=node,
+      label=n,
+    ),
+    align = TRUE,
+    offset.text = 0.0,
+    hjust = "center",
+    fontsize = 2,
+    offset = 0.7,
+    barsize = 0,
+    fontface="bold",
+    ) +
+  geom_tiplab(aes(label=name),        size=6*plot_size_ratio, linesize=0.2, parse=TRUE, align=TRUE, offset=0.01) +
+  geom_tiplab(aes(label=family),      size=6*plot_size_ratio, linesize=0.0, parse=TRUE, align=TRUE, offset=0.20) +
+  geom_tiplab(aes(label=suborder),    size=6*plot_size_ratio, linesize=0.0, parse=TRUE, align=TRUE, offset=0.27) +
+  geom_tiplab(aes(label=order),       size=6*plot_size_ratio, linesize=0.0, parse=TRUE, align=TRUE, offset=0.35) +
+  geom_tiplab(aes(label=subclass),    size=6*plot_size_ratio, linesize=0.0, parse=TRUE, align=TRUE, offset=0.44) +
+  geom_tiplab(aes(label=class),       size=6*plot_size_ratio, linesize=0.0, parse=TRUE, align=TRUE, offset=0.54) +
+  geom_tiplab(aes(label=phylum),      size=6*plot_size_ratio, linesize=0.0, parse=TRUE, align=TRUE, offset=0.62) +
+  geom_tippoint(aes(color=data_type), size=6*plot_size_ratio, show.legend=FALSE) +
+  hexpand(0.1)
+
+p + geom_text(aes(label=node))
+```
+
+
+
+
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```

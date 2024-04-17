@@ -1,0 +1,405 @@
+---
+title: "Plot selected OGs against species tree"
+author: "Timothy Stephens"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+
+
+## Setup
+
+Setup R env. Load packages and set default image export formats, size and resolution.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 8, 
+                      fig.width = 12, 
+                      dev = c("png", "pdf"),
+                      dpi = 1000)
+library(ggplot2)
+library(ggtree)
+library(aplot)
+library(treeio)
+library(tibble)
+library(dplyr)
+library(reshape2)
+library(scales)
+library(ggrepel)
+library(stringr)
+library(glue)
+library(ggpubr)
+library(tidyr)
+library(aplot)
+library(knitr)
+options(scipen = 999) #Prevent scientific notation
+```
+
+
+
+
+
+## Functions
+
+Function to generate a formatted taxa names from samples sheet.
+```{r func_format_sp_name}
+# Format for plotting
+# See https://yulab-smu.top/treedata-book/faq.html?q=rename#faq-formatting-label
+format_sp_name = function(x){
+  n = x[["genera"]]
+  
+  # Add species if present
+  if(x[["species"]] != ""){
+    n = paste(n, x[["species"]], sep="~")
+  }
+  
+  # Either print with extra info (not italics) or not
+  if(x[["extra"]] != ""){
+    e = str_replace_all(x[["extra"]], " ", "~")
+    e = str_replace_all(e, ",", "")
+    lab = glue(paste("italic(",n,")~",e, sep=''))
+  } else {
+    lab = glue(paste("italic(",n,")", sep=''))
+  }
+  return(lab)
+}
+```
+
+
+
+Function to plot tree + heatmap
+```{r func_plot_tree_heatmap}
+get_colors <- function(seq.count.max){
+  color.list <- c("white", colorRampPalette(c("#ddf1da","#d53e4f"))(5))
+  for (i in 1:seq.count.max){
+    color.list <- c(color.list, "#d53e4f")
+  }
+  return(color.list[1:seq.count.max])
+}
+
+plot_tree_heatmap <- function(p,
+                              OG.class, OG.seqs, OG.annots,
+                              select.best_strata_taxa, select.designation, 
+                              select.best_strata_species_in_OG_proportion_total,
+                              plot.heatmap.rownames=FALSE){
+  # Select OGs to plot
+  selected.OGs.class <- OG.class %>%
+    filter(best_strata_taxa == select.best_strata_taxa) %>%
+    filter(designation == select.designation) %>%
+    filter(best_strata_species_in_OG_proportion_total >= select.best_strata_species_in_OG_proportion_total) %>%
+    arrange(orthogroup_id)
+  selected.OGs <- selected.OGs.class %>%
+    select(orthogroup_id)
+  
+  # Check that we have OGs to plot
+  if(length(selected.OGs$orthogroup_id) == 0){
+    print("No OGs found using the given filtering cutoffs. Returning nothing.")
+    return()
+  }
+  
+  # Get sequence membership and count number of seqs per genome/transcriptome
+  selected.OGs.seqs <- OG.seqs %>%
+    filter(orthogroup_id %in% selected.OGs$orthogroup_id) %>%
+    arrange(orthogroup_id, species_id, sequence_id)
+  selected.OGs.seqs.counts <- selected.OGs.seqs %>%
+    dplyr::group_by(orthogroup_id, species_id) %>%
+    dplyr::summarise(n_seq = n(), .groups="keep") %>%
+    pivot_wider(names_from = species_id, values_from = n_seq, values_fill=0)
+  
+  # Get max number of sequences per species (used for setting color range during plotting)
+  seq.count.max <- max(selected.OGs.seqs.counts %>% ungroup() %>% select(-orthogroup_id))
+  
+  # Get sequence annotations
+  selected.OGs.annots <- merge(selected.OGs.seqs, OG.annots, by="sequence_id", sort=FALSE)
+  
+  # Add missing genomes/transcriptomes to matrix - need to do since we are selecting OGs specific to taxonomic subset.
+  all.names <- samples$sample_id
+  not.in.matrix <- all.names[!all.names %in% colnames(selected.OGs.seqs.counts)]
+  for (n in not.in.matrix){
+    selected.OGs.seqs.counts[, n] <- 0
+  }
+  
+  # Write results for selected OGs
+  write.table(selected.OGs.class, 
+            paste("selected_", select.best_strata_taxa, "_", select.designation, "_", select.best_strata_species_in_OG_proportion_total, ".classification.tsv", sep=''), 
+            sep='\t',
+            quote = FALSE, 
+            row.names = FALSE, 
+            col.names = TRUE,
+            )
+  write.table(selected.OGs.seqs, 
+          paste("selected_", select.best_strata_taxa, "_", select.designation, "_", select.best_strata_species_in_OG_proportion_total, ".long.tsv", sep=''), 
+          sep='\t',
+          quote = FALSE, 
+          row.names = FALSE, 
+          col.names = TRUE,
+          )
+  write.table(selected.OGs.seqs.counts, 
+        paste("selected_", select.best_strata_taxa, "_", select.designation, "_", select.best_strata_species_in_OG_proportion_total, ".seq_counts.tsv", sep=''), 
+        sep='\t',
+        quote = FALSE, 
+        row.names = FALSE, 
+        col.names = TRUE,
+        )
+  write.table(selected.OGs.annots, 
+        paste("selected_", select.best_strata_taxa, "_", select.designation, "_", select.best_strata_species_in_OG_proportion_total, ".sequences.nr.top_hits.tsv", sep=''), 
+        sep='\t',
+        quote = FALSE, 
+        row.names = FALSE, 
+        col.names = TRUE,
+        )
+  
+  # Order or OGs in heatmap based on clustering of values
+  if (nrow(selected.OGs.seqs.counts) >= 2) {
+    data <- scale(selected.OGs.seqs.counts[,-1])
+    ord <- hclust( dist(data, method = "euclidean"), method = "ward.D" )$order
+    orthogroup_id.ord <- selected.OGs.seqs.counts$orthogroup_id[ord]
+  } else {
+    orthogroup_id.ord <- selected.OGs.seqs.counts$orthogroup_id
+  }
+  
+  # Melt matrix into 3-columns
+  selected.OGs.seqs.counts <- melt(selected.OGs.seqs.counts, id.vars = "orthogroup_id") %>%
+    mutate(value = factor(value)) %>%
+    mutate(orthogroup_id = factor(orthogroup_id, levels=orthogroup_id.ord))
+  
+  # Create additional column where zeros are NA (helpful during plotting since we can specifically set NA as white)
+  selected.OGs.seqs.counts$value_nas <- ifelse(selected.OGs.seqs.counts$value==0, NA, selected.OGs.seqs.counts$value)
+  
+  #Create heatmap
+  plot_size_ratio <- 0.2
+  
+  scaling.factor <- min(c((20 / nrow(selected.OGs)), 1))
+  
+  plot_family <- "sans"
+  plot_title <- paste(length(selected.OGs$orthogroup_id), ' "', select.designation, '" OGs that are specific to "', select.best_strata_taxa, '" and present in >=', select.best_strata_species_in_OG_proportion_total, '% of samples in this group', sep='')
+  hm <- ggplot(selected.OGs.seqs.counts, aes(x=orthogroup_id, y=variable)) + 
+    geom_tile(aes(fill=cut(value_nas, breaks=0:seq.count.max, labels=0:(seq.count.max-1)))) + 
+    scale_fill_manual(drop=FALSE, values=get_colors(seq.count.max), na.value="white", name="No. Genes") +
+    theme_minimal() + xlab(NULL) + ylab(NULL) + ggtitle(plot_title) +
+    theme(axis.text.x = element_text(family = plot_family, 
+                                     face = "bold", 
+                                     size = rel(scaling.factor * 4)*plot_size_ratio, 
+                                     colour = "black",
+                                     angle = 90,
+                                     )
+          ) +
+    theme(axis.text.y = element_text(family = plot_family, 
+                                     face = "bold", 
+                                     size = rel(1.66)*plot_size_ratio, 
+                                     colour = "black",
+                                     )
+          ) +
+    theme(plot.title = element_text(family = plot_family, 
+                                     face = "bold", 
+                                     size = rel(3)*plot_size_ratio, 
+                                     colour = "black",
+                                     hjust = 0.5,
+                                     )
+          )
+  
+  # Remove heatmap row names?
+  if(!plot.heatmap.rownames){
+    hm <- hm + theme(axis.text.y = element_blank())
+  }
+  
+  # Plot heatmap against tree
+  p <- hm %>% insert_left(p, width=1)
+  
+  # Return plot
+  return(p)
+}
+```
+
+
+
+
+
+# Load datasets into R
+
+Load tree of samples (to plot).
+```{r load_tree_of_samples}
+species.tree <- read.iqtree(
+  "../01_Orthofinder/Run2.SpeciesTree_rooted_node_labels.tre")
+species.names <- as.phylo(species.tree)$tip.label
+
+samples <- read.csv("../samples.txt", header=TRUE, sep='\t') %>% 
+  filter(sample_id %in% species.names)
+```
+
+
+
+Load OG info.
+```{r load_data}
+data.class   <- read.csv("../06_Final_Classifications/Orthogroups.Run2.classification.tsv.gz", header=TRUE, sep='\t')
+data.seqs    <- read.csv("../06_Final_Classifications/Orthogroups.Run2.long.tsv.gz", header=TRUE, sep='\t')
+data.annots  <- read.csv("../06_Final_Classifications/Orthogroups.Run2.sequences.nr.top_hits.tsv.gz", header=TRUE, sep='\t')
+```
+
+
+
+
+
+# Plot dataset tree with colored clades
+
+Global setting for plotting
+```{r plot_settings}
+plot_size_ratio <- 0.2
+plot.axis.text.y <- FALSE
+plot.legend <- FALSE
+```
+
+Data.frame with clade positions in tree and colors.
+```{r clade_colors}
+clade.colors <- data.frame(
+  node  = c(132,        138,         144,         146,       148,        164,            171,            172,          183,            179,                130,        126,        122,          124,                134,       136,          133,             56,          57),
+  fill  = c("blue",     "red",       "brown",     "pink",    "yellow",   "purple",       "green",        "orange",     "blue",         "red",             "purple",    "green",    "yellow",     "red",              "blue",    "blue",       "yellow",       "green",        "blue"),
+  alpha = c(0.2,        0.4,         0.2,         0.4,       0.2,        0.2,            0.2,            0.2,          0.2,            0.2,                0.5,        0.5,        0.5,          0.5,                0.5,       0.1,          0.2,            0.4,          0.2),
+  n     = c("Cnidaria", "Staurozoa", "Scyphozoa", "Cubozoa", "Hydrozoa", "Octocorallia", "Hexacorallia", "Actiniaria", "Scleractinia", "Corallimorpharia", "Placozoa", "Porifera", "Ctenophora", "Choanoflagellata", "Myxozoa", "Medusozoa",  "Endocnidozoa", "Zoantharia", "Scleractinia")
+)
+```
+
+Format species tree. Color clades and rename taxa into a pretty format (i.e., genera+species italics + extra info not italics).
+```{r species_tree_plotting}
+samples$name <- apply(samples, 1, format_sp_name )
+p <- ggtree(species.tree) %<+% samples + 
+  geom_highlight(
+    data = clade.colors,
+    mapping = aes(
+      node=node,
+      fill=I(fill),
+      alpha=I(alpha),
+    ),
+    extendto = 1.4,
+    to.bottom=TRUE,
+  ) +
+  geom_cladelab(
+    data = clade.colors,
+    mapping = aes(
+      node=node,
+      label=n,
+    ),
+    align = TRUE,
+    offset.text = 0.0,
+    hjust = "center",
+    fontsize = 2,
+    offset = 0.2,
+    barsize = 0,
+    fontface="bold",
+    ) +
+  geom_tiplab(aes(label=name), size=6*plot_size_ratio, linesize=0.2, parse=TRUE, align=TRUE, offset=0.01) +
+  geom_tippoint(aes(color=data_type), size=6*plot_size_ratio, show.legend=FALSE) +
+  hexpand(.1)
+
+p
+```
+
+
+
+Count number of OGs in each combination of groups.
+```{r count_OGs, layout="l-body-outset"}
+t <- data.class %>%
+  filter(best_strata_species_in_OG_proportion_total >= 50) %>%
+  filter(no_species > 2) %>%
+  group_by(designation, best_strata, best_strata_taxa) %>%
+  count() %>%
+  arrange(designation, best_strata, desc(n))
+kable(t)
+```
+
+
+Plot heatmap of species presence in each Scleractinia Dark-Restricted OG.
+```{r data_plots-Scleractinia_Dark-Restricted}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Scleractinia", "Dark-Restricted", 50)
+```
+
+
+
+Plot heatmap of species presence in each Hexacorallia Dark-Restricted OG.
+```{r data_plots-Hexacorallia_Dark-Restricted}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Hexacorallia", "Dark-Restricted", 50)
+```
+
+
+
+Plot heatmap of species presence in each Cnidaria Dark-Restricted OG.
+```{r data_plots-Cnidaria_Dark-Restricted}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Cnidaria", "Dark-Restricted", 50)
+```
+
+
+
+Plot heatmap of species presence in each Opisthokonta Dark-Restricted OG.
+```{r data_plots-Opisthokonta_Dark-Restricted}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Opisthokonta", "Dark-Restricted", 50)
+```
+
+
+
+
+
+Plot heatmap of species presence in each Scleractinia Dark-Shared OG.
+```{r data_plots-Scleractinia_Dark-Shared}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Scleractinia", "Dark-Shared", 50)
+```
+
+
+
+Plot heatmap of species presence in each Hexacorallia Dark-Shared OG.
+```{r data_plots-Hexacorallia_Dark-Shared}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Hexacorallia", "Dark-Shared", 50)
+```
+
+
+
+Plot heatmap of species presence in each Cnidaria Dark-Shared OG.
+```{r data_plots-Cnidaria_Dark-Shared}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Cnidaria", "Dark-Shared", 50)
+```
+
+
+
+Plot heatmap of species presence in each Opisthokonta Dark-Shared OG.
+```{r data_plots-Opisthokonta_Dark-Shared}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Opisthokonta", "Dark-Shared", 50)
+```
+
+
+
+
+
+
+
+
+
+
+Plot heatmap of species presence in each Scleractinia Dark-Restricted OG (>=5%).
+```{r count_OGs-Scleractinia, layout="l-body-outset"}
+t <- data.class %>%
+  filter(best_strata_species_in_OG_proportion_total >= 5) %>%
+  filter(no_species > 2) %>%
+  group_by(designation, best_strata, best_strata_taxa) %>%
+  count() %>%
+  arrange(designation, best_strata, desc(n)) %>%
+  filter(best_strata_taxa == "Scleractinia")
+kable(t)
+```
+
+```{r data_plots-Scleractinia_Dark-Restricted_5}
+plot_tree_heatmap(p, data.class, data.seqs, data.annots, "Scleractinia", "Dark-Restricted", 5)
+```
+
+
+
+
+
+
+# Session Info
+
+```{r ressionInfo}
+sessionInfo()
+```
+
+

@@ -1,0 +1,617 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 24 Jul 2023 05:37:20 PM EDT
+Working directory is /scratch/timothy/Orthofinder
+=====================================================================
+
+[Mon 24 Jul 2023 05:37:27 PM EDT]      CMD: md5sum files2cluster/*.pep.faa | tee md5sum_list-Run2.txt
+66ff81009de2ca7c61089f4639a0a47d  files2cluster/Acropora_acuminata_SLJPv1.genes.pep.faa
+e468f6071d041ee5d72205dd1b6ec46d  files2cluster/Acropora_awi_SLJPv1.genes.pep.faa
+16e7f4edf10e27a9679bdd059e4c9698  files2cluster/Acropora_cytherea_SLJPv1.genes.pep.faa
+654241fc0f4f4e6d39f48f14c8529916  files2cluster/Acropora_digitifera_SLJPv2.genes.pep.faa
+e24be93a3d23fa48f106886a78ac50ae  files2cluster/Acropora_echinata_SLJPv1.genes.pep.faa
+a78ada70b06f614e898b1f02ddcdf82f  files2cluster/Acropora_florida_SLJPv1.genes.pep.faa
+832b73c6ff23c6f2dc80b9d7dae61eec  files2cluster/Acropora_gemmifera_SLJPv1.genes.pep.faa
+3bd4be31467e6ccf34b9339a50601ed2  files2cluster/Acropora_hyacinthus_NANAv1.transcripts.pep.faa
+4ededf5532ace4a4e2cfb3c6503055b8  files2cluster/Acropora_hyacinthus_SLJPv1.genes.pep.faa
+3f9f1f35bd114ec1f4911aa61c59d7ff  files2cluster/Acropora_intermedia_SLJPv1.genes.pep.faa
+53d0dd53701003dfa28a5bb210773d33  files2cluster/Acropora_microphthalma_SLJPv1.genes.pep.faa
+e070ed2bf116df2ebb83fc41e69bee74  files2cluster/Acropora_millepora_JSIDv2.1.genes.pep.faa
+fdfdb6b393e17a09eb46f5513b65102e  files2cluster/Acropora_muricata_SLJPv1.genes.pep.faa
+50bee11ca0290b6e3898ae1a672b76ae  files2cluster/Acropora_muricata_XSCSv1.transcripts.pep.faa
+77b4030d5bade5089e339349777cbc31  files2cluster/Acropora_nasuta_SLJPv1.genes.pep.faa
+ca13e1d405e89905cd781c3987838b6c  files2cluster/Acropora_selago_SLJPv1.genes.pep.faa
+6355f6cc9fbac8b5d8111365dd8279b7  files2cluster/Acropora_tenuis_SLJPv1.genes.pep.faa
+14821b04fee1f8d73f251ea39b70c0a6  files2cluster/Acropora_yongei_SLJPv1.genes.pep.faa
+a2bc5963199a4dd8bcbbee6e55e28c93  files2cluster/Actinia_equina_RHUKv1.genes.pep.faa
+34d7286aee36838d628abe3ea36711c4  files2cluster/Alatina_alata_BNNLv1.genes.pep.faa
+ac173c141520ecfba70bf7e663fd81de  files2cluster/Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa
+9fa447619d783cbfc02da34bc9e27d61  files2cluster/Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa
+6ac99358e7a48fd41c126f9e63c1737b  files2cluster/Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa
+a18f7629938391213c2d65b371bcf13c  files2cluster/Anthopleura_elegantissima_REEFv1.transcripts.pep.faa
+cd6531f545f22f2900feb2ab87f4090b  files2cluster/Astreopora_myriophthalma_SLJPv2.genes.pep.faa
+e8c4b736c9c49d338adca4461571549b  files2cluster/Astreopora_sp_REEFv1.transcripts.pep.faa
+8363e8fa256d2cc03be07a3753bef91b  files2cluster/Aurelia_aurita_ALTOv1.genes.pep.faa
+28187bf0b95b2609e4bcc0bedc81095b  files2cluster/Aurelia_aurita_RSPOv1.genes.pep.faa
+9b2ef3a78579a0b99727b38c2f948deb  files2cluster/Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+7f166859a896d99923048f7f8700c6e8  files2cluster/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+685ae686baf71abac7a4025239e919eb  files2cluster/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+43962e0877a44c45bf420feda069bfcf  files2cluster/Cassiopea_xamachana_T1-Av2.transcripts.pep.faa
+19e5eec8b52913356325cbcbf2e354b3  files2cluster/Cassiopea_xamachana_T1-Av2-TRANS.transcripts.pep.faa
+60b5edcbbf5c3db908baeb00fb975d7d  files2cluster/Clytia_hemispaerica_NANAv1.genes.pep.faa
+8040d6b56b21f66e2288a68868a8d343  files2cluster/Corallium_rubrum_MRFRv1.transcripts.pep.faa
+3ddb8affef9be9cf513aaf5b71213a88  files2cluster/Corynactis_australis_JBAUv1.transcripts.pep.faa
+c66ef85df2c5af2634306bd23e97f08c  files2cluster/Craterolophus_convolvulus_RYUSv1.transcripts.pep.faa
+3a86524eaba334d2ba2bdeebc34d5259  files2cluster/Ctenactis_echinata_NAJPv1.transcripts.pep.faa
+837fbc11ad88527ace50e30be0fdb1a9  files2cluster/Dendronephthya_gigantea_SJKRv1.genes.pep.faa
+79cc92e9fb1ef451b2ef8d8a2859ba87  files2cluster/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa
+54ff449319261dcc65b260b620a68f81  files2cluster/Discosoma_sp_MSMEv1.genes.pep.faa
+c88ee89318d8fa84af38c04aaa833bc2  files2cluster/Dynamena_pumila_WSRUv1.transcripts.pep.faa
+d9273b9bb8d4e2570358be2619aeb034  files2cluster/Ephydatia_muelleri_BCCAv1.genes.pep.faa
+65fd42f0911ef79c0e0877ba74d8183b  files2cluster/Exaiptasia_diaphana_CC7v1.genes.pep.faa
+891ac1882140308d621ad1a39b4e713a  files2cluster/Favia_sp_REEFv1.transcripts.pep.faa
+6429c80a7cfd54c460ec5338790990f6  files2cluster/Fungia_scutaria_REEFv1.transcripts.pep.faa
+344d8007d89e7dee307f116658b2038d  files2cluster/Fungia_spp_REEFv1.genes.pep.faa
+610dbe58ab79d3bc5deaacd8e5b0325d  files2cluster/Galaxea_fascicularis_REEFv1.genes.pep.faa
+e32975a9a7d3d216edc91b0be39aa027  files2cluster/Goniastrea_aspera_REEFv1.genes.pep.faa
+fca6e38af386722033661434c7befb4f  files2cluster/Gorgonia_ventalina_LRPRv1.transcripts.pep.faa
+fde5043ecff4e65cf23fa4f89fa5afd6  files2cluster/Haliclystus_auricula_NANAv1.transcripts.pep.faa
+2598632fc0ab695825d9424412a1661b  files2cluster/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa
+856c154e55681417e1299de807cdc0a5  files2cluster/Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+9e90df366fa0ea2b8d075dad2e54b125  files2cluster/Hormiphora_californensis_MBUSv1.genes.pep.faa
+84d668091f93b4304c56a921d2d8c27b  files2cluster/Hydractinia_echinata_NWAOv1.genes.pep.faa
+d9857a92f72da76b580911ee2bd5cfdf  files2cluster/Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+1ef625c880d0375c6210068a32111f5e  files2cluster/Hydra_oligactis_GNCHv1.transcripts.pep.faa
+fa8ca3c9d9fa1349a61d0c9fa7d72827  files2cluster/Hydra_viridissima_99AUv1.genes.pep.faa
+a1c424f9a3db61b993e813936065348f  files2cluster/Hydra_vulgaris_MIJPv3.genes.pep.faa
+4255f175120d2a0aec9fcd0766a638a1  files2cluster/Kudoa_iwatai_RSILv1.transcripts.pep.faa
+3fa888d767c275caf14a30b77eb5feac  files2cluster/Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa
+2aa5af6e4dbce903834a34261cfbb8d8  files2cluster/Madracis_auretenra_REEFv1.transcripts.pep.faa
+6eba1174edb67bfbca81bf90aaec6958  files2cluster/Millepora_alcicornis_PRUSv1.transcripts.pep.faa
+473d2385d9cb4d783e017f2c1e4d7648  files2cluster/Millepora_complanata_PRUSv1.transcripts.pep.faa
+10236d23e47aae63f5a2d3fb62864f42  files2cluster/Millepora_sp_RR-2016_PRUSv1.transcripts.pep.faa
+61854aea33e1032f7d36f5370d0001b3  files2cluster/Millepora_squarrosa_PRUSv1.transcripts.pep.faa
+616377ec2bbc8d571e270893c3afd89e  files2cluster/Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+0129af2b91b116e5b261ae155313a1df  files2cluster/Monosiga_brevicollis_CCBMv1.genes.pep.faa
+c35eb8e47613e9571e6f365adad17824  files2cluster/Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+dc347c618ac8fbe8262e36769b04c7e4  files2cluster/Montastraea_faveolata_REEFv1.transcripts.pep.faa
+a61927dddf58e6afecf32f5f92885167  files2cluster/Montastrea_cavernosa_FGUSv2.genes.pep.faa
+850e5a2203d657df4eef532d05bc4ac6  files2cluster/Montipora_aequituberculata_NANAv1.transcripts.pep.faa
+16bd66db55eb5543e386672d2dd06aeb  files2cluster/Montipora_cactus_SLJPv2.genes.pep.faa
+45a6108c93776b678be495137f530b8b  files2cluster/Montipora_capitata_KBHIv3.genes.pep.faa
+c9c63e35668bb8e71927a8cd461a4cdd  files2cluster/Montipora_capitata_WTHIv1.1.genes.pep.faa
+6f34c40e6e06ed14aabbbc3039cc1b46  files2cluster/Montipora_efflorescens_SLJPv2.genes.pep.faa
+aa6b36a998221c2c09d21b7e9f582d56  files2cluster/Montipora_foliosa_XSCSv1.transcripts.pep.faa
+37a19c096ba1ca8d8fffe1db02ff5f7e  files2cluster/Morbakka_virulenta_ODJPv1.genes.pep.faa
+97e78218c180cf4498a4b6100eaaf2df  files2cluster/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+30daf9ded0bad3721664bd6d82be2bf2  files2cluster/Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+45fe353064eab1d6662af2b9295e4d86  files2cluster/Nematostella_vectensis_RRUSv1.genes.pep.faa
+5943a39cdf6f183f174633da6cdeb6f3  files2cluster/Orbicella_faveolata_NAPAv1.genes.pep.faa
+964c718de3baf2ae855cfd5b2b4ee331  files2cluster/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa
+ea2eed5d72bf2e98ab9189a0758d26ad  files2cluster/Pachyseris_speciosa_OIAUv0.12.genes.pep.faa
+399fc347d1e5572b21b85ad47ea303de  files2cluster/Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+1a63b788cc6b9cedf0bb7ba31dfb9cfe  files2cluster/Paramuricea_clavata_CTESv1.genes.pep.faa
+5c58f0d47933303f855a9f13ee6bee6f  files2cluster/Physalia_physalis_OKJPv1.transcripts.pep.faa
+fa71f09c098a75c3e12a6d59b1b99851  files2cluster/Platygyra_carnosus_REEFv1.transcripts.pep.faa
+6d7fcb3f9d01b8a07476499387ba1128  files2cluster/Platygyra_sinensis_SDTHv1.genes.pep.faa
+480b495bf71f385e949d3b9f91adb808  files2cluster/Plexaura_homomalla_PRUSv1.transcripts.pep.faa
+83789adba6f35c99aa167f0acd7b438e  files2cluster/Plexaura_kukenthali_PRUSv1.transcripts.pep.faa
+a89ef1ea58c9e2d84962a4cd2685fcc3  files2cluster/Pocillopora_acuta_KBHIv2.genes.pep.faa
+0d053fd5db07828b84ad04b35e16deca  files2cluster/Pocillopora_acuta_LBIDv1.genes.pep.faa
+aa7335ebfe24483ca39ac3090f7ae6e1  files2cluster/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+5cf6e2c2484e48d71792bce0299c403a  files2cluster/Pocillopora_damicornis_SIPAv1.genes.pep.faa
+5ac3d55966342700e572896829a32984  files2cluster/Pocillopora_damicornis_XSCSv1.transcripts.pep.faa
+890de3fa0c4ef335eafce955911940d0  files2cluster/Pocillopora_meandrina_KBHIv1.genes.pep.faa
+ebe6471551f98c75fce5a55d39c41f97  files2cluster/Pocillopora_verrucosa_RSSAv1.genes.pep.faa
+ff683ee267b99f78dfea08c4efd6f7f8  files2cluster/Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa
+cd74a403292093266d092c39b4eda548  files2cluster/Podocoryna_carnea_NANAv1.transcripts.pep.faa
+4e9024c60590c0708f60562a8ac9a783  files2cluster/Polypodium_hydriforme_OKUSv1.transcripts.pep.faa
+f718b41eb664ee7bdc0d6638f1533596  files2cluster/Porites_astreoides_BBBMv1.genes.pep.faa
+791b1bed7b818a1103f2c7879919e913  files2cluster/Porites_astreoides_REEFv1.transcripts.pep.faa
+1c2f35cb7aaa9482c3f7a9ba6eec4917  files2cluster/Porites_australiensis_SLJPv1.genes.pep.faa
+20a6fe8d92e14a7987a1d911ea370f9f  files2cluster/Porites_compressa_KBHIv1.genes.pep.faa
+f2bbe2705df92326de6754bc5e3d1bfc  files2cluster/Porites_evermanni_NAPFv1.genes.pep.faa
+b96afa7fcd1c65fc715c8d7540e2b3ae  files2cluster/Porites_lobata_NAPFv3.genes.pep.faa
+2d324d02f90f053bb2cbcd14811613a3  files2cluster/Porites_lobata_REEFv1.transcripts.pep.faa
+4cbe262f6a9129a10e14cc4657bad32c  files2cluster/Porites_lutea_OIAUv1.1.genes.pep.faa
+75faf2988c020c0386ad30aefe7daebe  files2cluster/Porites_rus_NAIDv1.genes.pep.faa
+0b77c6900c63cf7409a8de88c3feba4d  files2cluster/Porpita_porpita_YOJPv1.transcripts.pep.faa
+f64918638b3b942a52b65cf99b0fb3a2  files2cluster/Pseudodiploria_strigosa_REEFv1.transcripts.pep.faa
+36c150161851d4d550d542c227e0ad93  files2cluster/Renilla_muelleri_FLUSv1.genes.pep.faa
+8b882a30a2de5ed54f04c34b8d140ee7  files2cluster/Renilla_reniformis_FLUSv1.genes.pep.faa
+67e5fec9a470c4dcd01462f368cf0a04  files2cluster/Rhodactis_indosinensis_NATWv1.transcripts.pep.faa
+1bc2dccd98689221c7db1f02eeb51b94  files2cluster/Ricordea_yuma_NAAUv1.transcripts.pep.faa
+9c7785d973aae5cbb506379c9381b4b7  files2cluster/Salpingoeca_rosetta_HIUSv1.genes.pep.faa
+2772b677547a553c20585ecdd4e754fe  files2cluster/Scolanthus_callimorphus_CRFRv1.genes.pep.faa
+b3baefd68e9005637cf8267abcd7e558  files2cluster/Seriatopora_hystrix_REEFv1.transcripts.pep.faa
+910a64e1319dbcb24416e4ae15454f0a  files2cluster/Stylissa_carteri_RSSAv1.genes.pep.faa
+5daa51c3169f0e2b2f987322c79c0e07  files2cluster/Stylophora_pistillata_GAJOv1.genes.pep.faa
+b657ab29c7e22b13a7266c5014b50cbe  files2cluster/Thelohanellus_kitauei_TJCNv1.genes.pep.faa
+965f0a861b2d890b784bb8e482fb5115  files2cluster/Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+e2ed4e68cfb8474e4b165bd69f86b94e  files2cluster/Trichoplax_sp_H2_CRPAv1.genes.pep.faa
+c6994ffaa59fff6141f46ee7e053ef02  files2cluster/Tripedalia_cystophora_Conant1897_1897v1.transcripts.pep.faa
+abbe149adb468f3f72c6203d6793b3cf  files2cluster/Turritopsis_sp_SK-2016_TBJPv1.transcripts.pep.faa
+047484a24c8c3386019352e42e81f6ba  files2cluster/Velella_velella_OKJPv1.transcripts.pep.faa
+de3624a4d9780cde87b52a6c7218e6ba  files2cluster/Xenia_sp_CTEAv1.genes.pep.faa
+f75fa89e60c8e8d012d0a362d331af0a  files2cluster/Xestospongia_testudinaria_RSSAv1.genes.pep.faa
+[Mon 24 Jul 2023 05:37:34 PM EDT]      CMD: orthofinder -t 12 -a 12 -b files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory
+
+OrthoFinder version 2.5.4 Copyright (C) 2014 David Emms
+
+2023-07-24 17:37:37 : Starting OrthoFinder 2.5.4
+12 thread(s) for highly parallel tasks (BLAST searches etc.)
+12 thread(s) for OrthoFinder algorithm
+
+Checking required programs are installed
+----------------------------------------
+Test can run "mcl -h" - ok
+Test can run "fastme -i /scratch/timothy/Orthofinder/files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory/SimpleTest.phy -o /scratch/timothy/Orthofinder/files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory/SimpleTest.tre" - ok
+Using previously calculated BLAST results in /scratch/timothy/Orthofinder/files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory/
+
+Running OrthoFinder algorithm
+-----------------------------
+2023-07-24 17:38:16 : Initial processing of each species
+2023-07-24 17:57:13 : Initial processing of species 3 complete
+2023-07-24 17:57:46 : Initial processing of species 4 complete
+2023-07-24 17:57:49 : Initial processing of species 0 complete
+2023-07-24 17:57:54 : Initial processing of species 1 complete
+2023-07-24 17:58:33 : Initial processing of species 5 complete
+2023-07-24 17:58:55 : Initial processing of species 2 complete
+2023-07-24 18:09:01 : Initial processing of species 7 complete
+2023-07-24 18:15:56 : Initial processing of species 6 complete
+2023-07-24 18:17:36 : Initial processing of species 9 complete
+2023-07-24 18:17:47 : Initial processing of species 10 complete
+2023-07-24 18:18:12 : Initial processing of species 8 complete
+2023-07-24 18:25:50 : Initial processing of species 13 complete
+2023-07-24 18:29:31 : Initial processing of species 12 complete
+2023-07-24 18:30:49 : Initial processing of species 11 complete
+2023-07-24 18:38:01 : Initial processing of species 15 complete
+2023-07-24 18:38:16 : Initial processing of species 14 complete
+2023-07-24 18:38:33 : Initial processing of species 16 complete
+2023-07-24 18:46:25 : Initial processing of species 17 complete
+2023-07-24 18:52:06 : Initial processing of species 20 complete
+2023-07-24 18:57:11 : Initial processing of species 21 complete
+2023-07-24 18:58:06 : Initial processing of species 22 complete
+2023-07-24 19:02:06 : Initial processing of species 19 complete
+2023-07-24 19:04:56 : Initial processing of species 18 complete
+2023-07-24 19:07:19 : Initial processing of species 24 complete
+2023-07-24 19:08:21 : Initial processing of species 23 complete
+2023-07-24 19:12:49 : Initial processing of species 26 complete
+2023-07-24 19:16:02 : Initial processing of species 25 complete
+2023-07-24 19:16:28 : Initial processing of species 27 complete
+2023-07-24 19:20:06 : Initial processing of species 28 complete
+2023-07-24 19:21:46 : Initial processing of species 29 complete
+2023-07-24 19:22:09 : Initial processing of species 30 complete
+2023-07-24 19:27:50 : Initial processing of species 33 complete
+2023-07-24 19:29:39 : Initial processing of species 34 complete
+2023-07-24 19:29:41 : Initial processing of species 31 complete
+2023-07-24 19:31:57 : Initial processing of species 36 complete
+2023-07-24 19:33:01 : Initial processing of species 32 complete
+2023-07-24 19:38:12 : Initial processing of species 35 complete
+2023-07-24 19:44:27 : Initial processing of species 37 complete
+2023-07-24 19:46:14 : Initial processing of species 41 complete
+2023-07-24 19:46:41 : Initial processing of species 38 complete
+2023-07-24 19:50:37 : Initial processing of species 39 complete
+2023-07-24 19:51:38 : Initial processing of species 40 complete
+2023-07-24 19:53:27 : Initial processing of species 42 complete
+2023-07-24 20:01:23 : Initial processing of species 44 complete
+2023-07-24 20:01:30 : Initial processing of species 47 complete
+2023-07-24 20:08:43 : Initial processing of species 49 complete
+2023-07-24 20:08:52 : Initial processing of species 50 complete
+2023-07-24 20:09:37 : Initial processing of species 48 complete
+2023-07-24 20:12:36 : Initial processing of species 45 complete
+2023-07-24 20:14:19 : Initial processing of species 43 complete
+2023-07-24 20:15:04 : Initial processing of species 46 complete
+2023-07-24 20:16:49 : Initial processing of species 56 complete
+2023-07-24 20:19:51 : Initial processing of species 51 complete
+2023-07-24 20:19:55 : Initial processing of species 52 complete
+2023-07-24 20:22:51 : Initial processing of species 53 complete
+2023-07-24 20:27:36 : Initial processing of species 54 complete
+2023-07-24 20:28:05 : Initial processing of species 55 complete
+2023-07-24 20:28:11 : Initial processing of species 57 complete
+2023-07-24 20:35:52 : Initial processing of species 63 complete
+2023-07-24 20:39:29 : Initial processing of species 58 complete
+2023-07-24 20:40:30 : Initial processing of species 64 complete
+2023-07-24 20:49:51 : Initial processing of species 59 complete
+2023-07-24 20:54:32 : Initial processing of species 66 complete
+2023-07-24 20:54:47 : Initial processing of species 60 complete
+2023-07-24 20:58:17 : Initial processing of species 61 complete
+2023-07-24 21:00:59 : Initial processing of species 65 complete
+2023-07-24 21:01:03 : Initial processing of species 62 complete
+2023-07-24 21:07:13 : Initial processing of species 72 complete
+2023-07-24 21:08:15 : Initial processing of species 67 complete
+2023-07-24 21:12:34 : Initial processing of species 74 complete
+2023-07-24 21:15:13 : Initial processing of species 68 complete
+2023-07-24 21:19:43 : Initial processing of species 71 complete
+2023-07-24 21:23:42 : Initial processing of species 73 complete
+2023-07-24 21:23:50 : Initial processing of species 70 complete
+2023-07-24 21:24:02 : Initial processing of species 75 complete
+2023-07-24 21:34:08 : Initial processing of species 80 complete
+2023-07-24 21:36:56 : Initial processing of species 69 complete
+2023-07-24 21:38:56 : Initial processing of species 76 complete
+2023-07-24 21:50:12 : Initial processing of species 78 complete
+2023-07-24 21:50:31 : Initial processing of species 77 complete
+2023-07-24 21:53:40 : Initial processing of species 83 complete
+2023-07-24 21:57:00 : Initial processing of species 81 complete
+2023-07-24 22:05:18 : Initial processing of species 79 complete
+2023-07-24 22:10:38 : Initial processing of species 86 complete
+2023-07-24 22:12:48 : Initial processing of species 85 complete
+2023-07-24 22:14:40 : Initial processing of species 84 complete
+2023-07-24 22:23:10 : Initial processing of species 89 complete
+2023-07-24 22:26:18 : Initial processing of species 87 complete
+2023-07-24 22:27:53 : Initial processing of species 88 complete
+2023-07-24 22:29:35 : Initial processing of species 82 complete
+2023-07-24 22:33:12 : Initial processing of species 92 complete
+2023-07-24 22:39:15 : Initial processing of species 94 complete
+2023-07-24 22:40:08 : Initial processing of species 90 complete
+2023-07-24 22:43:13 : Initial processing of species 91 complete
+2023-07-24 22:59:31 : Initial processing of species 96 complete
+2023-07-24 23:00:37 : Initial processing of species 93 complete
+2023-07-24 23:14:19 : Initial processing of species 100 complete
+2023-07-24 23:15:02 : Initial processing of species 97 complete
+2023-07-24 23:15:51 : Initial processing of species 98 complete
+2023-07-24 23:21:17 : Initial processing of species 95 complete
+2023-07-24 23:24:12 : Initial processing of species 99 complete
+2023-07-24 23:29:02 : Initial processing of species 101 complete
+2023-07-24 23:31:01 : Initial processing of species 104 complete
+2023-07-24 23:37:39 : Initial processing of species 108 complete
+2023-07-24 23:38:36 : Initial processing of species 103 complete
+2023-07-24 23:40:32 : Initial processing of species 106 complete
+2023-07-24 23:41:31 : Initial processing of species 105 complete
+2023-07-24 23:45:06 : Initial processing of species 107 complete
+2023-07-24 23:47:02 : Initial processing of species 102 complete
+2023-07-24 23:54:03 : Initial processing of species 113 complete
+2023-07-24 23:56:30 : Initial processing of species 114 complete
+2023-07-24 23:57:32 : Initial processing of species 109 complete
+2023-07-24 23:58:17 : Initial processing of species 110 complete
+2023-07-25 00:05:27 : Initial processing of species 111 complete
+2023-07-25 00:09:21 : Initial processing of species 112 complete
+2023-07-25 00:12:56 : Initial processing of species 116 complete
+2023-07-25 00:16:50 : Initial processing of species 118 complete
+2023-07-25 00:31:52 : Initial processing of species 119 complete
+2023-07-25 00:33:02 : Initial processing of species 115 complete
+2023-07-25 00:39:13 : Initial processing of species 117 complete
+2023-07-25 01:09:28 : Connected putative homologues
+2023-07-25 01:13:28 : Written final scores for species 33 to graph file
+2023-07-25 01:13:31 : Written final scores for species 21 to graph file
+2023-07-25 01:13:47 : Written final scores for species 27 to graph file
+2023-07-25 01:13:49 : Written final scores for species 3 to graph file
+2023-07-25 01:13:54 : Written final scores for species 24 to graph file
+2023-07-25 01:13:58 : Written final scores for species 0 to graph file
+2023-07-25 01:14:04 : Written final scores for species 12 to graph file
+2023-07-25 01:14:06 : Written final scores for species 30 to graph file
+2023-07-25 01:14:07 : Written final scores for species 6 to graph file
+2023-07-25 01:14:15 : Written final scores for species 15 to graph file
+2023-07-25 01:14:15 : Written final scores for species 9 to graph file
+2023-07-25 01:16:41 : Written final scores for species 13 to graph file
+2023-07-25 01:16:42 : Written final scores for species 34 to graph file
+2023-07-25 01:18:02 : Written final scores for species 18 to graph file
+2023-07-25 01:18:05 : Written final scores for species 7 to graph file
+2023-07-25 01:18:18 : Written final scores for species 4 to graph file
+2023-07-25 01:18:31 : Written final scores for species 1 to graph file
+2023-07-25 01:18:43 : Written final scores for species 22 to graph file
+2023-07-25 01:18:54 : Written final scores for species 10 to graph file
+2023-07-25 01:18:57 : Written final scores for species 31 to graph file
+2023-07-25 01:19:00 : Written final scores for species 16 to graph file
+2023-07-25 01:19:14 : Written final scores for species 28 to graph file
+2023-07-25 01:19:21 : Written final scores for species 25 to graph file
+2023-07-25 01:20:53 : Written final scores for species 14 to graph file
+2023-07-25 01:21:26 : Written final scores for species 35 to graph file
+2023-07-25 01:22:43 : Written final scores for species 8 to graph file
+2023-07-25 01:23:02 : Written final scores for species 5 to graph file
+2023-07-25 01:23:08 : Written final scores for species 2 to graph file
+2023-07-25 01:23:46 : Written final scores for species 23 to graph file
+2023-07-25 01:23:51 : Written final scores for species 17 to graph file
+2023-07-25 01:23:57 : Written final scores for species 36 to graph file
+2023-07-25 01:24:08 : Written final scores for species 32 to graph file
+2023-07-25 01:24:39 : Written final scores for species 26 to graph file
+2023-07-25 01:24:52 : Written final scores for species 29 to graph file
+2023-07-25 01:25:18 : Written final scores for species 11 to graph file
+2023-07-25 01:27:29 : Written final scores for species 51 to graph file
+2023-07-25 01:27:47 : Written final scores for species 63 to graph file
+2023-07-25 01:28:06 : Written final scores for species 42 to graph file
+2023-07-25 01:28:18 : Written final scores for species 39 to graph file
+2023-07-25 01:28:24 : Written final scores for species 57 to graph file
+2023-07-25 01:28:34 : Written final scores for species 37 to graph file
+2023-07-25 01:29:04 : Written final scores for species 48 to graph file
+2023-07-25 01:29:12 : Written final scores for species 54 to graph file
+2023-07-25 01:29:20 : Written final scores for species 64 to graph file
+2023-07-25 01:29:38 : Written final scores for species 19 to graph file
+2023-07-25 01:30:07 : Written final scores for species 66 to graph file
+2023-07-25 01:30:16 : Written final scores for species 45 to graph file
+2023-07-25 01:31:32 : Written final scores for species 52 to graph file
+2023-07-25 01:31:45 : Written final scores for species 49 to graph file
+2023-07-25 01:33:14 : Written final scores for species 55 to graph file
+2023-07-25 01:33:24 : Written final scores for species 20 to graph file
+2023-07-25 01:33:41 : Written final scores for species 40 to graph file
+2023-07-25 01:33:58 : Written final scores for species 56 to graph file
+2023-07-25 01:34:05 : Written final scores for species 38 to graph file
+2023-07-25 01:34:18 : Written final scores for species 50 to graph file
+2023-07-25 01:35:22 : Written final scores for species 53 to graph file
+2023-07-25 01:35:22 : Written final scores for species 58 to graph file
+2023-07-25 01:35:43 : Written final scores for species 67 to graph file
+2023-07-25 01:35:43 : Written final scores for species 72 to graph file
+2023-07-25 01:35:57 : Written final scores for species 43 to graph file
+2023-07-25 01:36:02 : Written final scores for species 65 to graph file
+2023-07-25 01:36:57 : Written final scores for species 75 to graph file
+2023-07-25 01:37:15 : Written final scores for species 60 to graph file
+2023-07-25 01:38:26 : Written final scores for species 41 to graph file
+2023-07-25 01:40:12 : Written final scores for species 73 to graph file
+2023-07-25 01:40:48 : Written final scores for species 44 to graph file
+2023-07-25 01:41:40 : Written final scores for species 68 to graph file
+2023-07-25 01:41:46 : Written final scores for species 74 to graph file
+2023-07-25 01:42:09 : Written final scores for species 76 to graph file
+2023-07-25 01:42:12 : Written final scores for species 46 to graph file
+2023-07-25 01:43:36 : Written final scores for species 69 to graph file
+2023-07-25 01:44:13 : Written final scores for species 84 to graph file
+2023-07-25 01:44:54 : Written final scores for species 87 to graph file
+2023-07-25 01:44:58 : Written final scores for species 78 to graph file
+2023-07-25 01:45:37 : Written final scores for species 81 to graph file
+2023-07-25 01:46:09 : Written final scores for species 47 to graph file
+2023-07-25 01:47:10 : Written final scores for species 90 to graph file
+2023-07-25 01:48:00 : Written final scores for species 96 to graph file
+2023-07-25 01:48:31 : Written final scores for species 59 to graph file
+2023-07-25 01:50:07 : Written final scores for species 88 to graph file
+2023-07-25 01:50:15 : Written final scores for species 77 to graph file
+2023-07-25 01:50:32 : Written final scores for species 70 to graph file
+2023-07-25 01:50:59 : Written final scores for species 61 to graph file
+2023-07-25 01:51:15 : Written final scores for species 85 to graph file
+2023-07-25 01:51:39 : Written final scores for species 93 to graph file
+2023-07-25 01:52:58 : Written final scores for species 89 to graph file
+2023-07-25 01:53:05 : Written final scores for species 91 to graph file
+2023-07-25 01:54:23 : Written final scores for species 99 to graph file
+2023-07-25 01:54:57 : Written final scores for species 94 to graph file
+2023-07-25 01:54:59 : Written final scores for species 105 to graph file
+2023-07-25 01:55:03 : Written final scores for species 108 to graph file
+2023-07-25 01:55:32 : Written final scores for species 102 to graph file
+2023-07-25 01:55:46 : Written final scores for species 79 to graph file
+2023-07-25 01:55:57 : Written final scores for species 92 to graph file
+2023-07-25 01:56:20 : Written final scores for species 71 to graph file
+2023-07-25 01:56:21 : Written final scores for species 97 to graph file
+2023-07-25 01:56:28 : Written final scores for species 86 to graph file
+2023-07-25 01:56:52 : Written final scores for species 82 to graph file
+2023-07-25 01:58:30 : Written final scores for species 100 to graph file
+2023-07-25 01:58:45 : Written final scores for species 106 to graph file
+2023-07-25 01:58:53 : Written final scores for species 80 to graph file
+2023-07-25 01:58:53 : Written final scores for species 114 to graph file
+2023-07-25 01:59:46 : Written final scores for species 109 to graph file
+2023-07-25 02:01:45 : Written final scores for species 103 to graph file
+2023-07-25 02:02:16 : Written final scores for species 83 to graph file
+2023-07-25 02:02:33 : Written final scores for species 107 to graph file
+2023-07-25 02:02:54 : Written final scores for species 62 to graph file
+2023-07-25 02:03:41 : Written final scores for species 111 to graph file
+2023-07-25 02:04:09 : Written final scores for species 98 to graph file
+2023-07-25 02:04:43 : Written final scores for species 110 to graph file
+2023-07-25 02:04:45 : Written final scores for species 101 to graph file
+2023-07-25 02:05:49 : Written final scores for species 95 to graph file
+2023-07-25 02:05:57 : Written final scores for species 104 to graph file
+2023-07-25 02:08:19 : Written final scores for species 115 to graph file
+2023-07-25 02:09:11 : Written final scores for species 112 to graph file
+2023-07-25 02:10:24 : Written final scores for species 117 to graph file
+2023-07-25 02:11:37 : Written final scores for species 113 to graph file
+2023-07-25 02:12:39 : Written final scores for species 116 to graph file
+2023-07-25 02:15:07 : Written final scores for species 118 to graph file
+2023-07-25 02:23:04 : Written final scores for species 119 to graph file
+
+WARNING: program called by OrthoFinder produced output to stderr
+
+Command: mcl /scratch/timothy/Orthofinder/files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory/OrthoFinder/Results_Jul24/WorkingDirectory/OrthoFinder_graph.txt -I 1.5 -o /scratch/timothy/Orthofinder/files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory/OrthoFinder/Results_Jul24/WorkingDirectory/clusters_OrthoFinder_I1.5.txt -te 12 -V all
+
+stdout
+------
+
+stderr
+------
+[mcl] cut <3> instances of overlap
+
+2023-07-25 07:54:52 : Ran MCL
+
+Writing orthogroups to file
+---------------------------
+OrthoFinder assigned 3592710 genes (95.1% of total) to 137793 orthogroups. Fifty percent of all genes were in orthogroups with 196 or more genes (G50 was 196) and were contained in the largest 3328 orthogroups (O50 was 3328). There were 191 orthogroups with all species present and 0 of these consisted entirely of single-copy genes.
+
+2023-07-25 08:06:02 : Done orthogroups
+
+Analysing Orthogroups
+=====================
+
+Calculating gene distances
+--------------------------
+2023-07-25 16:26:44 : Done
+2023-07-25 16:27:58 : Done 0 of 77709
+2023-07-25 23:19:36 : Done 1000 of 77709
+2023-07-25 23:26:55 : Done 2000 of 77709
+2023-07-25 23:29:00 : Done 3000 of 77709
+2023-07-25 23:30:02 : Done 4000 of 77709
+2023-07-25 23:30:42 : Done 5000 of 77709
+2023-07-25 23:31:13 : Done 6000 of 77709
+2023-07-25 23:31:38 : Done 7000 of 77709
+2023-07-25 23:31:58 : Done 8000 of 77709
+2023-07-25 23:32:12 : Done 9000 of 77709
+2023-07-25 23:32:22 : Done 10000 of 77709
+2023-07-25 23:32:30 : Done 11000 of 77709
+2023-07-25 23:32:37 : Done 12000 of 77709
+2023-07-25 23:32:42 : Done 13000 of 77709
+2023-07-25 23:32:48 : Done 14000 of 77709
+2023-07-25 23:32:53 : Done 15000 of 77709
+2023-07-25 23:32:58 : Done 16000 of 77709
+2023-07-25 23:33:03 : Done 17000 of 77709
+2023-07-25 23:33:09 : Done 18000 of 77709
+2023-07-25 23:33:14 : Done 19000 of 77709
+2023-07-25 23:33:19 : Done 20000 of 77709
+2023-07-25 23:33:23 : Done 21000 of 77709
+2023-07-25 23:33:28 : Done 22000 of 77709
+2023-07-25 23:33:32 : Done 23000 of 77709
+2023-07-25 23:33:37 : Done 24000 of 77709
+2023-07-25 23:33:42 : Done 25000 of 77709
+2023-07-25 23:33:46 : Done 26000 of 77709
+2023-07-25 23:33:51 : Done 27000 of 77709
+2023-07-25 23:33:55 : Done 28000 of 77709
+2023-07-25 23:34:00 : Done 29000 of 77709
+2023-07-25 23:34:05 : Done 30000 of 77709
+2023-07-25 23:34:08 : Done 31000 of 77709
+2023-07-25 23:34:12 : Done 32000 of 77709
+2023-07-25 23:34:15 : Done 33000 of 77709
+2023-07-25 23:34:18 : Done 34000 of 77709
+2023-07-25 23:34:21 : Done 35000 of 77709
+2023-07-25 23:34:25 : Done 36000 of 77709
+2023-07-25 23:34:28 : Done 37000 of 77709
+2023-07-25 23:34:31 : Done 38000 of 77709
+2023-07-25 23:34:34 : Done 39000 of 77709
+2023-07-25 23:34:37 : Done 40000 of 77709
+2023-07-25 23:34:41 : Done 41000 of 77709
+2023-07-25 23:34:44 : Done 42000 of 77709
+2023-07-25 23:34:47 : Done 43000 of 77709
+2023-07-25 23:34:50 : Done 44000 of 77709
+2023-07-25 23:34:53 : Done 45000 of 77709
+2023-07-25 23:34:56 : Done 46000 of 77709
+2023-07-25 23:34:59 : Done 47000 of 77709
+2023-07-25 23:35:02 : Done 48000 of 77709
+2023-07-25 23:35:06 : Done 49000 of 77709
+2023-07-25 23:35:09 : Done 50000 of 77709
+2023-07-25 23:35:12 : Done 51000 of 77709
+2023-07-25 23:35:14 : Done 52000 of 77709
+2023-07-25 23:35:18 : Done 53000 of 77709
+2023-07-25 23:35:21 : Done 54000 of 77709
+2023-07-25 23:35:24 : Done 55000 of 77709
+2023-07-25 23:35:27 : Done 56000 of 77709
+2023-07-25 23:35:30 : Done 57000 of 77709
+2023-07-25 23:35:33 : Done 58000 of 77709
+2023-07-25 23:35:36 : Done 59000 of 77709
+2023-07-25 23:35:39 : Done 60000 of 77709
+2023-07-25 23:35:43 : Done 61000 of 77709
+2023-07-25 23:35:46 : Done 62000 of 77709
+2023-07-25 23:35:49 : Done 63000 of 77709
+2023-07-25 23:35:52 : Done 64000 of 77709
+2023-07-25 23:35:55 : Done 65000 of 77709
+2023-07-25 23:35:59 : Done 66000 of 77709
+2023-07-25 23:36:02 : Done 67000 of 77709
+2023-07-25 23:36:05 : Done 68000 of 77709
+2023-07-25 23:36:08 : Done 69000 of 77709
+2023-07-25 23:36:11 : Done 70000 of 77709
+2023-07-25 23:36:15 : Done 71000 of 77709
+2023-07-25 23:36:18 : Done 72000 of 77709
+2023-07-25 23:36:21 : Done 73000 of 77709
+2023-07-25 23:36:24 : Done 74000 of 77709
+2023-07-25 23:36:27 : Done 75000 of 77709
+2023-07-25 23:36:31 : Done 76000 of 77709
+2023-07-25 23:36:34 : Done 77000 of 77709
+
+Inferring gene and species trees
+--------------------------------
+
+191 trees had all species present and will be used by STAG to infer the species tree
+
+Best outgroup(s) for species tree
+---------------------------------
+2023-08-05 02:01:15 : Starting STRIDE
+2023-08-05 02:04:55 : Done STRIDE
+Observed 3016 well-supported, non-terminal duplications. 3016 support the best root and 0 contradict it.
+Best outgroup for species tree:
+  Mnemiopsis_leidyi_WHUSv2.2.genes.pep, Hormiphora_californensis_MBUSv1.genes.pep
+
+Reconciling gene trees and species tree
+---------------------------------------
+Outgroup: Mnemiopsis_leidyi_WHUSv2.2.genes.pep, Hormiphora_californensis_MBUSv1.genes.pep
+2023-08-05 02:04:55 : Starting Recon and orthologues
+2023-08-05 02:04:55 : Starting OF Orthologues
+2023-08-05 02:11:25 : Done 1000 of 77709
+2023-08-05 02:12:24 : Done 2000 of 77709
+2023-08-05 02:13:09 : Done 3000 of 77709
+2023-08-05 02:13:39 : Done 4000 of 77709
+2023-08-05 02:14:07 : Done 5000 of 77709
+2023-08-05 02:14:31 : Done 6000 of 77709
+2023-08-05 02:14:52 : Done 7000 of 77709
+2023-08-05 02:15:12 : Done 8000 of 77709
+2023-08-05 02:15:27 : Done 9000 of 77709
+2023-08-05 02:15:38 : Done 10000 of 77709
+2023-08-05 02:15:46 : Done 11000 of 77709
+2023-08-05 02:15:52 : Done 12000 of 77709
+2023-08-05 02:15:57 : Done 13000 of 77709
+2023-08-05 02:16:01 : Done 14000 of 77709
+2023-08-05 02:16:05 : Done 15000 of 77709
+2023-08-05 02:16:08 : Done 16000 of 77709
+2023-08-05 02:16:11 : Done 17000 of 77709
+2023-08-05 02:16:14 : Done 18000 of 77709
+2023-08-05 02:16:18 : Done 19000 of 77709
+2023-08-05 02:16:21 : Done 20000 of 77709
+2023-08-05 02:16:24 : Done 21000 of 77709
+2023-08-05 02:16:26 : Done 22000 of 77709
+2023-08-05 02:16:29 : Done 23000 of 77709
+2023-08-05 02:16:31 : Done 24000 of 77709
+2023-08-05 02:16:33 : Done 25000 of 77709
+2023-08-05 02:16:36 : Done 26000 of 77709
+2023-08-05 02:16:38 : Done 27000 of 77709
+2023-08-05 02:16:41 : Done 28000 of 77709
+2023-08-05 02:16:43 : Done 29000 of 77709
+2023-08-05 02:16:45 : Done 30000 of 77709
+2023-08-05 02:16:47 : Done 31000 of 77709
+2023-08-05 02:16:49 : Done 32000 of 77709
+2023-08-05 02:16:51 : Done 33000 of 77709
+2023-08-05 02:16:53 : Done 34000 of 77709
+2023-08-05 02:16:56 : Done 35000 of 77709
+2023-08-05 02:16:58 : Done 36000 of 77709
+2023-08-05 02:16:59 : Done 37000 of 77709
+2023-08-05 02:17:01 : Done 38000 of 77709
+2023-08-05 02:17:03 : Done 39000 of 77709
+2023-08-05 02:17:05 : Done 40000 of 77709
+2023-08-05 02:17:07 : Done 41000 of 77709
+2023-08-05 02:17:10 : Done 42000 of 77709
+2023-08-05 02:17:11 : Done 43000 of 77709
+2023-08-05 02:17:13 : Done 44000 of 77709
+2023-08-05 02:17:15 : Done 45000 of 77709
+2023-08-05 02:17:17 : Done 46000 of 77709
+2023-08-05 02:17:19 : Done 47000 of 77709
+2023-08-05 02:17:21 : Done 48000 of 77709
+2023-08-05 02:17:23 : Done 49000 of 77709
+2023-08-05 02:17:25 : Done 50000 of 77709
+2023-08-05 02:17:27 : Done 51000 of 77709
+2023-08-05 02:17:28 : Done 52000 of 77709
+2023-08-05 02:17:30 : Done 53000 of 77709
+2023-08-05 02:17:32 : Done 54000 of 77709
+2023-08-05 02:17:34 : Done 55000 of 77709
+2023-08-05 02:17:36 : Done 56000 of 77709
+2023-08-05 02:17:37 : Done 57000 of 77709
+2023-08-05 02:17:39 : Done 58000 of 77709
+2023-08-05 02:17:40 : Done 59000 of 77709
+2023-08-05 02:17:42 : Done 60000 of 77709
+2023-08-05 02:17:43 : Done 61000 of 77709
+2023-08-05 02:17:45 : Done 62000 of 77709
+2023-08-05 02:17:47 : Done 63000 of 77709
+2023-08-05 02:17:48 : Done 64000 of 77709
+2023-08-05 02:17:50 : Done 65000 of 77709
+2023-08-05 02:17:51 : Done 66000 of 77709
+2023-08-05 02:17:53 : Done 67000 of 77709
+2023-08-05 02:17:54 : Done 68000 of 77709
+2023-08-05 02:17:55 : Done 69000 of 77709
+2023-08-05 02:17:56 : Done 70000 of 77709
+2023-08-05 02:17:57 : Done 71000 of 77709
+2023-08-05 02:17:59 : Done 72000 of 77709
+2023-08-05 02:18:00 : Done 73000 of 77709
+2023-08-05 02:18:01 : Done 74000 of 77709
+2023-08-05 02:18:03 : Done 75000 of 77709
+2023-08-05 02:18:04 : Done 76000 of 77709
+2023-08-05 02:18:05 : Done 77000 of 77709
+2023-08-05 02:26:20 : Done 0 of 77709
+2023-08-05 02:26:22 : Done OF Orthologues
+
+Writing results files
+=====================
+2023-08-05 02:28:52 : Done orthologues
+
+Results:
+    /scratch/timothy/Orthofinder/files2cluster/OrthoFinder/Results_Jul14/WorkingDirectory/OrthoFinder/Results_Jul24/
+
+CITATION:
+ When publishing work that uses OrthoFinder please cite:
+ Emms D.M. & Kelly S. (2019), Genome Biology 20:238
+
+ If you use the species tree in your work then please also cite:
+ Emms D.M. & Kelly S. (2017), MBE 34(12): 3267-3278
+ Emms D.M. & Kelly S. (2018), bioRxiv https://doi.org/10.1101/267914
+
+=====================================================================
+Started: at Mon 24 Jul 2023 05:37:20 PM EDT
+Finished: at Sat 05 Aug 2023 02:29:01 AM EDT
+ExitStatus: 0
+=====================================================================
